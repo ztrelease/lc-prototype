@@ -1,0 +1,156 @@
+{{<layout}}
+
+{{$pageTitle}}
+	HMRC > BRAMA 
+{{/pageTitle}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+	<div id = "global-breadcrumb" class = "header-context" style="background-color:transparent">
+    <ol class = "group" role = "breadcrumbs">
+        <li>
+          <a href = "../../index">Home</a>
+        </li>
+        <li>
+          <a href = "business_registration_index">Business registration</a>
+        </li>
+        <li>
+          User journey 2
+        </li>
+      </ol>
+  	</div>
+
+	<h2 class="heading-large brama-shrink-padding-3">Business registration</h2>
+  <!-- feel free to change this page to suit your needs -->
+
+  <div class="nav-container">
+        <nav role="navigation">
+            <ol class="brama-progress">
+                <li class="brama-progress-active">
+                    1. Business lookup</a>
+                </li><li class="brama-progress-indicator brama-progress-thinner3">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    2. Business details
+                </li><li class="brama-progress-indicator brama-progress-thinner3">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    3. Confirmation
+                </li><li class="brama-progress-indicator brama-progress-wider3">
+                  &nbsp;
+              </li>
+            </ol>
+        </nav>
+  </div>
+
+	<h3 class="heading-medium brama-shrink-padding-1">Business lookup</h3>
+
+  <div class="brama-spacer2"></div>
+
+	<p>We will match your business details with our records to validate your identity and speed up the registration process</p>
+
+  <div class="brama-spacer2"></div>
+
+  <label class="form-label">Type of business</label>
+
+	<select id = 'choose' onChange = 'show_div();' class="brama-dropdown">
+        
+        <option value="selected">Select</option>
+        <option value="1">Individual/Sole Trader</option>
+        <option value="2">Limited company</option>
+        <option value="3">Limited Liability Partnership</option>
+        <option value="4">Ordinary Business Partnership</option>
+        <option value="5">Unincorporated Body</option>
+
+  </select>
+
+    <div class="brama-spacer"></div>
+
+    <div id="hidden-form-1">
+
+      <div>
+          <label class="form-label" for="business_address0">Business name</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+      </div>
+
+      <div>
+          <label class="form-label" for="business_address0">Unique Tax Reference</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+      </div>
+
+    	<div class="form-group form-group-compound">
+          <fieldset class="inline">
+    		    <label class="block-label">
+    		    <input id="chargeable-period-1" type="radio" name="chargeable-period" value="Yes" onclick="document.getElementById('hidden-liabilities').style.display = 'none';">
+    		       Yes
+    		    </label>
+    		    <label class="block-label" >
+    		    <input id="chargeable-period-2" type="radio" name="chargeable-period" value="No" onclick="document.getElementById('hidden-liabilities').style.display = 'inline-block';">
+    		        No
+    		    </label>
+          </fieldset>
+    	</div>
+
+  	</div>
+
+    <div id="hidden-form-2">
+
+      Form 2
+
+      <div>
+          <label class="form-label" for="business_address0">Sole trader name</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+      </div>
+
+      <div class="form-group">
+          <label class="form-label">Address line 3</label>
+          <input class="form-control brama-input-longform" type="text" value="">
+      </div> 
+
+  </div>
+
+  <div class="brama-spacer"></div>
+
+  <a href = "user_journey_2_review_details"><input type="submit" value="Save and continue" class="button"></a>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel business registration</a>
+
+</main>
+
+<script>
+function show_div()
+{
+	var option = document.getElementById('choose');
+	if (option.value == '1')
+	{
+		document.getElementById("hidden-form-1").style.display = 'inline-block';
+     	document.getElementById("hidden-form-2").style.display = 'none';	}
+	else if (option.value =='2')
+	{
+		document.getElementById("hidden-form-1").style.display = 'none';
+     	document.getElementById("hidden-form-2").style.display = 'inline-block';
+	}
+}
+
+
+
+     document.getElementById("hidden-form-1").style.display = 'none';
+     document.getElementById("hidden-form-2").style.display = 'none';
+
+    <!--
+     // function show_div(x){
+      //	document.getElementById(x).style.display = 'inline-block'
+      //}
+
+
+    //-->
+</script>
+
+
+{{/content}}
+
+{{/layout}}
