@@ -1,0 +1,183 @@
+{{<layout}}
+
+{{$pageTitle}}
+	HMRC > BRAMA 
+{{/pageTitle}}
+
+{{$propositionHeader}}
+<div id="brama-agent-name">John Smith, Acme Limited &nbsp;|&nbsp; <a href="index" class="ated-logout-link"><font color='#2B8CC4'>Logout</font></a></div>
+{{/propositionHeader}}
+
+{{$content}}
+
+<main id="content" role="main">
+
+  <div id = "global-breadcrumb" class = "header-context" style="background-color:transparent">
+    <ol class = "group" role = "breadcrumbs">
+        <li>
+          <a href = "../../../../index">Home</a>
+        </li>
+        <li>
+          <a href = "../../ated_index">ATED</a>
+        </li>
+        <li>
+          ATED subscription
+        </li>
+      </ol>
+    </div>
+
+  <h2 class="heading-large brama-shrink-padding-3">ATED subscription</h2>
+  <!-- feel free to change this page to suit your needs -->
+
+  <div class="nav-container">
+        <nav role="navigation">
+            <ol class="brama-progress">
+                <li class="brama-progress-indicator">
+                    <a href="business_details" class="brama-progress-link">1. Business details</a>
+                </li><li class="brama-progress-indicator brama-progress-thinner">
+                  &nbsp;
+              </li><li class="brama-progress-active">
+                    2. Additional details
+                </li><li class="brama-progress-indicator brama-progress-thinner">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    3. Review details
+                </li><li class="brama-progress-indicator brama-progress-thinner">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    4. Confirmation
+                </li><li class="brama-progress-indicator brama-progress-wider-end1">
+                  &nbsp;
+              </li>
+            </ol>
+        </nav>
+    </div>
+
+  <h3 class="heading-medium brama-shrink-padding-1">Additional details</h3>
+
+  <div class="brama-spacer5"></div>
+
+  <h4 class="heading-medium brama-shrink-padding subtitle_line">ATED correspondence address</h4>
+
+  <div class="brama-spacer"></div>
+    
+  <div>
+
+      <form> 
+
+        <div>
+          <label class="form-label" for="business_address0">House name / number</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+          &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 1</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 2</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 3</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">City / Town</label>
+          <input class="form-control brama-input-mediumform" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">postcode</label>
+          <input class="form-control brama-input-verysortform" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">County</label>
+          <select onChange="window.location.href=this.value" id = 'choose' class="brama-dropdown3">
+                    <option value="selected">Select</option>
+                    <option value="#">United Kingdom</option>
+                    <option value="#">Option 1</option>
+                    <option value="#">Option 2</option>
+                    <option value="#">Option 3</option>
+                    </select>
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Country</label>
+          <select onChange="window.location.href=this.value" id = 'choose' class="brama-dropdown3">
+                    <option value="selected">Select</option>
+                    <option value="#">United Kingdom</option>
+                    <option value="#">Other 1</option>
+                    <option value="#">Other 2</option>
+                    <option value="#">Other 3</option>
+                    </select>
+        </div>         
+
+      </form>
+
+  </div>
+
+  <div class="brama-spacer"></div>
+
+  <div class="brama-spacer"></div>
+
+  <a href = "review_details"><input type="submit" value="Save and continue" class="button"></a>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+
+</main>
+
+<script>
+function show_div()
+{
+	var option = document.getElementById('choose');
+	if (option.value == '1')
+	{
+		document.getElementById("hidden-form-1").style.display = 'inline-block';
+     	document.getElementById("hidden-form-2").style.display = 'none';	}
+	else if (option.value =='2')
+	{
+		document.getElementById("hidden-form-1").style.display = 'none';
+     	document.getElementById("hidden-form-2").style.display = 'inline-block';
+	}
+}
+
+
+
+     document.getElementById("hidden-form-1").style.display = 'none';
+     document.getElementById("hidden-form-2").style.display = 'none';
+
+    <!--
+     // function show_div(x){
+      //	document.getElementById(x).style.display = 'inline-block'
+      //}
+
+
+    //-->
+</script>
+
+
+{{/content}}
+
+{{/layout}}

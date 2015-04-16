@@ -91,6 +91,24 @@ select {
 	width:100px;
 }
 
+.brama-input-verysortform2{
+	width:70px;
+}
+
+.brama-input-verysortform3{
+	width:50px;
+}
+
+.brama-input-populated-form{
+	background-color: #DEE0E2;
+	font-size: 16px;
+	color: #777777;
+}
+
+.brama-input-populated-form2{
+	font-size: 16px;
+}
+
 .brama-form-legend{
 	width: 100%;
 	border-bottom: 1px solid #bfc1c3;
@@ -119,12 +137,12 @@ select {
 
 .brama-spacer4{
 	clear:both;
-	height:500px;
+	height:800px;
 }
 
 .brama-spacer5{
 	clear:both;
-	height:1px;
+	height:5px;
 }
 
 .brama-spacer-big{
@@ -259,8 +277,11 @@ select {
 
 #brama-agent-name{
 	padding-top:8px;
-	color: #fff;
-	padding-left: 15px;
+	color: #ffffff;
+	margin-right: 20px;
+	float:right;
+	font-size: 16px;
+
 }
 
 .brama-grey-panel{
@@ -271,6 +292,14 @@ select {
 
 .text-medium{
 	font-size: 18px;
+}
+
+.text-medium2{
+	font-size: 16px;
+}
+
+.text-medium-link{
+	font-size: 16px;
 
 }
 
@@ -380,6 +409,7 @@ h4.heading-medium.brama-shrink-padding{
 	background-color: #F47738;
 	color:#fff;
 	font-weight: 400;
+	font-size: 16px;
 }
 
 .brama-relief-warning{
@@ -447,19 +477,32 @@ h4.heading-medium.brama-shrink-padding{
 
 .brama-progress li{
 	display: inline-block;
+	font-size: 16px;
 }
 
 .brama-progress-indicator{
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	border-bottom: 3px solid #bfc1c3;
-	padding-right: 15px;
+	padding-right: 0px;
 	color: #6F777B;
 }
 
 .brama-progress-active{
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 	border-bottom: 3px solid #28a197;
 	padding-right: 0px;
+}
+
+.brama-progress-wider-end1{
+	width: 380px;
+}
+
+.brama-progress-wider-end2{
+	width: 220px;
+}
+
+.brama-progress-wider-end3{
+	width: 506px;
 }
 
 .brama-progress-wider{
@@ -479,7 +522,7 @@ h4.heading-medium.brama-shrink-padding{
 }
 
 .brama-progress-thinner{
-	width: 30px;
+	width: 50px;
 }
 
 .brama-progress-thinner2{
@@ -603,6 +646,39 @@ a:hover{
   	padding-left: 10px;
 	background: #bfc1C3;
   }
+
+.brama-dropdown3{
+	width: 300px;
+	height: 37px;
+	border: 1px solid #bfc1c3;
+	border-radius: 0px;
+	font-family: "nta", Arial, sans-serif;
+ 	font-size: 16px;
+ 	line-height: 1.3157894737;
+  	font-weight: 400;
+  	text-transform: none;
+  	margin-bottom: 5px;
+  	padding-left: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url(/public/images/arrow_down.png) 95% / 5% no-repeat #fff;
+}
+
+.brama-dropdown-text-list1{
+ 	font-size: 16px;
+  	font-weight: 400;
+}
+
+.brama-dropdown-text-list2{
+ 	font-size: 16px;
+  	font-weight: 700;
+}
+
+.brama-dropdown-text-list3{
+ 	font-size: 14px;
+  	font-weight: 400;
+}
 
 .brama-option {
   border: 5px solid #bfc1c3;
