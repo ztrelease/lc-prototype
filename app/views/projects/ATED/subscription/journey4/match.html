@@ -26,61 +26,37 @@
       </ol>
     </div>
 
-  <h2 class="heading-large brama-shrink-padding-3">ATED subscription</h2>
-  <!-- feel free to change this page to suit your needs -->
+  <h2 class="heading-large brama-shrink-padding-3">Welcome to ATED subscription</h2>
 
-  <div class="nav-container">
-        <nav role="navigation">
-            <ol class="brama-progress">
-                <li class="brama-progress-active">
-                    1. Search business
-                </li><li class="brama-progress-indicator brama-progress-thinner">
-                  &nbsp;
-              </li><li class="brama-progress-indicator">
-                    2. Business details
-                </li><li class="brama-progress-indicator brama-progress-thinner">
-                  &nbsp;
-              </li><li class="brama-progress-indicator">
-                    3. Additional details
-                </li><li class="brama-progress-indicator brama-progress-thinner">
-                  &nbsp;
-              </li><li class="brama-progress-indicator">
-                    4. Review details
-                </li><li class="brama-progress-indicator brama-progress-thinner">
-                  &nbsp;
-              </li><li class="brama-progress-indicator">
-                    5. Confirmation
-                </li><li class="brama-progress-indicator brama-progress-wider-end2">
-                  &nbsp;
-              </li>
-            </ol>
-        </nav>
-    </div>
+  <div class="brama-spacer5"></div>
 
-  <h3 class="heading-medium brama-shrink-padding-1">Search business</h3>
+  <p class="brama-no-record2">We need to confirm your business details before subscribe to ATED. <br>
+    You can search for your business details in our records or enter it manually if you are a new UK business or an overseas business.</p>
+
+  <h3 class="heading-medium brama-shrink-padding-1">Your business details</h3>
 
   <div class="brama-spacer2"></div>
 
-  <p class="brama-no-record">You can search for your business details in our records or enter it manually if you are a new UK business or an overseas business</p>
+  <h4 class="heading-medium brama-shrink-padding subtitle_line">Search business</h4>
 
-  <div class="brama-spacer2"></div>
+  <div class="brama-spacer"></div>
 
   <label class="form-label">Type of business</label>
 
   <select id = 'choose' onChange = 'show_div();' class="brama-dropdown2">
         <option value="selected">Select</option>
-        <option value="0" style="brama-dropdown-text-list3">-------------------------------------</option>
-        <option value="0" style="brama-dropdown-text-list2">UK established business</option>
-        <option value="1">&nbsp;&nbsp;&nbsp;&nbsp; Individual / Sole Trader</option>
-        <option value="2">&nbsp;&nbsp;&nbsp;&nbsp; Limited company</option>
-        <option value="3">&nbsp;&nbsp;&nbsp;&nbsp; Limited Liability Partnership</option>
-        <option value="4">&nbsp;&nbsp;&nbsp;&nbsp; Ordinary Business Partnership</option>
-        <option value="5">&nbsp;&nbsp;&nbsp;&nbsp; Unincorporated Body</option>
-        <option value="0">-------------------------------------</option>
+        <option style="brama-dropdown-text-list3">-------------------------------------</option>
+        <option style="brama-dropdown-text-list2">UK established business</option>
+        <option>&nbsp;&nbsp;&nbsp;&nbsp; Individual / Sole Trader</option>
+        <option >&nbsp;&nbsp;&nbsp;&nbsp; Limited company</option>
+        <option>&nbsp;&nbsp;&nbsp;&nbsp; Limited Liability Partnership</option>
+        <option>&nbsp;&nbsp;&nbsp;&nbsp; Ordinary Business Partnership</option>
+        <option>&nbsp;&nbsp;&nbsp;&nbsp; Unincorporated Body</option>
+        <option>-------------------------------------</option>
         <option value="6">UK new business</option>
-        <option value="0">-------------------------------------</option>
-        <option value="7">Overseas business</option>
-        <option value="0">-------------------------------------</option>
+        <option>-------------------------------------</option>
+        <option>Overseas business</option>
+        <option>-------------------------------------</option>
 
   </select>
 
@@ -106,7 +82,7 @@
               I don't have a Unique Tax Reference -->
         </div>
 
-        <a href = "#"><input type="submit" value="Search business" class="button"></a>
+        <a href = "about_you"><input type="submit" value="Search business" class="button"></a>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -134,13 +110,16 @@
 
         <div class="brama-spacer"></div>
 
-        <a href = "business_details"><input type="submit" value="Search business" class="button"></a>
+        <a href = "about_you"><input type="submit" value="Search business" class="button"></a>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
 
     </div>
+
+
+
 
     <div id="hidden-form-3">Form 3</div>
 
@@ -148,9 +127,14 @@
 
     <div id="hidden-form-5">Form 5</div>
 
+    
+
+
     <div id="hidden-form-6">
 
-        <a href="business_details"><input type="submit" value="Add your business details" class="button"></a>
+        <div class="brama-spacer"></div>
+
+        <a href = "business_registration"><input type="submit" value="Add business details" class="button"></a>
 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -158,11 +142,12 @@
 
     </div>
 
+
+
+
     <div id="hidden-form-7">Form 7</div>
 
 
-
-    <div class="brama-spacer"></div>
 
     <div class="brama-spacer"></div>
 
@@ -237,7 +222,7 @@ function show_div()
       document.getElementById("hidden-form-3").style.display = 'none';
       document.getElementById("hidden-form-4").style.display = 'none';
       document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'none';
+      document.getElementById("hidden-form-6").style.display = 'inline-block';
       document.getElementById("hidden-form-7").style.display = 'none';
   }
       else if (option.value =='7')
@@ -260,7 +245,7 @@ function show_div()
      document.getElementById("hidden-form-4").style.display = 'none';
      document.getElementById("hidden-form-5").style.display = 'none';
      document.getElementById("hidden-form-6").style.display = 'none';
-     document.getElementById("hidden-form-7").style.display = 'none';
+    document.getElementById("hidden-form-7").style.display = 'none';
 
 
     <!--
