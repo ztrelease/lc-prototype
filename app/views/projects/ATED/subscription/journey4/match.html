@@ -30,230 +30,212 @@
 
   <div class="brama-spacer5"></div>
 
-  <p class="brama-no-record2">We need to confirm your business details before subscribe to ATED. <br>
-    You can search for your business details in our records or enter it manually if you are a new UK business or an overseas business.</p>
-
-  <h3 class="heading-medium brama-shrink-padding-1">Your business details</h3>
-
-  <div class="brama-spacer2"></div>
-
-  <h4 class="heading-medium brama-shrink-padding subtitle_line">Search business</h4>
+  <p class="brama-no-record2">We need to confirm your business details before subscribe to brama. <br>
+    Search for your business details in our records or enter them manually if you are a new business.</p>
 
   <div class="brama-spacer"></div>
 
-  <label class="form-label">Type of business</label>
+  <h4 class="heading-medium brama-shrink-padding subtitle_line text-bold2">Business search</h4>
 
-  <select id = 'choose' onChange = 'show_div();' class="brama-dropdown2">
-        <option value="selected">Select</option>
-        <option style="brama-dropdown-text-list3">-------------------------------------</option>
-        <option style="brama-dropdown-text-list2">UK established business</option>
-        <option>&nbsp;&nbsp;&nbsp;&nbsp; Individual / Sole Trader</option>
-        <option >&nbsp;&nbsp;&nbsp;&nbsp; Limited company</option>
-        <option>&nbsp;&nbsp;&nbsp;&nbsp; Limited Liability Partnership</option>
-        <option>&nbsp;&nbsp;&nbsp;&nbsp; Ordinary Business Partnership</option>
-        <option>&nbsp;&nbsp;&nbsp;&nbsp; Unincorporated Body</option>
-        <option>-------------------------------------</option>
-        <option value="6">UK new business</option>
-        <option>-------------------------------------</option>
-        <option>Overseas business</option>
-        <option>-------------------------------------</option>
+  <div class="brama-spacer"></div>
 
-  </select>
+  <!-- <form action="chargeable-period-summary" onsubmit="sessionStorage.number_of_properties++;"> -->
 
-  &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+        <div id="hidden-form" class="panel-indent"></div>
 
-    <div class="brama-spacer"></div>
+        <div class="form-group form-group-compound">
+          <fieldset>
+            <div>
+              <label class="block-label no-float" style="width: 180px">
+              <input type="radio" value="1" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'inline-block';
+              document.getElementById('hidden-2-details').style.display = 'none';
+              document.getElementById('hidden-3-details').style.display = 'none';
+              document.getElementById('hidden-4-details').style.display = 'none';
+              document.getElementById('hidden-5-details').style.display = 'none';
+              document.getElementById('hidden-6-details').style.display = 'none';">
+                  Individual / soletrader
+              </label>
 
-    <div id="hidden-form-1">
-
-        <div>
-            <label class="form-label" for="business_address0">Full name</label>
-            <input class="form-control brama-input-mediumform" type="text" value="">
-    </div>
-
-        <div class="brama-spacer"></div>
-
-        <div class="form-group">
-            <label class="form-label">Unique Tax Reference</label>
-            <input class="form-control brama-input-mediumform" type="text" value="">
-
-            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input id="checkbox-telephone-number" type="checkbox" value="checkbox-telephone-number">
-              I don't have a Unique Tax Reference -->
+              <div id="hidden-1-details" class="panel-indent">
+                  <div>
+                    <label class="form-label">First name</label>
+                    <input class="form-control brama-input-mediumform" value="">
+                  </div>
+                  <div class="brama-spacer"></div>
+                  <div>
+                    <label class="form-label">Last name</label>
+                    <input class="form-control brama-input-mediumform" value="">
+                  </div>
+                  <div class="brama-spacer"></div>
+                  <div>
+                    <label class="form-label">Self Assessment Unique Tax Reference</label>
+                    <input class="form-control brama-input-mediumform" value="">
+                    &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+                  </div>
+                  <div class="brama-spacer"></div>
+                  <div class="brama-spacer"></div>
+                  <a href = "#"><input type="submit" value="Search business" class="button"></a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+              </div>
+            </div>
+            <div>
+              <label class="block-label no-float" style="width: 150px">
+              <input type="radio" value="2" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'none';
+              document.getElementById('hidden-2-details').style.display = 'inline-block';
+              document.getElementById('hidden-3-details').style.display = 'none';
+              document.getElementById('hidden-4-details').style.display = 'none';
+              document.getElementById('hidden-5-details').style.display = 'none';
+              document.getElementById('hidden-6-details').style.display = 'none';">
+                  Limited Company
+              </label>
+              <div id="hidden-2-details"  class="panel-indent">
+              <div>
+                <label class="form-label">Registered name</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div>
+                <label class="form-label">Corporation Tax Unique Tax Reference</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div class="brama-spacer"></div>
+              <a href = "#"><input type="submit" value="Search business" class="button"></a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+              </div>
+            </div>
+            <div>
+              <label class="block-label no-float" style="width: 230px">
+              <input type="radio" value="3" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'none';
+              document.getElementById('hidden-2-details').style.display = 'none';
+              document.getElementById('hidden-3-details').style.display = 'inline-block';
+              document.getElementById('hidden-4-details').style.display = 'none';
+              document.getElementById('hidden-5-details').style.display = 'none';
+              document.getElementById('hidden-6-details').style.display = 'none';">
+                  Limited Liability Partnership
+              </label>
+              <div id="hidden-3-details"  class="panel-indent">
+              <div>
+                <label class="form-label">Registered name</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div>
+                <label class="form-label">Partnership Self Assessment Unique Tax Reference</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div class="brama-spacer"></div>
+              <a href = "#"><input type="submit" value="Search business" class="button"></a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+              </div>
+            </div>
+            <div>
+              <label class="block-label no-float" style="width: 175px">
+              <input type="radio" value="4" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'none';
+              document.getElementById('hidden-2-details').style.display = 'none';
+              document.getElementById('hidden-3-details').style.display = 'none';
+              document.getElementById('hidden-4-details').style.display = 'inline-block';
+              document.getElementById('hidden-5-details').style.display = 'none';
+              document.getElementById('hidden-6-details').style.display = 'none';">
+                  Ordinary Partnership
+              </label>
+              <div id="hidden-4-details" class="panel-indent">
+              <div>
+                <label class="form-label">Registered name</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div>
+                <label class="form-label">Partnership Self Assessment Unique Tax Reference</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div class="brama-spacer"></div>
+              <a href = "#"><input type="submit" value="Search business" class="button"></a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+              </div>
+            </div>
+            <div>
+              <label class="block-label no-float" style="width: 180px">
+              <input type="radio" value="5" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'none';
+              document.getElementById('hidden-2-details').style.display = 'none';
+              document.getElementById('hidden-3-details').style.display = 'none';
+              document.getElementById('hidden-4-details').style.display = 'none';
+              document.getElementById('hidden-5-details').style.display = 'inline-block';
+              document.getElementById('hidden-6-details').style.display = 'none';">
+                  Uncorporbrama Body
+              </label>
+              <div id="hidden-5-details" class="panel-indent">
+              <div>
+                <label class="form-label">Registered name</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div>
+                <label class="form-label">Corporation Tax Unique Tax Reference</label>
+                <input class="form-control brama-input-mediumform" value="">
+                &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
+              </div>
+              <div class="brama-spacer"></div>
+              <div class="brama-spacer"></div>
+              <a href = "#"><input type="submit" value="Search business" class="button"></a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+              </div>
+            </div>
+            <div>
+              <label class="block-label no-float" style="width: 150px">
+              <input type="radio" value="6" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'none';
+              document.getElementById('hidden-2-details').style.display = 'none';
+              document.getElementById('hidden-3-details').style.display = 'none';
+              document.getElementById('hidden-4-details').style.display = 'none';
+              document.getElementById('hidden-5-details').style.display = 'none';
+              document.getElementById('hidden-6-details').style.display = 'inline-block';">
+                  Non-UK Company
+              </label>
+              <div id="hidden-6-details" class="panel-indent">
+              <div>
+                <label class="form-label">Non-UK businesses must to register with HMRC first prior subscribe to ATED</label>
+              </div>
+              <div class="brama-spacer"></div>
+              <a href = "business_registration"><input type="submit" value="Register business" class="button"></a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
+              </div>
+            </div>
+          </fieldset>
         </div>
-
-        <a href = "about_you"><input type="submit" value="Search business" class="button"></a>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
-
-    </div>
-
-    <div id="hidden-form-2">
-
-    <div>
-            <label class="form-label" for="business_address0">Business name</label>
-            <input class="form-control brama-input-mediumform" type="text" value="">
-    </div>
-
-    <div class="brama-spacer"></div>
-
-    <div class="form-group">
-            <label class="form-label">Unique Tax Reference</label>
-            <input class="form-control brama-input-mediumform" type="text" value="">
-
-            <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input id="checkbox-telephone-number" type="checkbox" value="checkbox-telephone-number">
-              I'm a new business so I don't have a Unique Tax Reference -->
-    </div>
-
-        <div class="brama-spacer"></div>
-
-        <a href = "about_you"><input type="submit" value="Search business" class="button"></a>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
-
-    </div>
-
-
-
-
-    <div id="hidden-form-3">Form 3</div>
-
-    <div id="hidden-form-4">Form 4</div>
-
-    <div id="hidden-form-5">Form 5</div>
-
-    
-
-
-    <div id="hidden-form-6">
-
-        <div class="brama-spacer"></div>
-
-        <a href = "business_registration"><input type="submit" value="Add business details" class="button"></a>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
-
-    </div>
-
-
-
-
-    <div id="hidden-form-7">Form 7</div>
-
-
-
-    <div class="brama-spacer"></div>
-
-    <!-- <a href = "subscription_details"><input type="submit" value="Save and continue" class="button"></a>
-
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-    <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel subscription</a> -->
-          
-  </div>
+  <!-- </form> -->
 
 </main>
 
 <script>
-function show_div()
-{
-  var option = document.getElementById('choose');
-  if (option.value == '1')
-  {
-    document.getElementById("hidden-form-1").style.display = 'inline-block';
-      document.getElementById("hidden-form-2").style.display = 'none';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none'; 
-      document.getElementById("hidden-form-6").style.display = 'none';
-      document.getElementById("hidden-form-7").style.display = 'none'; 
-    }
-  else if (option.value =='2')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'inline-block';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'none';
-      document.getElementById("hidden-form-7").style.display = 'none';
-  }
-    else if (option.value =='3')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'none';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'none';
-      document.getElementById("hidden-form-7").style.display = 'none';
-  }
-    else if (option.value =='4')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'none';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'none';
-      document.getElementById("hidden-form-7").style.display = 'none';
-  }
-    else if (option.value =='5')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'none';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'none';
-      document.getElementById("hidden-form-7").style.display = 'none';
-  }
-      else if (option.value =='6')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'none';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'inline-block';
-      document.getElementById("hidden-form-7").style.display = 'none';
-  }
-      else if (option.value =='7')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'none';
-      document.getElementById("hidden-form-3").style.display = 'none';
-      document.getElementById("hidden-form-4").style.display = 'none';
-      document.getElementById("hidden-form-5").style.display = 'none';
-      document.getElementById("hidden-form-6").style.display = 'none';
-      document.getElementById("hidden-form-7").style.display = 'none';
-  }
-
-
-}
-
-     document.getElementById("hidden-form-1").style.display = 'none';
-     document.getElementById("hidden-form-2").style.display = 'none';
-     document.getElementById("hidden-form-3").style.display = 'none';
-     document.getElementById("hidden-form-4").style.display = 'none';
-     document.getElementById("hidden-form-5").style.display = 'none';
-     document.getElementById("hidden-form-6").style.display = 'none';
-    document.getElementById("hidden-form-7").style.display = 'none';
-
-
     <!--
-     // function show_div(x){
-      //  document.getElementById(x).style.display = 'inline-block'
-      //}
-
-
+      document.getElementById("hidden-form").style.display = 'none';
+      document.getElementById("hidden-1-details").style.display = 'none';
+      document.getElementById("hidden-2-details").style.display = 'none';
+      document.getElementById("hidden-3-details").style.display = 'none';
+      document.getElementById("hidden-4-details").style.display = 'none';
+      document.getElementById("hidden-5-details").style.display = 'none';
+      document.getElementById("hidden-6-details").style.display = 'none';
     //-->
 </script>
 
