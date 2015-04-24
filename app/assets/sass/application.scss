@@ -134,6 +134,10 @@ select {
     padding-bottom:10px;
 }
 
+.no_subtitle_line{
+	border-bottom: 0px solid #ffffff;
+}
+
 .brama-spacer{
 	clear:both;
 	height:20px;
@@ -415,7 +419,7 @@ h3.heading-medium.brama-shrink-padding-2, legend.heading-medium.brama-shrink-pad
 }
 
 h3.heading-medium.brama-shrink-padding-3{
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 5px;
 }
 
@@ -430,6 +434,13 @@ h4.heading-medium.brama-shrink-padding{
 	margin-top: 15px;
 	margin-bottom: 5px;
 	font-size: 18px;
+	font-weight: 700;
+}
+
+h4.heading-medium.brama-shrink-padding-2{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 16px;
 	font-weight: 700;
 }
 
@@ -454,8 +465,8 @@ h4.heading-medium.brama-shrink-padding{
 	background-position: 10px 8px;
 	padding: 15px 10px 0px 20px;
 	min-height: 35px;
-	background-color: #F47738;
-	color:#fff;
+	background-color: #FFBF47;
+	color:#000;
 	font-weight: 400;
 	font-size: 16px;
 }
