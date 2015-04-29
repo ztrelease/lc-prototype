@@ -315,6 +315,14 @@ select {
 	padding-bottom: 5px;
 }
 
+.text-table-gray{
+	font-weight: 400;
+	font-size: 16px;
+	color: #666666;
+	border-bottom: 1px solid #bfc1c3;
+	border-top: 1px solid #ffffff;
+}
+
 .polulated-form-fixed2{
 	font-weight: 700;
 	font-size: 16px;
@@ -364,6 +372,16 @@ select {
 .text-italic{
 	font-size: 18px;
 	font-weight: text-italic;
+}
+
+.text-gray{
+	font-size: 16px;
+	color: #666666;
+}
+
+.text-gray2{
+	font-size: 19px;
+	color: #666666;
 }
 
 table.brama-table{
@@ -591,7 +609,7 @@ h4.heading-medium.brama-shrink-padding-2{
 }
 
 .brama-progress-wider-end3{
-	width: 320px;
+	width: 190px;
 }
 
 .brama-progress-wider-end4{

@@ -18,12 +18,12 @@
           <a href = "../../../../index">Home</a>
         </li>
         <li>
-          Agent designation
+          Appoint an agent
         </li>
       </ol>
   </div>
 
-  <h2 class="heading-large brama-shrink-padding-3">Agent designation</h2>
+  <h2 class="heading-large brama-shrink-padding-3">Appoint an agent</h2>
 
   <div class="nav-container">
         <nav role="navigation">
@@ -45,11 +45,9 @@
         </nav>
   </div>
 
-  <div class="brama-spacer5"></div>
-
   <div class="brama-spacer"></div>
 
-  <p class="brama-no-record2">You are now ready to send an agent designation request to an specific agent to access to business services on behalf your business details or view mode only. In any case the agent could accept or reject your designation request.</p>
+  <p class="panel-indent">To appoint an agent, you must send a request with the appropriate permissions. The agent can act on your behalf or have read only access. They can accept or reject this request.</p>
 
   <h3 class="heading-medium brama-shrink-padding subtitle_line">Agent details</h3>
 
@@ -68,8 +66,8 @@
 
         <div>
           <label class="form-label" for="business_address0">Agent reference number</label>
+          <p class="text-gray">Reference provided by your agent.</p>
           <input class="form-control brama-input-mediumform" type="text" value="">
-          &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
         </div> 
 
         <div class="brama-spacer"></div>
@@ -89,8 +87,8 @@
           <label class="form-label" for="business_address0">Permissions</label>
           <select onChange="window.location.href=this.value" id = 'choose' class="brama-dropdown3">
                     <option value="selected">Select</option>
-                    <option value="#">On behalf Acme Limited</option>
-                    <option value="#">Read mode only</option>
+                    <option value="#">Act on behalf of</option>
+                    <option value="#">Read only</option>
           </select>
         </div>        
 
@@ -106,7 +104,7 @@
 
   <div class="brama-spacer"></div>
 
-  <a href = "review_details"><input type="submit" value="Send designation request to agent" class="button"></a>
+  <a href = "review_details"><input type="submit" value="Send request to agent" class="button"></a>
 
   <div class="brama-spacer2"></div>
 

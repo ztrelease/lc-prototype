@@ -36,7 +36,7 @@
                 </li><li class="brama-progress-indicator brama-progress-thinner">
                   &nbsp;
               </li><li class="brama-progress-indicator">
-                    2. Contact details
+                    2. Correspondence contact details
                 </li><li class="brama-progress-indicator brama-progress-thinner">
                   &nbsp;
               </li><li class="brama-progress-indicator">
@@ -51,12 +51,10 @@
             </ol>
         </nav>
   </div>
-
+  
   <h3 class="heading-medium brama-shrink-padding-1">Business addresses</h3>
 
-  <div class="brama-spacer2"></div>
-
-  <h4 class="heading-medium brama-shrink-padding subtitle_line">Main place of business</h4>
+  <div class="brama-spacer5"></div>Permanent place of business address</h4>
 
   <div class="brama-spacer"></div>
     
@@ -107,66 +105,18 @@
       </form>
 
   </div>
-    
-  <div class="brama-spacer"></div>
-
-  <div class="brama-spacer"></div>
-   
-  <div>
-    <p class="text-bold">Is this your correspondence address?</p>
-    <fieldset class="inline">
-      <label class="block-label" for="radio-inline-1">
-        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
-        Yes
-      </label>
-      <label class="block-label" for="radio-inline-2">
-        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
-        No
-      </label>
-    
-    </fieldset>
-  </div>
 
   <div class="brama-spacer"></div>
 
   <div class="brama-spacer"></div>
 
-  <a href = "review_details"><input type="submit" value="Save and continue" class="button"></a>
+  <a href = "correspondence_contact_details"><input type="submit" value="Save and continue" class="button"></a>
 
   <div class="brama-spacer2"></div>
 
   <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
 
 </main>
-
-<script>
-function show_div()
-{
-	var option = document.getElementById('choose');
-	if (option.value == '1')
-	{
-		document.getElementById("hidden-form-1").style.display = 'inline-block';
-     	document.getElementById("hidden-form-2").style.display = 'none';	}
-	else if (option.value =='2')
-	{
-		document.getElementById("hidden-form-1").style.display = 'none';
-     	document.getElementById("hidden-form-2").style.display = 'inline-block';
-	}
-}
-
-
-
-     document.getElementById("hidden-form-1").style.display = 'none';
-     document.getElementById("hidden-form-2").style.display = 'none';
-
-    <!--
-     // function show_div(x){
-      //	document.getElementById(x).style.display = 'inline-block'
-      //}
-
-
-    //-->
-</script>
 
 
 {{/content}}
