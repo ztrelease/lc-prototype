@@ -7,13 +7,18 @@
 {{$propositionHeader}}
 <div class="header-proposition">
   <div class="content">
-    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+    <a href="#" class="js-header-toggle menu">Menu</a>
     <nav id="proposition-menu">
-      <a href="/" id="proposition-name">ATED account registration</a>
-      <!--ul id="proposition-links">
-        <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
-        <li><a href="url-to-page-2">Navigation item #2</a></li>
-      </ul-->
+      <a href="#" id="proposition-name">Annual Tax on Enveloped Dwellings (ATED)</a>
+      <!--
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="gov_uk" class="text-navigation-header">Sign out</a>
+      
+      <ul id="proposition-links">
+        <li><a href="gov_uk">Sign out</a></li>
+        <li><a href="#">Lorum</a></li>
+      </ul>
+      -->
     </nav>
   </div>
 </div>
@@ -21,36 +26,22 @@
 
 {{$content}}
 
+<link rel="stylesheet" href="http://hmrc-prototype.herokuapp.com/assets/stylesheets/application.css">
 <script src="http://hmrc-prototype.herokuapp.com/assets/javascripts/vendor/modernizr.js" type="text/javascript"></script>
 <script src="/http://hmrc-prototype.herokuapp.com/assets/javascripts/vendor/jquery.js"></script>
 
 <main id="content" role="main">
 
-  <div style="border-bottom: solid #BFC1C3 1px; padding-bottom:0px; margin-bottom:20px;">
+  <div>
     <div class="service-info" style="padding-bottom:0px; margin-bottom:0px;">
       <div class="logo">
         <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
       </div>
-      <div class="div-right" style="padding-bottom:0px; margin-bottom:0px;">
-        <p class="bold user-name">John Smith, Acme Limited</p> 
-        <p class="font-xsmall secondary-text" style="margin-bottom: 10px;">Last sign in: 28 February 2015 - <a href="#">Sign out</a></p>
+
+      <div class="div-right">
+        <p class="brama-logged">John Smith, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
       </div>
     </div>
-  </div>
-
-
-  <div id = "global-breadcrumb" class = "header-context" style="background-color:transparent">
-    <ol class = "group" role = "breadcrumbs">
-        <li>
-          <a href = "../../../../index">Home</a>
-        </li>
-        <li>
-          <a href = "../../ated_index">ATED</a>
-        </li>
-        <li>
-          ATED account registration
-        </li>
-      </ol>
   </div>
 
   <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
@@ -147,7 +138,7 @@
       <input type='submit' value='Continue' class='button'>
   </div>
 
-  <div class="brama-spacer2"></div>
+  <div class="brama-spacer"></div>
 
   <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
 
@@ -178,8 +169,6 @@ function change_link()
     document.getElementById("buttonChange").innerHTML = "<a href = 'business_address4'><input type='submit' value='Continue' class='button'></a>";
   }
 
-
-
 }
 
     document.getElementById("hidden-form-1").style.display = 'none';
@@ -187,7 +176,22 @@ function change_link()
 
 </script>
 
-
 {{/content}}
 
 {{/layout}}
+
+<div id = "global-breadcrumb" class = "testing-link" style="background-color: #dee0e2">
+    <span>
+    <ol>
+        <li>
+          <a href = "../../../../index">Home</a>
+        </li>
+        <li>
+          <a href = "../../ated_index">ATED</a>
+        </li>
+        <li>
+          ATED account registration
+        </li>
+    </ol>
+  </span>
+</div>
