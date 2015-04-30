@@ -7,18 +7,13 @@
 {{$propositionHeader}}
 <div class="header-proposition">
   <div class="content">
-    <a href="#" class="js-header-toggle menu">Menu</a>
+    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
     <nav id="proposition-menu">
-      <a href="#" id="proposition-name">Annual Tax on Enveloped Dwellings (ATED)</a>
-      <!--
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="gov_uk" class="text-navigation-header">Sign out</a>
-      
-      <ul id="proposition-links">
-        <li><a href="gov_uk">Sign out</a></li>
-        <li><a href="#">Lorum</a></li>
-      </ul>
-      -->
+      <a href="/" id="proposition-name">ATED account registration</a>
+      <!--ul id="proposition-links">
+        <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
+        <li><a href="url-to-page-2">Navigation item #2</a></li>
+      </ul-->
     </nav>
   </div>
 </div>
@@ -32,27 +27,29 @@
 
 <main id="content" role="main">
 
-  <div>
+  <div style="border-bottom: solid #BFC1C3 1px; padding-bottom:0px; margin-bottom:20px;">
     <div class="service-info" style="padding-bottom:0px; margin-bottom:0px;">
       <div class="logo">
         <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
       </div>
 
-      <div class="div-right">
-        <p class="brama-logged">John Smith, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+      <div class="div-right" style="padding-bottom:0px; margin-bottom:0px;">
+
+        <p class="bold user-name">John Smith, Acme Limited</p> 
+        <!-- //service-info__help //--> <p class="font-xsmall secondary-text" style="margin-bottom: 10px;">Last sign in: 28 February 2015 - <a href="#">Sign out</a></p>
       </div>
     </div>
   </div>
 
-  <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
+  <div class="brama-spacer5"></div>
 
-  <p class="text-section">Section 1 of 3</p>
-  
-  <h3 class="heading-medium brama-shrink-padding-1">Business addresses</h3>
+  <p style="text-gray">Section 1 of 3</p>
+
+  <h2 class="heading-large brama-shrink-padding-3">Business addresses</h2>
 
   <div class="brama-spacer5"></div>
 
-  <h4 class="heading-medium brama-shrink-padding">Permanent place of business address</h4>
+  <h4 class="heading-medium brama-shrink-padding">Permanent place of business address </h4>
 
   <div class="brama-spacer"></div>
     
@@ -110,19 +107,19 @@
       <div class="form-group form-group-compound">
           <label class="text-bold">Is the above your correspondence address?</label>
           <div class="brama-spacer5"></div>
-          <label class="text-gray2">Additional address must be provided later</label>
+          <label class="text-gray2">Adittional address will need be provided</label>
           <div class="brama-spacer2"></div>
           <form>
             <fieldset class="inline">
               <div>
                 <label class="block-label">
-                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
+                <input type="radio" value="1" name="same">
                     Yes
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
+                <input type="radio" value="2" name="same">
                     No
                 </label>
               </div>
@@ -133,55 +130,44 @@
 
   <div class="brama-spacer5"></div>
 
-  <div class="brama-spacer"></div>
+  <a href = "correspondence_contact_details"><input type="submit" value="Continue" class="button"></a>
 
-  <div id='buttonChange'>
-      <input type='submit' value='Save and continue' class='button'>
-  </div>
-
-  <div class="brama-spacer"></div>
+  <div class="brama-spacer2"></div>
 
   <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
 
 </main>
 
 <script>
-
-function change_link()
+function show_div()
 {
-  if (document.getElementById("1").checked)
+  var option = document.getElementById('choose');
+  if (option.value == '1')
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'correspondence_contact_details'><input type='submit' value='Save and continue' class='button'></a>";
-  }
-  else if (document.getElementById("2").checked)
+    document.getElementById("hidden-form-1").style.display = 'inline-block';
+      document.getElementById("hidden-form-2").style.display = 'none';  }
+  else if (option.value =='2')
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address3'><input type='submit' value='Save and continue' class='button'></a>";
+    document.getElementById("hidden-form-1").style.display = 'none';
+      document.getElementById("hidden-form-2").style.display = 'inline-block';
   }
-
 }
 
-    document.getElementById("hidden-form-1").style.display = 'none';
-    document.getElementById("hidden-form-2").style.display = 'none';
 
+
+     document.getElementById("hidden-form-1").style.display = 'none';
+     document.getElementById("hidden-form-2").style.display = 'none';
+
+    <!--
+     // function show_div(x){
+      //  document.getElementById(x).style.display = 'inline-block'
+      //}
+
+
+    //-->
 </script>
 
 
 {{/content}}
 
 {{/layout}}
-
-<div id = "global-breadcrumb" class = "testing-link" style="background-color: #dee0e2">
-    <span>
-    <ol>
-        <li>
-          <a href = "../../../../index">Home</a>
-        </li>
-        <li>
-          <a href = "../../ated_index">ATED</a>
-        </li>
-        <li>
-          ATED account registration
-        </li>
-    </ol>
-  </span>
-</div>

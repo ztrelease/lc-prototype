@@ -32,7 +32,7 @@
 
 <main id="content" role="main">
 
-	<div>
+  <div>
     <div class="service-info" style="padding-bottom:0px; margin-bottom:0px;">
       <div class="logo">
         <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
@@ -45,86 +45,84 @@
   </div>
 
   <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
-  <!-- feel free to change this page to suit your needs -->
 
-  <p class="text-section">Section 3 of 3</p>
+  <p class="panel-indent">You are about to register the following business for ATED.</p>
 
-  <h3 class="heading-medium brama-shrink-padding-1">Review details</h3>
+  <h3 class="heading-medium brama-shrink-padding-1">Business details</h3>
 
   <div class="brama-spacer2"></div>
-
-  <div class="grid-row">
-    <div class="column-two-thirds">
+    
+  <div>
 
       <table>
       <tr>
-        <th style="width:60%">Business name</th>
+        <th style="width:40%">Business name</th>
         <td>ACME</td>
-        <td></td>
       </tr>
       <tr>
         <th>Type of business</th>
         <td>Limited Company</td>
-        <td></td>
+      </tr>
+
+      <tr>
+        <th class="align-top">Registered business address</th>
+        <td>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</td>
       </tr>
       <tr>
         <th>Telephone</th>
         <td>01234567890</td>
-        <td></td>
       </tr>
       <tr>
         <th>Email</th>
         <td>contact@acme.com</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th class="align-top">Registered business address</th>
-        <td>23 High Street<br>The Park<br>Cheltenham<br>Gloucestershire<br>ABC 123<br>United Kingdom</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th class="align-top">Permanent place of business address</th>
-        <td>7 King George<br>Monument Avenue<br>Newcastle<br>Tyne & Wear<br>DEF 456<br>United Kingdom</td>
-        <td class="align-top align-top brama-edit-link"><a href="#">Edit</a></td>
-      </tr>
-      <tr>
-        <th class="align-top">Correspondence address</th>
-        <td>7 King George<br>Monument Avenue<br>Newcastle<br>Tyne & Wear<br>DEF 456<br>United Kingdom</td>
-        <td class="align-top align-top brama-edit-link"><a href="#">Edit</a></td>
-      </tr>
-      <tr>
-        <th class="align-top">Correspondence contact details</th>
-        <td>Charles Coward<br>01234567899<br>charles@acme.com</td>
-        <td class="align-top align-top brama-edit-link"><a href="#">Edit</a></td>
       </tr>
     </table>
 
-    <div class="brama-spacer"></div>
-
-    <div class="brama-spacer"></div>
-
-      <table>
-        <tr>
-          <td class="brama-no-line"><img src="/public/images/icon-important.png" class="brama-vertically-centered-icon"></td>
-          <th class="brama-no-line text-disclaimer">I want to register Acme Limited for ATED. I confirm that the above information is accurate and complete to the best of my knowledge.</td>
-        </tr>
-      </table>
-
   </div>
 
-      <div class="brama-spacer"></div>
+  <div class="brama-spacer"></div>
 
-    <div class="brama-spacer"></div>
+  <div class="brama-spacer"></div>
 
-      <a href = "confirmation"><input type="submit" value="Register and confirm" class="button"></a>
+  <div class="brama-spacer"></div>
 
-    <div class="brama-spacer"></div>
+  <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
 
-    <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
+  <div class="brama-spacer"></div>
 
-  </div>
+  <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
 
 </main>
+
+<script>
+function show_div()
+{
+	var option = document.getElementById('choose');
+	if (option.value == '1')
+	{
+		document.getElementById("hidden-form-1").style.display = 'inline-block';
+     	document.getElementById("hidden-form-2").style.display = 'none';	}
+	else if (option.value =='2')
+	{
+		document.getElementById("hidden-form-1").style.display = 'none';
+     	document.getElementById("hidden-form-2").style.display = 'inline-block';
+	}
+}
+
+
+
+     document.getElementById("hidden-form-1").style.display = 'none';
+     document.getElementById("hidden-form-2").style.display = 'none';
+
+    <!--
+     // function show_div(x){
+      //	document.getElementById(x).style.display = 'inline-block'
+      //}
+
+
+    //-->
+</script>
+
 
 {{/content}}
 

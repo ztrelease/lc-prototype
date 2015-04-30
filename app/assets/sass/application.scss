@@ -417,6 +417,12 @@ select {
 	color: #666666;
 }
 
+.text-section{
+	font-size: 19px;
+	color: #666666;
+	padding-bottom: 0px;
+}
+
 table.brama-table{
 	font-size: 16px;
 	border-bottom: 1px solid #bfc1c3;
@@ -474,6 +480,11 @@ h2.heading-large.brama-shrink-padding-3{
 
 h2.heading-large.brama-shrink-padding-4{
 	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+h2.heading-medium.brama-shrink-padding-5{
+	margin-top: 0px;
 	margin-bottom: 10px;
 }
 

@@ -46,13 +46,35 @@
 
   <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
 
-  <p class="text-section">Section 1 of 3</p>
+  <div class="nav-container">
+        <nav role="navigation">
+            <ul class="brama-progress">
+              <li class="brama-progress-active">
+                    1. Business addresses
+                </li><li class="brama-progress-indicator brama-progress-thinner">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    2. Correspondence contact details
+                </li><li class="brama-progress-indicator brama-progress-thinner">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    3. Review details
+                </li><li class="brama-progress-indicator brama-progress-thinner">
+                  &nbsp;
+              </li><li class="brama-progress-indicator">
+                    4. Confirmation
+                </li><li class="brama-progress-indicator brama-progress-wider-end3">
+                  &nbsp;
+              </li>
+            </ul>
+        </nav>
+  </div>
   
   <h3 class="heading-medium brama-shrink-padding-1">Business addresses</h3>
 
   <div class="brama-spacer5"></div>
 
-  <h4 class="heading-medium brama-shrink-padding">Correspondence address</h4>
+  <h4 class="heading-medium brama-shrink-padding">Permanent place of business address</h4>
 
   <div class="brama-spacer"></div>
     
@@ -106,15 +128,62 @@
 
   <div class="brama-spacer"></div>
 
-  <div class="brama-spacer"></div>
+  <div id="hidden-form" class="panel-indent">
+      <div class="form-group form-group-compound">
+          <label class="text-bold">Is the above your correspondence address?</label>
+          <div class="brama-spacer5"></div>
+          <label class="text-gray2">Additional address must be provided later</label>
+          <div class="brama-spacer2"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+      </div>
+  </div>
 
-  <a href = "correspondence_contact_details"><input type="submit" value="Save and continue" class="button"></a>
+  <div class="brama-spacer5"></div>
+
+  <div id='buttonChange'>
+      <input type='submit' value='Save and continue' class='button'>
+  </div>
 
   <div class="brama-spacer"></div>
 
   <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
 
 </main>
+
+<script>
+
+function change_link()
+{
+  if (document.getElementById("1").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'correspondence_contact_details'><input type='submit' value='Save and continue' class='button'></a>";
+  }
+  else if (document.getElementById("2").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address3'><input type='submit' value='Save and continue' class='button'></a>";
+  }
+
+}
+
+    document.getElementById("hidden-form-1").style.display = 'none';
+    document.getElementById("hidden-form-2").style.display = 'none';
+
+</script>
 
 
 {{/content}}
