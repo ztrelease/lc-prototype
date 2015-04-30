@@ -420,7 +420,7 @@ select {
 .text-section{
 	font-size: 19px;
 	color: #666666;
-	padding-bottom: 0px;
+	margin-bottom: 10px;
 }
 
 table.brama-table{
@@ -483,11 +483,6 @@ h2.heading-large.brama-shrink-padding-4{
 	margin-bottom: 10px;
 }
 
-h2.heading-medium.brama-shrink-padding-5{
-	margin-top: 0px;
-	margin-bottom: 10px;
-}
-
 h3.heading-medium.brama-shrink-padding-1, legend.heading-medium.brama-shrink-padding{
 	margin-top: 30px;
 	margin-bottom: 10px;
@@ -501,6 +496,11 @@ h3.heading-medium.brama-shrink-padding-2, legend.heading-medium.brama-shrink-pad
 h3.heading-medium.brama-shrink-padding-3{
 	margin-top: 0px;
 	margin-bottom: 5px;
+}
+
+h3.heading-medium.brama-shrink-padding-4, legend.heading-medium.brama-shrink-padding{
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .brama-yta-subsection{
