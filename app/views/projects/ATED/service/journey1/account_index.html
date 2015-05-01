@@ -59,48 +59,37 @@
 
       <div class="brama-spacer"></div>
 
-      <h3 class="heading-medium brama-shrink-padding-3">For the chargeable period from April 2015 to March 2016, <br>I would like to...</h3>
+      <h3 class="heading-medium brama-shrink-padding-3">For chargeable period 1 April 2015 to 30 March 2016</h3>
 
       <div class="brama-spacer"></div>
 
       <!-- <form action="chargeable-period-summary" onsubmit="sessionStorage.number_of_properties++;"> -->
 
-            <div id="hidden-form" class="panel-indent"></div>
+      <div id="hidden-form" class="panel-indent"></div>
 
-            <div class="form-group form-group-compound">
-              <fieldset>
-                <div>
+        <div class="form-group form-group-compound">
+          <fieldset>
+            <!--
+              <label class="block-label no-float" style="width: 150px">
+              <input type="radio" value="2" name="same"
+              onclick="document.getElementById('hidden-1-details').style.display = 'none';
+              document.getElementById('hidden-2-details').style.display = 'inline-block';
+              document.getElementById('hidden-3-details').style.display = 'none';">
+                  Add chargeable property
+              </label>
+              <div id="hidden-2-details"  class="panel-indent" style="float: left;">
+                  <p class="text-gray">This is the name on your incorporation certificate.</p>
+              </div>
+            -->
+              
+              <div>
                   <label class="block-label">
-                  <input type="radio" value="1" name="same">
+                  <input type="radio" value="2" name="same">
                       Add chargeable property
                   </label>
+              </div>
 
-                  <!-- 
-                  <div id="hidden-1-details" class="panel-indent">
-                      <div>
-                        <label class="form-label">First name</label>
-                        <input class="form-control brama-input-mediumform" value="">
-                      </div>
-                      <div class="brama-spacer"></div>
-                      <div>
-                        <label class="form-label">Last name</label>
-                        <input class="form-control brama-input-mediumform" value="">
-                      </div>
-                      <div class="brama-spacer"></div>
-                      <div>
-                        <label class="form-label">Self Assessment Unique Tax Reference</label>
-                        <input class="form-control brama-input-mediumform" value="">
-                        &nbsp; <a href="#" target="_blank"> <img src="/public/images/icon-information.png" class="brama-vertically-centered-icon"></a>
-                      </div>
-                      <div class="brama-spacer"></div>
-                      <div class="brama-spacer"></div>
-                      <a href = "#"><input type="submit" value="Search business" class="button"></a>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a href="#" class="brama-vertically-centered-text2">Cancel subscription</a>
-                  </div>
-                  -->
-                </div>
-                <div>
+              <div>
                   <label class="block-label">
                   <input type="radio" value="2" name="same">
                       Add relief property
@@ -127,9 +116,28 @@
                   </div>
                   -->
                 </div>
-                
-              </fieldset>
-            </div>
+          </fieldset>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+  
 
       </div>
   </div>
@@ -142,7 +150,7 @@
 
   <div class="brama-spacer"></div>
 
-  <a id="save_application" href="#" class="brama-vertically-centered-text2">Back to Your Tax Account</a>
+  <a href="yta2" class="brama-vertically-centered-text2">Back to Your Tax Account</a>
   <!-- </form> -->
 
 </main>
@@ -156,35 +164,6 @@
       document.getElementById("hidden-4-details").style.display = 'none';
       document.getElementById("hidden-5-details").style.display = 'none';
       document.getElementById("hidden-6-details").style.display = 'none';
-    //-->
-</script>
-
-<script>
-function show_div()
-{
-	var option = document.getElementById('choose');
-	if (option.value == '1')
-	{
-		document.getElementById("hidden-form-1").style.display = 'inline-block';
-     	document.getElementById("hidden-form-2").style.display = 'none';	}
-	else if (option.value =='2')
-	{
-		document.getElementById("hidden-form-1").style.display = 'none';
-     	document.getElementById("hidden-form-2").style.display = 'inline-block';
-	}
-}
-
-
-
-     document.getElementById("hidden-form-1").style.display = 'none';
-     document.getElementById("hidden-form-2").style.display = 'none';
-
-    <!--
-     // function show_div(x){
-      //	document.getElementById(x).style.display = 'inline-block'
-      //}
-
-
     //-->
 </script>
 
