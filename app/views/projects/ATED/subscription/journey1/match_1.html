@@ -44,87 +44,55 @@
     </div>
   </div>
 
+  <div class="brama-spacer"></div> 
+
+  <h2 class="heading-large brama-shrink-padding-5">Business details</h2>
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
-  <h2 class="heading-large brama-shrink-padding-3">Business details</h2>
+      <h4 class="heading-medium brama-shrink-padding text-bold2">Search my business with the following details</h4>
 
-  <p class="panel-indent">You are about to register the following business for ATED.</p>
+      <div class="brama-spacer"></div>
 
-  <div class="brama-spacer2"></div>
+          <div class="form-group form-group-compound">
+              <fieldset>
+                    <div>
+                      <label class="form-label">Registered name</label>
+                      <p class="text-gray">This is the name on your incorporation certificate.</p>
+                      <input class="form-control brama-input-mediumform" value="">
+                    </div>
+                    <div class="brama-spacer"></div>
+                    <div>
+                      <label class="form-label">Corporation Tax Unique Tax Reference (UTR)</label>
+                      <input class="form-control brama-input-mediumform" value="">
+                    </div>
+                    <div class="brama-spacer"></div>
+                    <a href="dont_know_utr">I don't know the UTR</a>
+                  </div>
+              </fieldset>
+          </div>
 
-      <table>
-      <tr>
-        <th style="width:60%">Name</th>
-        <td>ACME</td>
-      </tr>
-      <tr>
-        <th>Type of business</th>
-        <td>Limited Company</td>
-      </tr>
+          <div class="brama-spacer2"></div>
 
-      <tr>
-        <th class="align-top">Registered address</th>
-        <td>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</td>
-      </tr>
-      <tr>
-        <th>Telephone</th>
-        <td>01234567890</td>
-      </tr>
-      <tr>
-        <th>Email</th>
-        <td>contact@acme.com</td>
-      </tr>
-    </table>
+          <div class="brama-spacer"></div>
+
+          <div>
+
+            <a href = "about_you"><input type="submit" value="Continue" class="button"></a>
+
+            <div class="brama-spacer"></div>
+
+            <a href="cancel2" class="brama-vertically-centered-text2">Cancel</a>
+
+          </div>
 
     </div>
-
-    <div class="column-third"></div>
   </div>
 
-  <div class="brama-spacer"></div>
-
-  <div class="brama-spacer"></div>
-
-  <div class="brama-spacer"></div>
-
-  <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
-
-  <div class="brama-spacer"></div>
-
-  <a href="business_registration" class="brama-vertically-centered-text2">Back</a>
+  <!-- </form> -->
 
 </main>
-
-<script>
-function show_div()
-{
-  var option = document.getElementById('choose');
-  if (option.value == '1')
-  {
-    document.getElementById("hidden-form-1").style.display = 'inline-block';
-      document.getElementById("hidden-form-2").style.display = 'none';  }
-  else if (option.value =='2')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'inline-block';
-  }
-}
-
-
-
-     document.getElementById("hidden-form-1").style.display = 'none';
-     document.getElementById("hidden-form-2").style.display = 'none';
-
-    <!--
-     // function show_div(x){
-      //  document.getElementById(x).style.display = 'inline-block'
-      //}
-
-
-    //-->
-</script>
-
 
 {{/content}}
 
