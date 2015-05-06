@@ -74,17 +74,35 @@
     <div class="column-third"></div>
   </div>
 
-  <div class="brama-spacer"></div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-  <div class="brama-spacer"></div>
+      <div class="brama-spacer"></div>
 
-  <div class="brama-spacer"></div>
+      <div class="brama-spacer"></div>
 
-  <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
+      <div class="brama-spacer"></div>
 
-  <div class="brama-spacer"></div>
+      <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
 
-  <a href="this_is_not_me" class="brama-vertically-centered-text2">Not the right business?</a>
+      <div class="brama-spacer"></div>
+
+      <a href="#" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Not the right business?</a>
+
+      <div class="ated-spacer"></div>
+
+      <div id="hidden-text" class="panel-indent">    
+
+      <p>If this doesn’t match the business you want to register, <a href="login">login</a> again with the right business details.</p>
+
+      <div class="ated-spacer"></div>
+
+      <div class="ated-spacer"></div>
+
+      </div>
+
+    </div>
+  </div>
 
 </main>
 
@@ -114,6 +132,12 @@ function show_div()
       //}
 
 
+    //-->
+</script>
+
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
     //-->
 </script>
 
