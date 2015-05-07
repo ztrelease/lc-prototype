@@ -44,58 +44,34 @@
     </div>
   </div>
 
-  <div class="brama-spacer"></div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-  <h2 class="heading-large brama-shrink-padding-5">Permanent place of business</h2>
+  <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
+
+  <p class="panel-indent">You are about to register the following business for ATED.</p>
 
   <div class="brama-spacer2"></div>
-    
-  <div>
 
-      <form> 
+      <table>
+      <tr>
+        <th style="width:60%">Name</th>
+        <td>ACME</td>
+      </tr>
+      <tr>
+        <th>Type of business</th>
+        <td>Limited Company</td>
+      </tr>
 
-        <div>
-          <label class="form-label" for="business_address0">Address line 1</label>
-          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value=" ">
-        </div> 
+      <tr>
+        <th class="align-top">Registered address</th>
+        <td>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</td>
+      </tr>
+    </table>
 
-        <div class="brama-spacer"></div>
+    </div>
 
-        <div>
-          <label class="form-label" for="business_address0">Address line 2</label>
-          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-          <label class="form-label" for="business_address0">Address line 3</label>
-          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-          <label class="form-label" for="business_address0">Address line 4</label>
-          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-          <label class="form-label" for="business_address0">Postcode</label>
-          <input class="form-control brama-input-verysortform brama-input-populated-form2" type="text" value="">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-          <label class="form-label" for="business_address0">Country</label>
-          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
-        </div>        
-
-      </form>
-
+    <div class="column-third"></div>
   </div>
 
   <div class="grid-row">
@@ -105,17 +81,19 @@
 
       <div class="brama-spacer"></div>
 
-      <a href = "correspondence_contact_details"><input type="submit" value="Continue" class="button"></a>
+      <div class="brama-spacer"></div>
+
+      <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
 
       <div class="brama-spacer" id="here"></div>
 
-      <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
+      <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Not the right business?</a>
 
       <div class="ated-spacer"></div>
 
       <div id="hidden-text" class="panel-indent">    
 
-      <p>The account registration process will be cancelled. <br>You can start again at any time. <a href="yta">Cancel</a></p>
+      <p>If this doesn’t match the business you want to register, <a href="login">login</a> again with the right business details.</p>
 
       <div class="ated-spacer"></div>
 
@@ -128,6 +106,34 @@
 
 </main>
 
+<script>
+function show_div()
+{
+	var option = document.getElementById('choose');
+	if (option.value == '1')
+	{
+		document.getElementById("hidden-form-1").style.display = 'inline-block';
+     	document.getElementById("hidden-form-2").style.display = 'none';	}
+	else if (option.value =='2')
+	{
+		document.getElementById("hidden-form-1").style.display = 'none';
+     	document.getElementById("hidden-form-2").style.display = 'inline-block';
+	}
+}
+
+
+
+     document.getElementById("hidden-form-1").style.display = 'none';
+     document.getElementById("hidden-form-2").style.display = 'none';
+
+    <!--
+     // function show_div(x){
+      //	document.getElementById(x).style.display = 'inline-block'
+      //}
+
+
+    //-->
+</script>
 
 <script>
     <!--

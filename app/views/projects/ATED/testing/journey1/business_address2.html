@@ -44,38 +44,63 @@
     </div>
   </div>
 
-  <div class="brama-spacer"></div>
+  <p class="text-section">ATED account registration for ACME Limited </p>
 
-  <h2 class="heading-large brama-shrink-padding-5">Registered business address</h2>
+  <div class="brama-spacer5"></div>
+
+  <h2 class="heading-large brama-shrink-padding-5">Place of business</h2>
 
   <div class="brama-spacer2"></div>
+    
+  <div>
 
-  <p>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</p>
+      <form> 
 
-  <div id="hidden-form" class="panel-indent">
-      <div class="form-group form-group-compound">
-          <label class="text-bold">Is this your permanent place of business?</label>
-          <div class="brama-spacer5"></div>
-          <label class="text-gray2">Additional address must be provided later</label>
-          <div class="brama-spacer2"></div>
-          <form>
-            <fieldset class="inline">
-              <div>
-                <label class="block-label">
-                <input type="radio" value="1" name="same" id="a1" onChange="change_link();">
-                    Yes
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="2" name="same" id="a2" onChange="change_link();">
-                    No
-                </label>
-              </div>
-            </fieldset>
-          </form>
-      </div>
+        <div>
+          <label class="form-label" for="business_address0">Address line 1</label>
+          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value=" ">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 2</label>
+          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 3</label>
+          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 4</label>
+          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Postcode</label>
+          <input class="form-control brama-input-verysortform brama-input-populated-form2" type="text" value="">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Country</label>
+          <input class="form-control brama-input-mediumform brama-input-populated-form2" type="text" value="">
+        </div>        
+
+      </form>
+
   </div>
+
+  <div class="brama-spacer"></div>
 
   <div id="hidden-form" class="panel-indent">
       <div class="form-group form-group-compound">
@@ -87,13 +112,13 @@
             <fieldset class="inline">
               <div>
                 <label class="block-label">
-                <input type="radio" value="1" id="a3" name="same" onChange="change_link();">
+                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
                     Yes
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="2" id="a4" name="same" onChange="change_link();">
+                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
                     No
                 </label>
               </div>
@@ -119,7 +144,7 @@
 
       <div id="hidden-text" class="panel-indent">    
 
-      <p>The account registration process will be cancelled. <br>You can start again at any time. <a href="yta">Cancel</a></p>
+      <p>The registration process will be cancelled and you will be signed out. <br>You can restart registration at any time. <a href="gov_uk2">Sign out</a></p>
 
       <div class="ated-spacer"></div>
 
@@ -136,25 +161,13 @@
 
 function change_link()
 {
-  if (document.getElementById("a1").checked &&
-      document.getElementById("a3").checked == true)
+  if (document.getElementById("1").checked)
   {
     document.getElementById("buttonChange").innerHTML = "<a href = 'correspondence_contact_details'><input type='submit' value='Continue' class='button'></a>";
   }
-  else if (document.getElementById("a2").checked &&
-      document.getElementById("a4").checked == true)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address2'><input type='submit' value='Continue' class='button'></a>";
-  }
-  else if (document.getElementById("a1").checked &&
-      document.getElementById("a4").checked == true)
+  else if (document.getElementById("2").checked)
   {
     document.getElementById("buttonChange").innerHTML = "<a href = 'business_address3'><input type='submit' value='Continue' class='button'></a>";
-  }
-   else if (document.getElementById("a2").checked &&
-      document.getElementById("a3").checked == true)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address4'><input type='submit' value='Continue' class='button'></a>";
   }
 
 }
@@ -169,6 +182,7 @@ function change_link()
       document.getElementById("hidden-text").style.display = 'none';
     //-->
 </script>
+
 
 {{/content}}
 

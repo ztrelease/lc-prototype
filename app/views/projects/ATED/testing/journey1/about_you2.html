@@ -1,7 +1,7 @@
 {{<layout}}
 
 {{$pageTitle}}
-	HMRC > BRAMA 
+  HMRC > BRAMA 
 {{/pageTitle}}
 
 {{$propositionHeader}}
@@ -47,9 +47,9 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-  <h2 class="heading-large brama-shrink-padding-3">Business details</h2>
+  <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
 
-  <p class="panel-indent">You are about to register the following business details for ATED.</p>
+  <p class="panel-indent">You are about to register the following business for ATED.</p>
 
   <div class="brama-spacer2"></div>
 
@@ -73,51 +73,34 @@
 
     <div class="column-third"></div>
   </div>
-<div class="grid-row">
-    <div class="column-two-thirds">
 
-      <div class="brama-spacer"></div>
+  <div class="brama-spacer"></div>
 
-      <div class="brama-spacer"></div>
+  <div class="brama-spacer"></div>
 
-      <div class="brama-spacer"></div>
+  <div class="brama-spacer"></div>
 
-      <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
+  <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
 
-      <div class="brama-spacer" id="here"></div>
+  <div class="brama-spacer"></div>
 
-      <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Not the right business?</a>
-
-      <div class="ated-spacer"></div>
-
-      <div id="hidden-text" class="panel-indent">    
-
-      <p>If this doesn’t match the business you want to register, <a href="login">login</a> again with the right business details.</p>
-
-      <div class="ated-spacer"></div>
-
-      <div class="ated-spacer"></div>
-
-      </div>
-
-    </div>
-  </div>
+  <a href="business_registration" class="brama-vertically-centered-text2">Back</a>
 
 </main>
 
 <script>
 function show_div()
 {
-	var option = document.getElementById('choose');
-	if (option.value == '1')
-	{
-		document.getElementById("hidden-form-1").style.display = 'inline-block';
-     	document.getElementById("hidden-form-2").style.display = 'none';	}
-	else if (option.value =='2')
-	{
-		document.getElementById("hidden-form-1").style.display = 'none';
-     	document.getElementById("hidden-form-2").style.display = 'inline-block';
-	}
+  var option = document.getElementById('choose');
+  if (option.value == '1')
+  {
+    document.getElementById("hidden-form-1").style.display = 'inline-block';
+      document.getElementById("hidden-form-2").style.display = 'none';  }
+  else if (option.value =='2')
+  {
+    document.getElementById("hidden-form-1").style.display = 'none';
+      document.getElementById("hidden-form-2").style.display = 'inline-block';
+  }
 }
 
 
@@ -127,16 +110,10 @@ function show_div()
 
     <!--
      // function show_div(x){
-      //	document.getElementById(x).style.display = 'inline-block'
+      //  document.getElementById(x).style.display = 'inline-block'
       //}
 
 
-    //-->
-</script>
-
-<script>
-    <!--
-      document.getElementById("hidden-text").style.display = 'none';
     //-->
 </script>
 

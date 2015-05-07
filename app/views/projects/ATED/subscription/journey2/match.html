@@ -106,17 +106,27 @@
           </form>
       </div>
 
-      <div class="brama-spacer2"></div>
-
       <div class="brama-spacer"></div>
 
-      <div id='buttonChange'>
-      <input type='submit' value='Continue' class='button'>
-      </div>
+        <div class="brama-spacer"></div>
 
-      <div class="brama-spacer"></div>
+        <div id='buttonChange'><input type='submit' value='Continue' class='button'></div>
 
-      <a href="cancel2" class="brama-vertically-centered-text2">Cancel</a>
+        <div class="brama-spacer" id="here"></div>
+
+        <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
+
+        <div class="ated-spacer"></div>
+
+        <div id="hidden-text" class="panel-indent">    
+
+        <p>The account registration process will be cancelled. <br>You can start again at any time. <a href="gov_uk">Cancel</a></p>
+
+        <div class="ated-spacer"></div>
+
+        <div class="ated-spacer"></div>
+
+        </div>
 
       </div>
     </div>
@@ -168,6 +178,12 @@ function change_link()
     document.getElementById("hidden-form-5").style.display = 'none';
     document.getElementById("hidden-form-6").style.display = 'none';
 
+</script>
+
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
+    //-->
 </script>
 
 {{/content}}

@@ -1,0 +1,121 @@
+{{<layout}}
+
+{{$pageTitle}}
+	HMRC > BRAMA 
+{{/pageTitle}}
+
+{{$propositionHeader}}
+<div class="header-proposition">
+  <div class="content">
+    <a href="#" class="js-header-toggle menu">Menu</a>
+    <nav id="proposition-menu">
+      <a href="#" id="proposition-name">Annual Tax on Enveloped Dwellings (ATED)</a>
+      <!--
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="gov_uk" class="text-navigation-header">Sign out</a>
+      
+      <ul id="proposition-links">
+        <li><a href="gov_uk">Sign out</a></li>
+        <li><a href="#">Lorum</a></li>
+      </ul>
+      -->
+    </nav>
+  </div>
+</div>
+{{/propositionHeader}}
+
+{{$content}}
+
+<link rel="stylesheet" href="http://hmrc-prototype.herokuapp.com/assets/stylesheets/application.css">
+<script src="http://hmrc-prototype.herokuapp.com/assets/javascripts/vendor/modernizr.js" type="text/javascript"></script>
+<script src="/http://hmrc-prototype.herokuapp.com/assets/javascripts/vendor/jquery.js"></script>
+
+<main id="content" role="main">
+
+  <div>
+    <div class="service-info" style="padding-bottom:0px; margin-bottom:0px;">
+      <div class="logo">
+        <span class="organisation-logo organisation-logo-medium">HM Revenue &amp; Customs</span>
+      </div>
+
+      <div class="div-right">
+        <p class="brama-logged">John Smith, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+      </div>
+    </div>
+  </div>
+
+  <div class="brama-spacer"></div> 
+
+  <h2 class="heading-large brama-shrink-padding-5">Unique Taxpayer Reference (UTR)</h2>
+
+  <div class="brama-spacer"></div> 
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <p>
+      The Unique Taxpayer Reference (UTR) is only issued by HM Revenue & Customs (HMRC) when you, or your client, have registered for Self Assessment. It is made up of 10 numbers, for example 1234567890, and can be found on documentation issued by HMRC such as the Tax Return (SA100), a 'Notice to complete a Tax Return' (SA316) or a Statement of Account.
+      <br><br>
+      Depending on the type of document issued the reference may be printed next to the headings 'Tax Reference', 'UTR' or 'Official Use'.
+      <br><br>
+      Please note: If you're self-employed and you register online for business taxes, you will automatically be enrolled for each HMRC Online Service that you selected.
+      <br><br>
+      In all other cases, you'll need to register with HMRC for Self Assessment and enrol for the online service separately. If you have not yet registered with HMRC for Self Assessment this must be done to get the reference before you enrol for the online service.
+      <br><br>
+      For further information please see <a ref="http://www.hmrc.gov.uk/sa/register.htm">Registering for Self Assessment</a>.
+      <br><br>
+      <span class="text-medium3">Where to find this</span>
+      <br><br>
+      You can find your UTR reference in the header of any of the letter that you received from HMRC. 
+      <br><br>
+      <img src="/public/images/utr.gif">
+      </p>     
+
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer"></div>
+
+        <div id='buttonChange'><input type='match_1' value='Back' class='button'></div>
+
+        <div class="brama-spacer" id="here"></div>
+
+        <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
+
+        <div class="ated-spacer"></div>
+
+        <div id="hidden-text" class="panel-indent">    
+
+        <p>The registration process will be cancelled and you will be signed out. <br>You can restart registration at any time. <a href="gov_uk2">Sign out</a></p>
+
+        <div class="ated-spacer"></div>
+
+        <div class="ated-spacer"></div>
+
+        </div>
+
+    </div>
+  </div>
+
+  <!-- </form> -->
+
+</main>
+
+{{/content}}
+
+{{/layout}}
+
+<div id = "global-breadcrumb" class = "testing-link" style="background-color: #dee0e2">
+    <span>
+    <ol>
+        <li>
+          <a href = "../../../../index">Home</a>
+        </li>
+        <li>
+          <a href = "../../ated_index">ATED</a>
+        </li>
+        <li>
+          ATED account registration
+        </li>
+    </ol>
+  </span>
+</div>

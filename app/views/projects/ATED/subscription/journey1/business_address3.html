@@ -44,9 +44,7 @@
     </div>
   </div>
 
-  <p class="text-section">Section 1 of 3</p>
-
-  <div class="brama-spacer5"></div>
+  <div class="brama-spacer"></div>
 
   <h2 class="heading-large brama-shrink-padding-5">Correspondence address</h2>
 
@@ -100,17 +98,42 @@
 
   </div>
 
-  <div class="brama-spacer"></div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-  <div class="brama-spacer"></div>
+      <div class="brama-spacer"></div>
 
-  <a href = "correspondence_contact_details"><input type="submit" value="Continue" class="button"></a>
+      <div class="brama-spacer"></div>
 
-  <div class="brama-spacer"></div>
+      <a href = "correspondence_contact_details"><input type="submit" value="Continue" class="button"></a>
 
-  <a href="cancel" class="brama-vertically-centered-text2">Cancel</a>
+      <div class="brama-spacer" id="here"></div>
+
+      <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
+
+      <div class="ated-spacer"></div>
+
+      <div id="hidden-text" class="panel-indent">    
+
+      <p>The account registration process will be cancelled. <br>You can start again at any time. <a href="yta">Cancel</a></p>
+
+      <div class="ated-spacer"></div>
+
+      <div class="ated-spacer"></div>
+
+      </div>
+
+    </div>
+  </div>
 
 </main>
+
+
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
+    //-->
+</script>
 
 
 {{/content}}

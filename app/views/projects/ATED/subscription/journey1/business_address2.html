@@ -44,9 +44,7 @@
     </div>
   </div>
 
-  <p class="text-section">Section 1 of 3</p>
-
-  <div class="brama-spacer5"></div>
+  <div class="brama-spacer"></div>
 
   <h2 class="heading-large brama-shrink-padding-5">Place of business</h2>
 
@@ -127,17 +125,33 @@
       </div>
   </div>
 
-  <div class="brama-spacer5"></div>
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-  <div class="brama-spacer"></div>
+      <div class="brama-spacer"></div>
 
-  <div id='buttonChange'>
-      <input type='submit' value='Continue' class='button'>
+      <div class="brama-spacer"></div>
+
+      <div id='buttonChange'><input type='submit' value='Continue' class='button'></div>
+
+      <div class="brama-spacer" id="here"></div>
+
+      <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
+
+      <div class="ated-spacer"></div>
+
+      <div id="hidden-text" class="panel-indent">    
+
+      <p>The account registration process will be cancelled. <br>You can start again at any time. <a href="yta">Cancel</a></p>
+
+      <div class="ated-spacer"></div>
+
+      <div class="ated-spacer"></div>
+
+      </div>
+
+    </div>
   </div>
-
-  <div class="brama-spacer"></div>
-
-  <a href="cancel" class="brama-vertically-centered-text2">Cancel</a>
 
 </main>
 
@@ -159,6 +173,12 @@ function change_link()
     document.getElementById("hidden-form-1").style.display = 'none';
     document.getElementById("hidden-form-2").style.display = 'none';
 
+</script>
+
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
+    //-->
 </script>
 
 
