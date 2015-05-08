@@ -1,7 +1,7 @@
 {{<layout}}
 
 {{$pageTitle}}
-  HMRC > BRAMA 
+	HMRC > BRAMA 
 {{/pageTitle}}
 
 {{$propositionHeader}}
@@ -9,7 +9,7 @@
   <div class="content">
     <a href="#" class="js-header-toggle menu">Menu</a>
     <nav id="proposition-menu">
-      <a href="#" id="proposition-name">Annual Tax on Enveloped Dwellings (ATED)</a>
+      <a href="#" id="proposition-name">Agents</a>
       <!--
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="gov_uk" class="text-navigation-header">Sign out</a>
@@ -44,63 +44,73 @@
     </div>
   </div>
 
+  <p class="text-section">Appoint an agent for ATED</p>
+
+  <h2 class="heading-large brama-shrink-padding-5">Agent details</h2>
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
-  <h2 class="heading-large brama-shrink-padding-3">ATED account registration</h2>
+        <p class="panel-indent">To appoint an agent to act on your behalf, you must send a request. the agent can accept or reject this request.</p>
 
-  <p class="panel-indent">You are about to register the following business for ATED.</p>
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer"></div>
+          
+        <div>
+
+            <form> 
+
+              <div>
+                <label class="form-label" for="business_address0">Agent name</label>
+                <input class="form-control brama-input-mediumform" type="text" value="">
+              </div> 
+
+              <div class="brama-spacer"></div>
+
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Agent reference number</label>
+                <p class="text-gray2">Provided by your agent.</p>
+                <input class="form-control brama-input-mediumform" type="text" value="">
+              </div>         
+
+            </form>
+
+        </div>
+
+    </div>
+  </div>  
+
 
   <div class="brama-spacer2"></div>
 
-      <table>
-      <tr>
-        <th style="width:60%">Name</th>
-        <td>ACME</td>
-      </tr>
-      <tr>
-        <th>Type of business</th>
-        <td>Limited Company</td>
-      </tr>
-
-      <tr>
-        <th class="align-top">Registered address</th>
-        <td>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</td>
-      </tr>
-    </table>
-
-    </div>
-
-    <div class="column-third"></div>
-  </div>
-
   <div class="brama-spacer"></div>
 
   <div class="brama-spacer"></div>
 
-  <div class="brama-spacer"></div>
-
-  <a href = "business_address1"><input type="submit" value="Continue" class="button"></a>
+  <a href = "review_agent_details"><input type="submit" value="Send request to agent" class="button"></a>
 
   <div class="brama-spacer"></div>
 
-  <a href="business_registration" class="brama-vertically-centered-text2">Back</a>
+  <a id="save_application" href="#" class="brama-vertically-centered-text2">Cancel</a>
 
 </main>
 
 <script>
 function show_div()
 {
-  var option = document.getElementById('choose');
-  if (option.value == '1')
-  {
-    document.getElementById("hidden-form-1").style.display = 'inline-block';
-      document.getElementById("hidden-form-2").style.display = 'none';  }
-  else if (option.value =='2')
-  {
-    document.getElementById("hidden-form-1").style.display = 'none';
-      document.getElementById("hidden-form-2").style.display = 'inline-block';
-  }
+	var option = document.getElementById('choose');
+	if (option.value == '1')
+	{
+		document.getElementById("hidden-form-1").style.display = 'inline-block';
+     	document.getElementById("hidden-form-2").style.display = 'none';	}
+	else if (option.value =='2')
+	{
+		document.getElementById("hidden-form-1").style.display = 'none';
+     	document.getElementById("hidden-form-2").style.display = 'inline-block';
+	}
 }
 
 
@@ -110,7 +120,7 @@ function show_div()
 
     <!--
      // function show_div(x){
-      //  document.getElementById(x).style.display = 'inline-block'
+      //	document.getElementById(x).style.display = 'inline-block'
       //}
 
 
