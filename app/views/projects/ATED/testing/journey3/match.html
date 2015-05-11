@@ -39,7 +39,7 @@
       </div>
 
       <div class="div-right">
-        <p class="brama-logged">Charles Coward, Agents Union Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+        <p class="brama-logged">John Smith, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <p class="panel-indent">Before registering, you need to confirm your business details. <br>
+      <p class="panel-indent">Before registering, you need to confirm your business details.  <br>
         Search for your business details or complete a new registration for an overseas company.</p>
 
       <div class="brama-spacer"></div>
@@ -75,30 +75,30 @@
                 </label>
                 <div>
                 <label class="block-label">
-                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
+                <input type="radio" value="" name="same" id="2" onChange="change_link();">
                     Sole Trader / Self-employed
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="3" name="same" id="3" onChange="change_link();">
+                <input type="radio" value="" name="same" id="3" onChange="change_link();">
                     Business Partnership
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="4" name="same" id="4" onChange="change_link();">
+                <input type="radio" value="" name="same" id="4" onChange="change_link();">
                     Limited Partnership
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="5" name="same" id="5" onChange="change_link();">
+                <input type="radio" value="" name="same" id="5" onChange="change_link();">
                     Limited Liability Partnership
                 </label>
                 <div>
                 <label class="block-label">
-                <input type="radio" value="6" name="same" id="6" onChange="change_link();">
+                <input type="radio" value="" name="same" id="6" onChange="change_link();">
                     Uncorporated Association
                 </label>
               </div>
@@ -139,7 +139,7 @@ function change_link()
 {
   if (document.getElementById("non").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'business_registration'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("1").checked)
   {
@@ -147,23 +147,23 @@ function change_link()
   }
   else if (document.getElementById("2").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_2'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("3").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_3'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("4").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_4'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("5").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_5'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("6").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_6'><input type='submit' value='Continue' class='button'></a>";
   }
 
 }
