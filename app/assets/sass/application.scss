@@ -352,6 +352,21 @@ select {
 	float: none;
 }
 
+.blue-line{
+  border-top: 8px 
+  solid #005ea5;
+  width: 300px;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.gray-line{
+  border-top: 1px 
+  solid #bfc1c3;
+  width: 300px;
+  padding: 0;
+}
+
 .brama-grey-panel{
 	background-color: #DEE0E2;
 	padding: 5px 20px 5px 20px;
@@ -421,6 +436,10 @@ select {
     padding-bottom: 0.5em;
     padding-left: 0px;
     margin-top: 200px;
+}
+
+.progress_icons{
+	padding-top: 14px;
 }
 
 .text-bold{
@@ -517,6 +536,11 @@ h2.heading-large.brama-shrink-padding-4{
 h2.heading-large.brama-shrink-padding-5{
 	margin-top: 0px;
 	margin-bottom: 10px;
+}
+
+h2.heading-blue-line{
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 h3.heading-medium.brama-shrink-padding-1, legend.heading-medium.brama-shrink-padding{
