@@ -64,12 +64,6 @@
           <form>
               <div>
                 <label class="block-label">
-                <input type="radio" value="non" name="same" id="non" onChange="change_link();">
-                    Non-UK Company
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
                 <input type="radio" value="1" name="same" id="1" onChange="change_link();">
                     Limited Company
                 </label>
@@ -137,11 +131,7 @@
 
 function change_link()
 {
-  if (document.getElementById("non").checked)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'business_registration'><input type='submit' value='Continue' class='button'></a>";
-  }
-  else if (document.getElementById("1").checked)
+  if (document.getElementById("1").checked)
   {
     document.getElementById("buttonChange").innerHTML = "<a href = 'match_1'><input type='submit' value='Continue' class='button'></a>";
   }
@@ -168,7 +158,6 @@ function change_link()
 
 }
 
-    document.getElementById("hidden-form-non").style.display = 'none';
     document.getElementById("hidden-form-1").style.display = 'none';
     document.getElementById("hidden-form-2").style.display = 'none';
     document.getElementById("hidden-form-3").style.display = 'none';
