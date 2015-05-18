@@ -54,29 +54,6 @@
 
   <p>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</p>
 
-  <div id="hidden-form">
-      <div class="form-group form-group-compound">
-          <label class="text-bold">Is this your permanent place of business?</label>
-          <div class="brama-spacer5"></div>
-          <form>
-            <fieldset class="inline">
-              <div>
-                <label class="block-label">
-                <input type="radio" value="1" name="same" id="a1" onChange="change_link();">
-                    Yes
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="2" name="same" id="a2" onChange="change_link();">
-                    No
-                </label>
-              </div>
-            </fieldset>
-          </form>
-      </div>
-  </div>
-
   <div class="brama-spacer"></div>
 
   <div id="hidden-form">
@@ -87,19 +64,18 @@
             <fieldset class="inline">
               <div>
                 <label class="block-label">
-                <input type="radio" value="1" id="a3" name="same" onChange="change_link();">
+                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
                     Yes
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="2" id="a4" name="same" onChange="change_link();">
+                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
                     No
                 </label>
               </div>
             </fieldset>
           </form>
-
       </div>
   </div>
 
@@ -137,25 +113,13 @@
 
 function change_link()
 {
-  if (document.getElementById("a1").checked &&
-      document.getElementById("a3").checked == true)
+  if (document.getElementById("1").checked)
   {
     document.getElementById("buttonChange").innerHTML = "<a href = 'correspondence_contact_details'><input type='submit' value='Continue' class='button'></a>";
   }
-  else if (document.getElementById("a2").checked &&
-      document.getElementById("a4").checked == true)
+  else if (document.getElementById("2").checked)
   {
     document.getElementById("buttonChange").innerHTML = "<a href = 'business_address2'><input type='submit' value='Continue' class='button'></a>";
-  }
-  else if (document.getElementById("a1").checked &&
-      document.getElementById("a4").checked == true)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address3'><input type='submit' value='Continue' class='button'></a>";
-  }
-   else if (document.getElementById("a2").checked &&
-      document.getElementById("a3").checked == true)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address4'><input type='submit' value='Continue' class='button'></a>";
   }
 
 }
