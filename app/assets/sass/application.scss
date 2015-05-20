@@ -390,6 +390,15 @@ select {
   margin-top: 40px;
 }
 
+.blue-line3{
+  border-top: 8px 
+  solid #005ea5;
+  width: 300px;
+  padding: 00;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
 .gray-line{
   border-top: 1px 
   solid #bfc1c3;
@@ -447,6 +456,11 @@ select {
 
 .text-medium-right{
 	font-size: 18px;
+	text-align:right;
+}
+
+.text-align-righ{
+	font-size: 16px;
 	text-align:right;
 }
 
