@@ -10,6 +10,15 @@
     <a href="#" class="js-header-toggle menu">Menu</a>
     <nav id="proposition-menu">
       <a href="#" id="proposition-name">Alcohol Wholesaler Registration Scheme (AWRS)</a>
+      <!--
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="gov_uk" class="text-navigation-header">Sign out</a>
+      
+      <ul id="proposition-links">
+        <li><a href="gov_uk">Sign out</a></li>
+        <li><a href="#">Lorum</a></li>
+      </ul>
+      -->
     </nav>
   </div>
 </div>
@@ -36,14 +45,15 @@
   </div>
 
   <p class="text-section">AWRS application </p>
+  <p class="text-black2">2. Business addreses</p>
 
-  <h2 class="heading-large brama-shrink-padding-5">2. Addreses details</h2>
+  <div class="brama-spacer6"></div>
+
+  <h2 class="heading-large brama-shrink-padding-5">Place of business</h2>
+
+  <p class="panel-indent">This is your main business work address.</p>
 
   <div class="brama-spacer"></div>
-
-  <h3 class="heading-medium brama-shrink-padding-4">Place of business </h3>
-
-  <p class="text-gray2" style="margin-top:10px">This is your main business work address.</p>
 
   <div>
 
@@ -106,21 +116,20 @@
           </form>
         </div>   
 
-         <div id="question1b">
-          <div class="brama-spacer"></div>
+         <div id="questionB">
+          <div class="brama-spacer6"></div>
           <div class="panel-indent">
           <label class="form-label" for="business_address0">How many years has your business operated from the current address? </label>
           <input class="brama-input-verysortform4" type="text" value="">
           </div>
         </div> 
 
-        <div id="question1a">
+        <div id="questionA">
 
-          <div class="brama-spacer"></div>
+          <div class="brama-spacer6"></div>
 
           <div class="panel-indent">
-
-              <label class="text-medium3" for="business_address0">Previous address details</label>
+            <label class="form-label" for="business_address0">Tell us about the previous address </label>
 
               <div class="brama-spacer"></div>
 
@@ -166,83 +175,10 @@
 
   <div class="brama-spacer"></div>
 
-  <div class="brama-spacer"></div>
-
   <div>
       <div class="form-group form-group-compound">
-
-        <h3 class="heading-medium brama-shrink-padding-4">Correspondence address </h3>
-
-        <p class="text-gray2" style="margin-top:10px">This is an alternative address for correspondence.</p>
-
-          <label class="form-label">Is your correspondence address same than your place of business?</label>
+          <label class="form-label">Is this your correspondence address?</label>
           <div class="brama-spacer6"></div>
-          <form>
-            <fieldset class="inline">
-              <div>
-                <label class="block-label">
-                <input type="radio" value="yes" id="question3" name="same" onChange="change_questions2();">
-                    Yes
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="no" id="question4" name="same" onChange="change_questions2();">
-                    No
-                </label>
-              </div>
-            </fieldset>
-
-            <div id="question2a">
-
-              <div class="brama-spacer"></div>
-
-              <div class="panel-indent">
-
-              <label class="text-medium3" for="business_address0">Correspondence address details</label>
-
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="form-label" for="business_address0">Postcode</label>
-                <input class="brama-input-verysortform4" type="text" value="">
-                &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Postcode lookup</a>
-              </div> 
-
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="form-label" for="business_address0">Address line 1</label>
-                <input class="brama-input-mediumform3" type="text" value=" ">
-              </div> 
-
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="form-label" for="business_address0">Address line 2</label>
-                <input class="brama-input-mediumform3" type="text" value=" ">
-              </div> 
-
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
-                <input class="brama-input-mediumform3" type="text" value=" ">
-              </div> 
-
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
-                <input class="brama-input-mediumform3" type="text" value=" ">
-              </div>
-
-            </div>
-
-            </div>
-
-          </form>
-          <!--
           <form>
             <fieldset class="inline">
               <div>
@@ -259,61 +195,16 @@
               </div>
             </fieldset>
           </form>
-          -->
 
       </div>
   </div>
-
-  <div class="brama-spacer"></div>
-
-  <div class="brama-spacer"></div>
-
-  <div>
-      <div class="form-group form-group-compound">
-
-        <h3 class="heading-medium brama-shrink-padding-4">Contact details </h3>
-
-        <p class="text-gray2" style="margin-top:10px">This is the contact person for AWRS matters.</p>
-
-      </div>
-
-      <div>
-
-        <form> 
-
-          <div>
-            <label class="form-label" for="business_address0">Contact name</label>
-            <input class="brama-input-mediumform3" type="text" value=" ">
-          </div> 
-
-          <div class="brama-spacer"></div>
-
-          <div>
-            <label class="form-label" for="business_address0">Email</label>
-            <input class="brama-input-mediumform3" type="text" value=" ">
-          </div> 
-
-          <div class="brama-spacer"></div>
-
-          <div>
-            <label class="form-label" for="business_address0">Telephone</label>
-            <input class="brama-input-mediumform3" type="text" value=" ">
-          </div>    
-
-        </form>
-
-      </div>
-
-  </div>
-
-  <div class="brama-spacer"></div>
 
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <div class="brama-spacer"></div>
 
-      <div><a href="form_3"><input type="submit" value="Save and continue" class="button"></a></div>
+      <div id='buttonChange'><input type="submit" value="Save and continue" class="button"></div>
 
       <div class="brama-spacer"></div>
 
@@ -379,45 +270,21 @@ function change_questions()
 {
   if (document.getElementById("question1").checked)
   {
-    document.getElementById("question1a").style.display = 'block';
-    document.getElementById("question1b").style.display = 'none';
+    document.getElementById("questionA").style.display = 'block';
+    document.getElementById("questionB").style.display = 'none';
     
   }
   else if (document.getElementById("question2").checked)
   {
-    document.getElementById("question1a").style.display = 'none';
-    document.getElementById("question1b").style.display = 'block';
+    document.getElementById("questionA").style.display = 'none';
+    document.getElementById("questionB").style.display = 'block';
     
   }
 
 }
 
-document.getElementById("question1a").style.display = 'none';
-document.getElementById("question1b").style.display = 'none';
-
-</script>
-
-<script>
-
-function change_questions2()
-{
-  if (document.getElementById("question3").checked)
-  {
-    document.getElementById("question2a").style.display = 'none';
-    document.getElementById("question2b").style.display = 'block';
-    
-  }
-  else if (document.getElementById("question4").checked)
-  {
-    document.getElementById("question2a").style.display = 'block';
-    document.getElementById("question2b").style.display = 'none';
-    
-  }
-
-}
-
-document.getElementById("question2a").style.display = 'none';
-document.getElementById("question2b").style.display = 'none';
+document.getElementById("questionA").style.display = 'none';
+document.getElementById("questionB").style.display = 'none';
 
 </script>
 
