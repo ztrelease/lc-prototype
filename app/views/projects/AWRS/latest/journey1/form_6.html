@@ -37,12 +37,12 @@
 
   <p class="text-section">AWRS application </p>
 
-  <h2 class="heading-large brama-shrink-padding-5">6. Supplier addresses</h2>
+  <h2 class="heading-large brama-shrink-padding-5">6. About your suppliers</h2>
 
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <p class="panel-indent" style="margin-top:10px">List all supplier and their addresses connected to your business.</p>
+      <p class="panel-indent" style="margin-top:10px">List all suppliers and their main address connected to your business.</p>
 
       <div class="brama-spacer"></div>
 
@@ -99,17 +99,13 @@
 
               <div class="brama-spacer"></div>
 
-              <div><a href="#here2" onclick="document.getElementById('1').style.display = 'inline-block';" class="brama-normal-link" id="here2">Add another address for this supplier</a></div>
-
-              <div class="brama-spacer2"></div>
-
               <div><a href="#here2" onclick="document.getElementById('1').style.display = 'inline-block';" class="brama-normal-link" id="here2">Add another supplier</a></div>
 
             </div>
 
         </div>
 
-        <div id="0">
+        <div id="1">
 
           <div class="brama-spacer"></div>
 
@@ -117,9 +113,7 @@
 
           <div class="brama-spacer"></div>
 
-          <div class="brama-spacer"></div>
-
-            <h3 class="heading-medium brama-shrink-padding-4">Additional address 1 </h3>
+            <h3 class="heading-medium brama-shrink-padding-4">Supplier 2 </h3>
 
             <div class="brama-spacer"></div>
 
@@ -206,11 +200,7 @@
 
 function change_add()
 {
-  if(document.getElementById("add").style.display == 'block'){
-    document.getElementById("0").style.display = 'none';
-  } 
-
-  else if (document.getElementById("add").style.display == 'block'){
+  if (document.getElementById("add").style.display == 'block'){
     document.getElementById("1").style.display = 'none';
   } 
 
@@ -226,9 +216,12 @@ function change_add()
     document.getElementById("4").style.display = 'none';
   } 
 
+  else if (document.getElementById("add").style.display == 'block'){
+    document.getElementById("5").style.display = 'none';
+  } 
+
 }
 
-document.getElementById("0").style.display = 'none';
 document.getElementById("1").style.display = 'none';
 document.getElementById("2").style.display = 'none';
 document.getElementById("3").style.display = 'none';

@@ -37,49 +37,39 @@
 
   <p class="text-section">AWRS application </p>
 
-  <h2 class="heading-large brama-shrink-padding-5">8. Group representative details</h2>
+  <h2 class="heading-large brama-shrink-padding-5">8. About your group</h2>
 
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <p class="panel-indent" style="margin-top:10px">The details of the person that represents the group.</p>
+      <p class="panel-indent" style="margin-top:10px">If your business is part of a group, you can create a group registration.</p>
 
       <div class="brama-spacer"></div>
 
       <form>
 
-        <div>
-           <label class="form-label" for="business_address0">Title</label>
-            <input class="brama-input-verysortform4" type="text" value="">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-            <label class="form-label" for="business_address0">First name</label>
-            <input class="brama-input-mediumform3" type="text" value=" ">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-          <label class="form-label" for="business_address0">Middle name &nbsp; <span class="text-gray2">(optional)</span></label>
-          <input class="brama-input-mediumform3" type="text" value=" ">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-           <label class="form-label" for="business_address0">Last name</label>
-          <input class="brama-input-mediumform3" type="text" value=" ">
-        </div> 
-
-        <div class="brama-spacer"></div>
-
-        <div>
-           <label class="form-label" for="business_address0">VAT number</label>
-          <input class="brama-input-mediumform3" type="text" value=" ">
-        </div> 
+        <div id="here">
+          <label class="text-medium3">Are you creating an AWRS group? <br>
+            <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
+            <span class="text-medium-link2">What is a group?</span></a>
+          </label>
+          <div class="brama-spacer"></div>
+          <div id="hidden-text" class="panel-indent">    
+          <span>iT is possible for a number of limited companies to form a group in order to apply for approval under a single registration. They can elect a representative member, make various changes to the group registration and upon which group membership can be terminated. They also provide for joint and several liability for any penalties which may be imposed under the Act or the Regulations.</span>
+          </div>
+          <fieldset class="inline">
+            <div>
+              <label class="block-label"> 
+              <input type="radio" value="yes" name="same">Yes
+              </label>
+            </div>
+            <div>
+              <label class="block-label">
+              <input type="radio" value="no" name="same">No
+              </label>
+            </div>
+          </fieldset>
+        </div>
 
       </form>
 
@@ -93,7 +83,7 @@
 
       <div class="brama-spacer"></div>
 
-      <div><a href="form_9"><input type="submit" value="Save and continue" class="button"></a></div>
+      <div><a href="application_overview2"><input type="submit" value="Save and continue" class="button"></a></div>
 
       <div class="brama-spacer"></div>
 
