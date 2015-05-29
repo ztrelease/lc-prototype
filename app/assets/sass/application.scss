@@ -109,6 +109,11 @@ select {
 	background: #e8e8e8 url('/public/images/expand-collapse-arrow2.png') no-repeat 0% 49%;
 	border-bottom:
 }
+
+.hide-styles td {
+	border-bottom: 1px solid #BFC1C3;
+}
+
 .hide-styles td:first-child {
 	padding-left: 13px;
 }
@@ -267,12 +272,12 @@ select {
 }
 
 .brama-grey-button:link, .brama-grey-button:visited{
-	color:#000;
-	background-color:#bbb;
+	color:#000000;
+	background-color:#bbbbbb;
 }
 
 .brama-grey-button:hover{
-	background-color:#aaa;
+	background-color:#aaaaaa;
 }
 
 .brama-last-column{
