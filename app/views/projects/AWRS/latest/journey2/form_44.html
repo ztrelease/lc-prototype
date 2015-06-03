@@ -50,28 +50,7 @@
 
       <form>
 
-          <label class="text-medium3">Status</label>
-          
-            <div class="brama-spacer2"></div>
-
-            <fieldset class="inline">
-              <div>
-                <label class="block-label">
-                <input type="radio" value="Director" id="question1" name="same" onChange="change_questions();">
-                    Yes
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="Secretary" id="question2" name="same" onChange="change_questions();">
-                    No
-                </label>
-              </div>
-            </fieldset>
-
-          <div id="question1a">
-
-              <div class="brama-spacer"></div>
+          <div>
 
               <p class="text-medium3">Business director 1 </p>
 
@@ -136,26 +115,7 @@
 
               <div class="brama-spacer"></div>
 
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="text-medium3">Does the business has more directors?</label>
-                <div class="brama-spacer2"></div>
-                <fieldset class="inline">
-                  <div>
-                    <label class="block-label">
-                    <input type="radio" value="yes" id="question1" name="same" onChange="change_questions();">
-                        Yes
-                    </label>
-                  </div>
-                  <div>
-                    <label class="block-label">
-                    <input type="radio" value="no" id="question2" name="same" onChange="change_questions();">
-                        No
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
+              <div><a href="#here2" style="background-color: #AAA" class="button" id="here2">Add another director</a></div>
 
               <!--
               <div><a href="#here2" onclick="document.getElementById('1').style.display = 'inline-block';" class="brama-normal-link" id="here2">Add another director</a></div>
@@ -497,7 +457,7 @@
 
       <div class="brama-spacer2"></div>
 
-      <div><a href="form_5"><input type="submit" value="Save and continue" class="button" disabled="disabled"></a></div>
+      <div><a href="form_5"><input type="submit" value="Save and continue" class="button"></a></div>
 
       <div class="brama-spacer"></div>
 
@@ -517,11 +477,7 @@
 
 function change_add()
 {
-  if(document.getElementById("add").style.display == 'block'){
-    document.getElementById("0").style.display = 'none';
-  } 
-
-  else if (document.getElementById("add").style.display == 'block'){
+  if (document.getElementById("add").style.display == 'block'){
     document.getElementById("1").style.display = 'none';
   } 
 
@@ -537,45 +493,16 @@ function change_add()
     document.getElementById("4").style.display = 'none';
   } 
 
-   else if (document.getElementById("add").style.display == 'block'){
+  else if (document.getElementById("add").style.display == 'block'){
     document.getElementById("5").style.display = 'none';
   } 
 
 }
 
-document.getElementById("0").style.display = 'none';
 document.getElementById("1").style.display = 'none';
 document.getElementById("2").style.display = 'none';
 document.getElementById("3").style.display = 'none';
 document.getElementById("4").style.display = 'none';
-document.getElementById("5").style.display = 'none';
-
-</script>
-
-
-
-
-<script>
-
-function change_questions()
-{
-  if (document.getElementById("question1").checked)
-  {
-    document.getElementById("question1a").style.display = 'block';
-    document.getElementById("question1b").style.display = 'none';
-    
-  }
-  else if (document.getElementById("question2").checked)
-  {
-    document.getElementById("question1a").style.display = 'none';
-    document.getElementById("question1b").style.display = 'block';
-    
-  }
-
-}
-
-document.getElementById("question1a").style.display = 'none';
-document.getElementById("question1b").style.display = 'none';
 
 </script>
 
