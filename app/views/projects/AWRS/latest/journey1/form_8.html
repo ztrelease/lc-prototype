@@ -46,12 +46,39 @@
 
       <div class="brama-spacer"></div>
 
+      <div class="brama-spacer2"></div>
+
       <form>
 
         <div id="here">
-          <label class="text-medium3">Are you creating an AWRS group? <br>
+          <label class="text-medium3">Are you a group representative for an alcohol buying group?<br>
             <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
-            <span class="text-medium-link2">What is a group?</span></a>
+            <span class="text-medium-link2">What is a buying group?</span></a>
+          </label>
+          <div class="brama-spacer"></div>
+          <div id="hidden-text" class="panel-indent">    
+          <span>A number of limited companies can form a group in order to apply for approval under a single registration. They can elect a representative member, make various changes to the group registration and upon which group membership can be terminated.</span>
+          </div>
+          <fieldset class="inline">
+            <div>
+              <label class="block-label"> 
+              <input type="radio" value="yes" name="same">Yes
+              </label>
+            </div>
+            <div>
+              <label class="block-label">
+              <input type="radio" value="no" name="same">No
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="brama-spacer"></div>
+
+        <div id="here">
+          <label class="text-medium3">Do you want to create an AWRS group?<br>
+            <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
+            <span class="text-medium-link2">What is a AWRS group?</span></a>
           </label>
           <div class="brama-spacer"></div>
           <div id="hidden-text" class="panel-indent">    
@@ -82,6 +109,8 @@
     <div class="column-two-thirds">
 
       <div class="brama-spacer"></div>
+
+      <div class="brama-spacer2"></div>
 
       <div><a href="application_overview3"><input type="submit" value="Save and continue" class="button"></a></div>
 
