@@ -42,8 +42,6 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <div class="brama-spacer"></div>
-
       <form>
 
         <p class="panel-indent" style="margin-top:10px">We need some additional business details to help evaluate your AWRS application.</p>
@@ -58,15 +56,28 @@
           <fieldset class="inline">
             <div>
               <label class="block-label"> 
-              <input type="radio" value="yes" name="same">Yes
+              <input type="radio" value="yes" id="question_new1a" name="same" onChange="change_questions_new1();">Yes
               </label>
             </div>
             <div>
               <label class="block-label">
-              <input type="radio" value="no" name="same">No
+              <input type="radio" value="no" id="question_new1b" name="same" onChange="change_questions_new1();">No
               </label>
             </div>
           </fieldset>
+        </div>
+
+        <div id="question_new1a1">
+
+            <div class="brama-spacer"></div>
+
+            <div class="panel-indent">
+              <label class="form-label" for="business_address0">What is your expected annual turnover (gross)?</label>
+              <p class="text-gray2" style="margin-top:10px">For example, 124500</p>
+              <br>
+              <input class="brama-input-verysortform4" type="text" value="">
+            </div>
+
         </div>
 
         <!--
@@ -130,8 +141,19 @@
           <div class="brama-spacer6"></div>
           <label class="block-label"><input type="checkbox">Physical premises </label>
           <div class="brama-spacer6"></div>
-          <label class="block-label"><input type="checkbox">Other </label>
+          <label class="block-label"><input type="checkbox" id="question_other1a" onChange="change_questions_other1();">Other </label>
           <div class="brama-spacer5"></div>
+        </div>
+
+        <div id="question_other1a1">
+
+            <div class="brama-spacer"></div>
+
+            <div class="panel-indent">
+              <label class="form-label" for="business_address0">Other</label>
+              <input class="brama-input-mediumform3" type="text" value="">
+            </div>
+
         </div>
 
         <div class="brama-spacer"></div>
@@ -165,8 +187,19 @@
           <div class="brama-spacer6"></div>
           <label class="block-label"><input type="checkbox">EU dispatches </label>
           <div class="brama-spacer6"></div>
-          <label class="block-label"><input type="checkbox">Other </label>
+          <label class="block-label"><input type="checkbox" id="question_other2a" onChange="change_questions_other2();">Other </label>
           <div class="brama-spacer5"></div>
+        </div>
+
+        <div id="question_other2a1">
+
+            <div class="brama-spacer"></div>
+
+            <div class="panel-indent">
+              <label class="form-label" for="business_address0">Other</label>
+              <input class="brama-input-mediumform3" type="text" value="">
+            </div>
+
         </div>
 
         <div class="brama-spacer"></div>
@@ -306,6 +339,78 @@ document.getElementById("4").style.display = 'none';
     <!--
       document.getElementById("hidden-text").style.display = 'none';
     //-->
+</script>
+
+<script>
+
+function change_questions_other1()
+{
+  if (document.getElementById("question_other1a").checked)
+  {
+    document.getElementById("question_other1a1").style.display = 'block';
+    document.getElementById("question_other1a2").style.display = 'none';
+    
+  }
+  else if (document.getElementById("question_other1b").checked)
+  {
+    document.getElementById("question_other1a1").style.display = 'none';
+    document.getElementById("question_other1a2").style.display = 'block';
+    
+  }
+
+}
+
+document.getElementById("question_other1a1").style.display = 'none';
+document.getElementById("question_other1a2").style.display = 'none';
+
+</script>
+
+<script>
+
+function change_questions_other2()
+{
+  if (document.getElementById("question_other2a").checked)
+  {
+    document.getElementById("question_other2a1").style.display = 'block';
+    document.getElementById("question_other2a2").style.display = 'none';
+    
+  }
+  else if (document.getElementById("question_other2b").checked)
+  {
+    document.getElementById("question_other2a1").style.display = 'none';
+    document.getElementById("question_other2a2").style.display = 'block';
+    
+  }
+
+}
+
+document.getElementById("question_other2a1").style.display = 'none';
+document.getElementById("question_other2a2").style.display = 'none';
+
+</script>
+
+<script>
+
+function change_questions_new1()
+{
+  if (document.getElementById("question_new1a").checked)
+  {
+    document.getElementById("question_new1a1").style.display = 'block';
+    document.getElementById("question_new1a2").style.display = 'none';
+    
+  }
+  else if (document.getElementById("question_new1b").checked)
+  {
+    document.getElementById("question_new1a1").style.display = 'none';
+    document.getElementById("question_new1a2").style.display = 'block';
+    
+  }
+
+}
+
+document.getElementById("question_new1a1").style.display = 'none';
+document.getElementById("question_new1a2").style.display = 'none';
+
 </script>
 
 
