@@ -50,6 +50,8 @@
 
       <form>
 
+        <!--
+
         <div id="here">
           <label class="text-medium3">Are you a group representative for an alcohol buying group?<br>
             <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
@@ -75,10 +77,12 @@
 
         <div class="brama-spacer"></div>
 
+        -->
+
         <div id="here">
           <label class="text-medium3">Do you want to create an AWRS group?<br>
             <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
-            <span class="text-medium-link2">What is a AWRS group?</span></a>
+            <span class="text-medium-link2">What is a group?</span></a>
           </label>
           <div class="brama-spacer"></div>
           <div id="hidden-text" class="panel-indent">    
@@ -87,15 +91,83 @@
           <fieldset class="inline">
             <div>
               <label class="block-label"> 
-              <input type="radio" value="yes" name="same">Yes
+              <input type="radio" value="yes" id="question_yes1a" name="1" onChange="change_questions_yes1();">Yes
               </label>
             </div>
             <div>
               <label class="block-label">
-              <input type="radio" value="no" name="same">No
+              <input type="radio" value="no" id="group_no" name="1" onChange="btn_toggle()">No
               </label>
             </div>
           </fieldset>
+        </div>
+
+        <div class="brama-spacer"></div>
+
+        <div id="question_yes1a1" class="panel-indent">
+
+              <div>
+                <label class="form-label">The number of group members</label>
+                <input class="brama-input-verysortform4" type="text" value="">
+              </div> 
+
+              <div class="brama-spacer"></div>
+
+              <div id="here">
+                <label class="form-label">Is each proposed member of the group, including the representative member, a corporate body?
+                <div class="brama-spacer2"></div>
+                <fieldset class="inline">
+                  <div>
+                    <label class="block-label"> 
+                    <input type="radio" value="yes" name="2">Yes
+                    </label>
+                  </div>
+                  <div>
+                    <label class="block-label">
+                    <input type="radio" value="no" name="2">No
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="brama-spacer"></div>
+
+              <div id="here">
+                <label class="form-label">Is each proposed member of the group, including the representative member, either a resident or established in the UK?
+                <div class="brama-spacer2"></div>
+                <fieldset class="inline">
+                  <div>
+                    <label class="block-label"> 
+                    <input type="radio" value="yes" name="3">Yes
+                    </label>
+                  </div>
+                  <div>
+                    <label class="block-label">
+                    <input type="radio" value="no" name="3">No
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
+              <div class="brama-spacer"></div>
+
+              <div id="here">
+                <label class="form-label">Are you the group representative?
+                <div class="brama-spacer2"></div>
+                <fieldset class="inline">
+                  <div>
+                    <label class="block-label"> 
+                    <input type="radio" value="yes" id="group_yes" name="4" onChange="btn_toggle()">Yes
+                    </label>
+                  </div>
+                  <div>
+                    <label class="block-label">
+                    <input type="radio" value="no" id="group_yes" name="4" onChange="btn_toggle()">No
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+
         </div>
 
       </form>
@@ -112,7 +184,13 @@
 
       <div class="brama-spacer2"></div>
 
-      <div><a href="application_overview3"><input type="submit" value="Save and continue" class="button"></a></div>
+      <div>
+
+        <input type="button" class ="button" value="Save and continue" id="btn_enabled" onclick="location.href='application_overview3'">
+
+        <input type="button" class ="button" value="Save and continue" id="btn_disabled" disabled="disabled">
+
+      </div>
 
       <div class="brama-spacer"></div>
 
@@ -132,6 +210,56 @@
     <!--
       document.getElementById("hidden-text").style.display = 'none';
     //-->
+</script>
+
+
+<script>
+
+function change_questions_yes1()
+{
+  if (document.getElementById("question_yes1a").checked)
+  {
+    document.getElementById("question_yes1a1").style.display = 'block';
+    document.getElementById("question_yes1a2").style.display = 'none';
+    
+  }
+  else if (document.getElementById("question_yes1b").checked)
+  {
+    document.getElementById("question_yes1a1").style.display = 'none';
+    document.getElementById("question_yes1a2").style.display = 'block';
+    
+  }
+
+}
+
+document.getElementById("question_yes1a1").style.display = 'none';
+document.getElementById("question_yes1a2").style.display = 'none';
+
+</script>
+
+
+<script>
+function btn_toggle()
+{
+
+  if (document.getElementById("group_no").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled").style.display = 'block';
+    document.getElementById("optional").style.display = 'none';
+  }
+  else if (document.getElementById("group_yes").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled").style.display = 'block';
+    document.getElementById("optional").style.display = 'block';
+  }
+}
+</script>
+
+<script>
+document.getElementById("btn_enabled").style.display = 'none';
+document.getElementById("optional").style.display = 'none';
 </script>
 
 

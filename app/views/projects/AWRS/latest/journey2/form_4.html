@@ -57,19 +57,20 @@
             <fieldset class="inline">
               <div>
                 <label class="block-label">
-                <input type="radio" value="Director" id="question1" name="same" onChange="change_questions();">
-                    Yes
+                <input type="radio" value="Director" id="status_yes" name="same" onChange="btn_toggle()">
+                    Director
                 </label>
               </div>
+              <br><br><br>
               <div>
                 <label class="block-label">
-                <input type="radio" value="Secretary" id="question2" name="same" onChange="change_questions();">
-                    No
+                <input type="radio" value="Secretary" id="status_no" name="same" onChange="btn_toggle()">
+                    Company secretary
                 </label>
               </div>
             </fieldset>
 
-          <div id="question1a">
+          <div id="optional">
 
               <div class="brama-spacer"></div>
 
@@ -107,6 +108,37 @@
 
               <div class="brama-spacer"></div>
 
+
+              <div>
+                <label class="form-label" for="business_address0">Are they based in the UK? </label>
+                <div class="brama-spacer6"></div>
+                <form>
+                  <fieldset class="inline">
+                    <div>
+                      <label class="block-label">
+                      <input type="radio" value="yes" id="question1" name="same" onChange="change_questions();">
+                          Yes
+                      </label>
+                    </div>
+                    <div>
+                      <label class="block-label">
+                      <input type="radio" value="no" id="question2" name="same" onChange="change_questions();">
+                          No
+                      </label>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+
+              <div id="question1b">
+                <div class="brama-spacer"></div>
+                <div class="panel-indent">
+                <label class="form-label" for="business_address0">How many years has your business operated from the current address? </label>
+                <input class="brama-input-verysortform4" type="text" value="">
+                </div>
+              </div>
+
+
               <div>
                 <label>Enter one of the following numbers:</label>
               </div>  
@@ -141,21 +173,26 @@
               <div>
                 <label class="text-medium3">Does the business has more directors?</label>
                 <div class="brama-spacer2"></div>
+
                 <fieldset class="inline">
                   <div>
                     <label class="block-label">
-                    <input type="radio" value="yes" id="question1" name="same" onChange="change_questions();">
+                    <input type="radio" value="yes" id="question10" name="same" onChange="change_questions_end();">
                         Yes
                     </label>
                   </div>
+                  <br><br><br>
                   <div>
                     <label class="block-label">
-                    <input type="radio" value="no" id="question2" name="same" onChange="change_questions();">
+                    <input type="radio" value="Secretary" id="status_no" name="same" onChange="btn_toggle()">
                         No
                     </label>
                   </div>
                 </fieldset>
+
               </div>
+
+
 
               <!--
               <div><a href="#here2" onclick="document.getElementById('1').style.display = 'inline-block';" class="brama-normal-link" id="here2">Add another director</a></div>
@@ -577,6 +614,59 @@ function change_questions()
 document.getElementById("question1a").style.display = 'none';
 document.getElementById("question1b").style.display = 'none';
 
+</script>
+
+
+<script>
+
+function change_questions_end()
+{
+  if (document.getElementById("question10").checked)
+  {
+    document.getElementById("question10a").style.display = 'block';
+    document.getElementById("question10b").style.display = 'none';
+    
+  }
+  else if (document.getElementById("question2").checked)
+  {
+    document.getElementById("question10a").style.display = 'none';
+    document.getElementById("question10b").style.display = 'block';
+    
+  }
+
+}
+
+document.getElementById("question10a").style.display = 'none';
+document.getElementById("question10b").style.display = 'none';
+
+</script>
+
+
+<script>
+function btn_toggle()
+{
+  //alert('working');
+  if (document.getElementById("status_no").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled").style.display = 'block';
+    document.getElementById("optional").style.display = 'none';
+  }
+  else if (document.getElementById("status_yes").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled").style.display = 'block';
+    document.getElementById("optional").style.display = 'block';
+  }
+}
+</script>
+
+
+
+
+<script>
+document.getElementById("btn_enabled").style.display = 'none';
+document.getElementById("optional").style.display = 'none';
 </script>
 
 
