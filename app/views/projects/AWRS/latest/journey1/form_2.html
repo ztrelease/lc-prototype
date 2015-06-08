@@ -1,7 +1,7 @@
 {{<layout}}
 
 {{$pageTitle}}
-  HMRC > BRAMA 
+	HMRC > BRAMA 
 {{/pageTitle}}
 
 {{$propositionHeader}}
@@ -37,142 +37,259 @@
 
   <p class="text-section">AWRS application </p>
 
-  <h2 class="heading-large brama-shrink-padding-5">2. About your group</h2>
+  <h2 class="heading-large brama-shrink-padding-5">2. Address details</h2>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <div class="brama-spacer"></div>
 
-      <p class="panel-indent" style="margin-top:10px">If your business is part of a group, you can create a group registration.</p>
+  <h3 class="heading-medium brama-shrink-padding-4">Principle place of business </h3>
 
-      <div class="brama-spacer"></div>
+  <p class="text-gray2" style="margin-top:10px">This is your main business work address.</p>
 
-      <div class="brama-spacer2"></div>
+  <div>
 
-      <form>
+      <form> 
 
-        <!--
-
-        <div id="here">
-          <label class="text-medium3">Are you a group representative for an alcohol buying group?<br>
-            <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
-            <span class="text-medium-link2">What is a buying group?</span></a>
-          </label>
-          <div class="brama-spacer"></div>
-          <div id="hidden-text" class="panel-indent">    
-          <span>A number of limited companies can form a group in order to apply for approval under a single registration. They can elect a representative member, make various changes to the group registration and upon which group membership can be terminated.</span>
-          </div>
-          <fieldset class="inline">
-            <div>
-              <label class="block-label"> 
-              <input type="radio" value="yes" name="same">Yes
-              </label>
-            </div>
-            <div>
-              <label class="block-label">
-              <input type="radio" value="no" name="same">No
-              </label>
-            </div>
-          </fieldset>
-        </div>
+        <div>
+          <label class="form-label" for="business_address0">Enter your postcode</label>
+          <input class="brama-input-verysortform4" type="text" value=" ABC 123">
+          &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Postcode lookup</a>
+        </div> 
 
         <div class="brama-spacer"></div>
 
-        -->
-
-        <div id="here">
-          <label class="text-medium3">Do you want to create an AWRS group?<br>
-            <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
-            <span class="text-medium-link2">What is a group?</span></a>
-          </label>
-          <div class="brama-spacer"></div>
-          <div id="hidden-text" class="panel-indent">    
-          <span>A number of limited companies can form a group in order to apply for approval under a single registration. They can elect a representative member, make various changes to the group registration and upon which group membership can be terminated.</span>
-          </div>
-          <fieldset class="inline">
-            <div>
-              <label class="block-label"> 
-              <input type="radio" value="yes" id="question_yes1a" name="1" onChange="change_questions_yes1();">Yes
-              </label>
-            </div>
-            <div>
-              <label class="block-label">
-              <input type="radio" value="no" id="group_no" name="1" onChange="btn_toggle()">No
-              </label>
-            </div>
-          </fieldset>
-        </div>
+        <div>
+          <label class="form-label" for="business_address0">Address line 1</label>
+          <input class="brama-input-mediumform3" type="text" value=" 23 High Street">
+        </div> 
 
         <div class="brama-spacer"></div>
 
-        <div id="question_yes1a1" class="panel-indent">
+        <div>
+          <label class="form-label" for="business_address0">Address line 2</label>
+          <input class="brama-input-mediumform3" type="text" value=" The Park">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
+          <input class="brama-input-mediumform3" type="text" value=" Gloucester">
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
+          <input class="brama-input-mediumform3" type="text" value=" Gloucestershire">
+        </div>    
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Has your business operated from a different address in the last 3 years? </label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question1" name="same" onChange="change_questions();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" name="same" onChange="change_questions();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div>   
+
+         <div id="question1b">
+          <div class="brama-spacer"></div>
+          <div class="panel-indent">
+          <label class="form-label" for="business_address0">How many years has your business operated from the current address? </label>
+          <input class="brama-input-verysortform4" type="text" value="">
+          </div>
+        </div> 
+
+        <div id="question1a">
+
+          <div class="brama-spacer"></div>
+
+          <div class="panel-indent">
+
+              <label class="text-medium3" for="business_address0">Previous address details</label>
+
+              <div class="brama-spacer"></div>
 
               <div>
-                <label class="form-label">The number of group members</label>
-                <input class="brama-input-verysortform4" type="text" value="">
+              <label class="form-label" for="business_address0">Postcode</label>
+              <input class="brama-input-verysortform4" type="text" value=" ">
+              &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Postcode lookup</a>
               </div> 
 
               <div class="brama-spacer"></div>
 
-              <div id="here">
-                <label class="form-label">Is each proposed member of the group, including the representative member, a corporate body?
-                <div class="brama-spacer2"></div>
-                <fieldset class="inline">
-                  <div>
-                    <label class="block-label"> 
-                    <input type="radio" value="yes" name="2">Yes
-                    </label>
-                  </div>
-                  <div>
-                    <label class="block-label">
-                    <input type="radio" value="no" name="2">No
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
+              <div>
+                <label class="form-label" for="business_address0">Address line 1</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
 
               <div class="brama-spacer"></div>
 
-              <div id="here">
-                <label class="form-label">Is each proposed member of the group, including the representative member, either a resident or established in the UK?
-                <div class="brama-spacer2"></div>
-                <fieldset class="inline">
-                  <div>
-                    <label class="block-label"> 
-                    <input type="radio" value="yes" name="3">Yes
-                    </label>
-                  </div>
-                  <div>
-                    <label class="block-label">
-                    <input type="radio" value="no" name="3">No
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
+              <div>
+                <label class="form-label" for="business_address0">Address line 2</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
 
               <div class="brama-spacer"></div>
 
-              <div id="here">
-                <label class="form-label">Are you the group representative?
-                <div class="brama-spacer2"></div>
-                <fieldset class="inline">
-                  <div>
-                    <label class="block-label"> 
-                    <input type="radio" value="yes" id="group_yes" name="4" onChange="btn_toggle()">Yes
-                    </label>
-                  </div>
-                  <div>
-                    <label class="block-label">
-                    <input type="radio" value="no" id="group_yes" name="4" onChange="btn_toggle()">No
-                    </label>
-                  </div>
-                </fieldset>
-              </div>
+              <div>
+                <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
 
-        </div>
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+              </div> 
+          </div>
 
       </form>
 
-    </div>
+  </div>
+
+
+
+  <div class="brama-spacer"></div>
+
+  <div class="brama-spacer"></div>
+
+  <div>
+      <div class="form-group form-group-compound">
+
+        <h3 class="heading-medium brama-shrink-padding-4">Correspondence address </h3>
+
+        <p class="text-gray2" style="margin-top:10px">This is an alternative address for correspondence.</p>
+
+          <label class="form-label">Is your correspondence address the same as your place of business?</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question3" name="same" onChange="change_questions2();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question4" name="same" onChange="change_questions2();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+
+            <div id="question2a">
+
+              <div class="brama-spacer"></div>
+
+              <div class="panel-indent">
+
+              <label class="text-medium3" for="business_address0">Correspondence address details</label>
+
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Postcode</label>
+                <input class="brama-input-verysortform4" type="text" value="">
+                &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Postcode lookup</a>
+              </div> 
+
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Address line 1</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Address line 2</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+
+              <div class="brama-spacer"></div>
+
+              <div>
+                <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div>
+
+            </div>
+
+            </div>
+
+          </form>
+
+      </div>
+  </div>
+
+
+
+  <div class="brama-spacer"></div>
+
+  <div class="brama-spacer"></div>
+
+  <div>
+      <div class="form-group form-group-compound">
+
+        <h3 class="heading-medium brama-shrink-padding-4">Contact details </h3>
+
+        <p class="text-gray2" style="margin-top:10px">This is the contact person for AWRS matters.</p>
+
+      </div>
+
+      <div>
+
+        <form> 
+
+          <div>
+            <label class="form-label" for="business_address0">Contact name</label>
+            <input class="brama-input-mediumform3" type="text" value=" ">
+          </div> 
+
+          <div class="brama-spacer"></div>
+
+          <div>
+            <label class="form-label" for="business_address0">Email</label>
+            <input class="brama-input-mediumform3" type="text" value=" ">
+          </div> 
+
+          <div class="brama-spacer"></div>
+
+          <div>
+            <label class="form-label" for="business_address0">Telephone</label>
+            <input class="brama-input-mediumform3" type="text" value=" ">
+          </div>    
+
+        </form>
+
+      </div>
+
   </div>
 
   <div class="brama-spacer"></div>
@@ -184,13 +301,7 @@
 
       <div class="brama-spacer2"></div>
 
-      <div>
-
-        <input type="button" class ="button" value="Save and continue" id="btn_enabled" onclick="location.href='form_3'">
-
-        <input type="button" class ="button" value="Save and continue" id="btn_disabled" disabled="disabled">
-
-      </div>
+      <div><a href="form_3"><input type="submit" value="Save and continue" class="button"></a></div>
 
       <div class="brama-spacer"></div>
 
@@ -200,6 +311,8 @@
 
       <div class="brama-spacer"></div>
 
+      </div>
+
     </div>
   </div>
 
@@ -207,61 +320,117 @@
 
 
 <script>
-    <!--
-      document.getElementById("hidden-text").style.display = 'none';
-    //-->
+
+function change_link()
+{
+  if (document.getElementById("1").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'form_222'><input type='submit' value='Save and continue' class='button'></a>";
+  }
+  else if (document.getElementById("2").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'form_22'><input type='submit' value='Save and continue' class='button'></a>";
+  }
+
+}
+
+    document.getElementById("hidden-form-1").style.display = 'none';
+    document.getElementById("hidden-form-2").style.display = 'none';
+
 </script>
 
 
+<!--
 <script>
 
-function change_questions_yes1()
+function change_yes()
 {
-  if (document.getElementById("question_yes1a").checked)
+  if (document.getElementById("question").style.display == 'block'){
+    document.getElementById("question").style.display = 'none';
+  } 
+}
+
+function change_no()
+{
+  if (document.getElementById("question").style.display == 'none'){
+    document.getElementById("question").style.display = 'block';
+  }
+}
+
+</script>
+
+-->
+
+<script>
+
+function change_questions()
+{
+  if (document.getElementById("question1").checked)
   {
-    document.getElementById("question_yes1a1").style.display = 'block';
-    document.getElementById("question_yes1a2").style.display = 'none';
+    document.getElementById("question1a").style.display = 'block';
+    document.getElementById("question1b").style.display = 'none';
     
   }
-  else if (document.getElementById("question_yes1b").checked)
+  else if (document.getElementById("question2").checked)
   {
-    document.getElementById("question_yes1a1").style.display = 'none';
-    document.getElementById("question_yes1a2").style.display = 'block';
+    document.getElementById("question1a").style.display = 'none';
+    document.getElementById("question1b").style.display = 'block';
     
   }
 
 }
 
-document.getElementById("question_yes1a1").style.display = 'none';
-document.getElementById("question_yes1a2").style.display = 'none';
+document.getElementById("question1a").style.display = 'none';
+document.getElementById("question1b").style.display = 'none';
 
 </script>
 
-
 <script>
-function btn_toggle()
-{
 
-  if (document.getElementById("group_no").checked)
+function change_questions2()
+{
+  if (document.getElementById("question3").checked)
   {
-    document.getElementById("btn_disabled").style.display = 'none';
-    document.getElementById("btn_enabled").style.display = 'block';
-    document.getElementById("optional").style.display = 'none';
+    document.getElementById("question2a").style.display = 'none';
+    document.getElementById("question2b").style.display = 'block';
+    
   }
-  else if (document.getElementById("group_yes").checked)
+  else if (document.getElementById("question4").checked)
   {
-    document.getElementById("btn_disabled").style.display = 'none';
-    document.getElementById("btn_enabled").style.display = 'block';
-    document.getElementById("optional").style.display = 'block';
+    document.getElementById("question2a").style.display = 'block';
+    document.getElementById("question2b").style.display = 'none';
+    
+  }
+
+}
+
+document.getElementById("question2a").style.display = 'none';
+document.getElementById("question2b").style.display = 'none';
+
+</script>
+
+<!--
+<script>
+
+function change_yes()
+{
+  //alert("hi");
+  if(document.getElementById("question").style.display == 'block'){
+    document.getElementById("question").style.display = 'none';
+  } 
+}
+
+function change_no()
+{
+  //alert("hi");
+  if (document.getElementById("question").style.display == 'none'){
+    document.getElementById("question").style.display = 'block';
   }
 }
+
 </script>
 
-<script>
-document.getElementById("btn_enabled").style.display = 'none';
-document.getElementById("optional").style.display = 'none';
-</script>
-
+-->
 
 {{/content}}
 
