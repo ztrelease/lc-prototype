@@ -51,28 +51,43 @@
 
     <div class="brama-spacer5"></div>
 
-    <h2 class="heading-large brama-shrink-padding-5">Verify business details</h2>
+    <h2 class="heading-large brama-shrink-padding-5">Are you a group?</h2>
+
+    <p class="panel-indent" style="margin-top:10px">If your business is part of a group, you can create a AWRS group registration.</p>
+
+    <div class="brama-spacer"></div>
 
     <div class="brama-spacer2"></div>
 
-    <p class="text-black2">You are about to register the following business for AWRS.</p>
+    <form>
 
-    <div class="brama-spacer2"></div>
+      <div id="here">
+          <label class="text-medium3">Do you want to create an AWRS group registration?<br>
+            <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
+            <span class="text-medium-link2">What is a group?</span></a>
+          </label>
+          <div class="brama-spacer"></div>
+            <div id="hidden-text">
+            <div class="panel-indent">    
+            <span>Larger companies who own a number of brands or smaller companies can apply for approval under a single registration.</span>
+            </div>
+            <div class="brama-spacer"></div>
+          </div>
+          <fieldset class="inline">
+            <div>
+              <label class="block-label">
+              <input type="radio" value="yes" id="question_yes" name="1" onChange="btn_toggle()">Yes
+              </label>
+            </div>
+            <div>
+              <label class="block-label">
+              <input type="radio" value="no" id="question_no" name="1" onChange="btn_toggle()">No
+              </label>
+            </div>
+          </fieldset>
+        </div>
 
-      <table>
-      <tr>
-        <th style="width:60%">Name</th>
-        <td>Acme</td>
-      </tr>
-      <tr>
-        <th>Type of business</th>
-        <td>Limited Company</td>
-      </tr>
-      <tr>
-        <th class="align-top">Registered address</th>
-        <td>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</td>
-      </tr>
-    </table>
+    </form>
 
     </div>
 
@@ -86,7 +101,17 @@
 
       <div class="brama-spacer"></div>
 
-      <a href = "group"><input type="submit" value="Continue" class="button"></a>
+      <div>
+
+        <input type="button" class ="button" value="Save and continue" id="btn_enabled_n" onclick="location.href='application_overview'">
+
+        <input type="button" class ="button" value="Save and continue" id="btn_enabled_y" onclick="location.href='groups_overview'">
+
+        <input type="button" class ="button" value="Save and continue" id="btn_disabled" disabled="disabled">
+
+      </div>
+
+      <!--
 
       <div class="brama-spacer" id="here"></div>
 
@@ -97,6 +122,8 @@
       <div id="hidden-text" class="panel-indent">    
 
       <p>If this doesn’t match the business you want to register, <a href="../login">login</a> again with the right business details.</p>
+
+      -->
 
       <div class="brama-spacer"></div>
 
@@ -110,38 +137,37 @@
 </main>
 
 <script>
-function show_div()
-{
-	var option = document.getElementById('choose');
-	if (option.value == '1')
-	{
-		document.getElementById("hidden-form-1").style.display = 'inline-block';
-     	document.getElementById("hidden-form-2").style.display = 'none';	}
-	else if (option.value =='2')
-	{
-		document.getElementById("hidden-form-1").style.display = 'none';
-     	document.getElementById("hidden-form-2").style.display = 'inline-block';
-	}
-}
-
-
-
-     document.getElementById("hidden-form-1").style.display = 'none';
-     document.getElementById("hidden-form-2").style.display = 'none';
-
-    <!--
-     // function show_div(x){
-      //	document.getElementById(x).style.display = 'inline-block'
-      //}
-
-
-    //-->
-</script>
-
-<script>
     <!--
       document.getElementById("hidden-text").style.display = 'none';
     //-->
+</script>
+
+
+
+<script>
+function btn_toggle()
+{
+
+  if (document.getElementById("question_no").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_n").style.display = 'block';
+    document.getElementById("btn_enabled_y").style.display = 'none';
+  }
+  else if (document.getElementById("question_yes").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_y").style.display = 'block';
+    document.getElementById("btn_enabled_n").style.display = 'none';
+  }
+  
+}
+</script>
+
+<script>
+document.getElementById("btn_enabled_y").style.display = 'none';
+document.getElementById("btn_enabled_n").style.display = 'none';
+document.getElementById("btn_enabled").style.display = 'none';
 </script>
 
 
