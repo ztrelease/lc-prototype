@@ -37,11 +37,6 @@
     $('#submit2').on('click', function(){
       $('#content2').hide();
       $('#content3').show();
-    });
-
-    $('#submit3').on('click', function(){
-      $('#content3').hide();
-      $('#content4').show();
     });      
   });
 
@@ -62,10 +57,6 @@
     </div>
   </div>
 
-
-
-
-
   <div id="content1">
 
     <p class="text-section">Claim reliefs for ACME Limited  </p>
@@ -75,7 +66,7 @@
     <div class="grid-row">
       <div class="column-two-thirds">
 
-        <h2 class="heading-large brama-shrink-padding-5">Reasons to claim reliefs</h2>
+        <h2 class="heading-large brama-shrink-padding-5">Choose reliefs</h2>
 
         <p class="panel-indent">We don’t need any property details, but you need to make sure you keep information about them. </p>
 
@@ -97,6 +88,7 @@
               </label>
             </div>
 
+
             <div class="brama-relief-checkbox-container">
             <div class="brama-relief-checkbox">
               <label class="block-label" for="checkbox-1">
@@ -104,6 +96,7 @@
                 <div class="brama-relief-code">2.</div>Open to the public
               </label>
             </div>
+
 
             <div class="brama-relief-checkbox-container">
              <div class="brama-relief-checkbox">
@@ -113,6 +106,7 @@
               </label>
             </div>
 
+
             <div class="brama-relief-checkbox-container">
              <div class="brama-relief-checkbox">
               <label class="block-label" for="checkbox-3">
@@ -120,6 +114,7 @@
                 <div class="brama-relief-code">4.</div>Property trading
               </label>
             </div>
+
 
             <div class="brama-relief-checkbox-container">
              <div class="brama-relief-checkbox">
@@ -129,6 +124,7 @@
               </label>
             </div>
 
+
             <div class="brama-relief-checkbox-container">
              <div class="brama-relief-checkbox">
               <label class="block-label" for="checkbox-5">
@@ -137,6 +133,7 @@
               </label>
             </div>
 
+
             <div class="brama-relief-checkbox-container">
              <div class="brama-relief-checkbox">
               <label class="block-label" for="checkbox-6">
@@ -144,6 +141,7 @@
                 <div class="brama-relief-code">7.</div>Farmhouses
               </label>
             </div>
+
 
             <div class="brama-relief-checkbox-container">
              <div class="brama-relief-checkbox">
@@ -158,7 +156,7 @@
 
           <div class="brama-spacer"></div>
 
-            <label class="text-medium3">Are you using an avoidance scheme for part or any of these reliefs?</label>
+            <label class="text-medium3">Are you claim an overdue scheme as part of the relief?</label>
           
             <div class="brama-spacer2"></div>
 
@@ -177,13 +175,47 @@
               </div>
             </fieldset>
 
+            <div id="question1a">
+
+                <div class="brama-spacer6"></div>
+
+                <div class="panel-indent" style="margin-top:20px">
+
+                  <label class="form-label">If your business has more than 5 premisses you can add the additional addresses using this <a href="#">spreadsheet template</a>: </label>
+
+                  <div class="brama-spacer2"></div>
+
+                  <div>
+                      <input class="brama-input-mediumform3" type="text" value="&nbsp;&nbsp;Browse spreadsheet template">
+                      <!--
+                      &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Browse</a>
+                      -->
+                      &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Upload template</a>
+                  </div> 
+
+                </div>
+
         </form>
 
         <div class="brama-spacer"></div>
 
         <div class="brama-spacer"></div>
 
+        <div>
+
+        <input type="button" class ="button" value="Save and continue" id="btn_enabled_n" onclick="location.href='#'">
+
+        <input type="button" class ="button" value="Save and continue" id="btn_enabled_y" onclick="location.href='#'">
+
+        <input type="button" class ="button" value="Save and continue" id="btn_disabled" disabled="disabled">
+
+        </div>
+
+        <!--
+
         <a href="#" id="submit1"><input type="submit" value="Save and continue" class="button"></a>
+
+        -->
 
         <div class="brama-spacer"></div>
 
@@ -192,11 +224,7 @@
       </div>
     </div>
   </div>
-
-
-
-
-
+  
   <div id="content2" class="js-hidden">
     <p class="text-section">Claim reliefs for ACME Limited</p>
 
@@ -204,7 +232,7 @@
 
     <div class="grid-row">
       <div class="column-two-thirds">
-        <h2 class="heading-large brama-shrink-padding-5">Enter avoidance scheme</h2>
+        <h2 class="heading-large brama-shrink-padding-5">Summary of reliefs you are claiming</h2>
 
         <p class="text-bold">For ATED period from 1 April 2015 to 30 March 2016</p>
 
@@ -215,7 +243,7 @@
               <tr>
                 <th scope="col" class="ated-address-column" id="table">Reasons to claim reliefs</th>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest">Avoidance scheme reference number</th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -225,7 +253,7 @@
               <tr class="js-hidden tableRow0">
                 <td scope="col" class="ated-address-column">1. Rental businesses</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -234,16 +262,16 @@
               <tr class="js-hidden tableRow1">
                 <td scope="col" class="ated-address-column">2. Open to the public</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"></th>
+                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
               </tr>                  
               <tr class="js-hidden tableRow2">
                 <td scope="col" class="ated-address-column">3. Property developers</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -252,7 +280,7 @@
               <tr class="js-hidden tableRow3">
                 <td scope="col" class="ated-address-column">4. Property trading</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -261,7 +289,7 @@
               <tr class="js-hidden tableRow4">
                 <td scope="col" class="ated-address-column">5. Lending</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -270,7 +298,7 @@
               <tr class="js-hidden tableRow5">
                 <td scope="col" class="ated-address-column">6. Employee occupation</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -279,7 +307,7 @@
               <tr class="js-hidden tableRow6">
                 <td scope="col" class="ated-address-column">7. Farmhouses</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -288,7 +316,7 @@
               <tr class="js-hidden tableRow7">
                 <td scope="col" class="ated-address-column">8. Social housing</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -300,8 +328,6 @@
 
             <a href="add_relief_property" class="brama-vertically-centered-text2">Add or change relief</a>
           </div>
-
-          <div class="brama-spacer"></div>
    
           <div class="brama-spacer5"></div>
 
@@ -320,140 +346,7 @@
     <a href="agent_clients" class="brama-vertically-centered-text2">Cancel</a>
   </div>
 
-
-
-
-
-  
   <div id="content3" class="js-hidden">
-    <p class="text-section">Claim reliefs for ACME Limited</p>
-
-    <div class="brama-spacer5"></div>
-
-    <div class="grid-row">
-      <div class="column-two-thirds">
-        <h2 class="heading-large brama-shrink-padding-5">Summary of reliefs you are claiming</h2>
-
-        <p class="text-bold">For ATED period from 1 April 2015 to 30 March 2016</p>
-
-        <div class="brama-spacer2"></div>
-
-          <div class="ated-grey-panel" id="ated-chargeable-property-list-hidden">
-            <table>
-              <tr>
-                <th scope="col" class="ated-address-column" id="table">Reasons to claim reliefs</th>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest">Avoidance scheme reference number</th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>
-
-              <tr class="js-hidden tableRow0">
-                <td scope="col" class="ated-address-column">1. Rental businesses</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                   
-              <tr class="js-hidden tableRow1">
-                <td scope="col" class="ated-address-column">2. Open to the public</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                  
-              <tr class="js-hidden tableRow2">
-                <td scope="col" class="ated-address-column">3. Property developers</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                    
-              <tr class="js-hidden tableRow3">
-                <td scope="col" class="ated-address-column">4. Property trading</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                  
-              <tr class="js-hidden tableRow4">
-                <td scope="col" class="ated-address-column">5. Lending</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                  
-              <tr class="js-hidden tableRow5">
-                <td scope="col" class="ated-address-column">6. Employee occupation</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                  
-              <tr class="js-hidden tableRow6">
-                <td scope="col" class="ated-address-column">7. Farmhouses</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                    
-              <tr class="js-hidden tableRow7">
-                <td scope="col" class="ated-address-column">8. Social housing</td>
-                <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
-                <th scope="col" class="ated-mobile-hidden"> </th>
-                <th scope="col"> </th>
-                <th scope="col" class="ated-mobile-hidden ated-right-align ated-ABTest"> </th>
-              </tr>                                   
-            </table>
-
-            <div class="brama-spacer5"></div>
-
-            <a href="add_relief_property" class="brama-vertically-centered-text2">Add or change relief</a>
-          </div>
-      
-          <div class="brama-spacer"></div>
-
-          <div class="brama-spacer5"></div>
-
-          <p class="panel-indent"><!--<span class="text-disclaimer2">Reliefs must be approved by your client before continuing.</span><br>-->This draft will be saved for 90 days or until it is submitted.</p>
-      </div>
-    </div>
-
-    <div class="brama-spacer5"></div>
-
-    <div class="brama-spacer"></div>
-
-    <a href="#" id="submit3"><input type="submit" value="Continue" class="button"></a>
-
-    <div class="brama-spacer"></div>
-
-    <a href="agent_clients" class="brama-vertically-centered-text2">Cancel</a>
-  </div>
-
-
-
-
-
-
-  <div id="content4" class="js-hidden">
     <p class="text-section">Claim reliefs for ACME Limited</p>
 
     <div class="brama-spacer5"></div>
@@ -474,7 +367,7 @@
             <tr>
               <th scope="col" class="ated-address-column">Reasons to claim reliefs</th>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest">Avoidance scheme reference number</th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -611,7 +504,6 @@ document.getElementById("btn_enabled_n").style.display = 'none';
 document.getElementById("question1a").style.display = 'none';
 document.getElementById("question1b").style.display = 'none';
 </script>
-
 
 
 {{/content}}

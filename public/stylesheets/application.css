@@ -1144,6 +1144,12 @@ select {
   font-size: 16px;
   color: #777777; }
 
+.brama-input-mediumform4 {
+  width: 200px;
+  height: 26px;
+  font-size: 16px;
+  color: #000000; }
+
 .brama-input-sortform {
   width: 200px; }
 
