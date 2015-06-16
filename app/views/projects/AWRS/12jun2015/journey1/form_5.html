@@ -50,8 +50,21 @@
 
         <div class="brama-spacer2"></div>
 
-        <div>
+        <div id="here">
           <label class="text-medium3">Are you a new business?</label>
+          <!--
+          <br>
+          <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
+            <span class="text-medium-link2">What is a new business?</span></a>
+          </label>
+          <div class="brama-spacer"></div>
+            <div id="hidden-text">
+            <div class="panel-indent">    
+            <span>A new business is....</span>
+            </div>
+            <div class="brama-spacer"></div>
+          </div>
+          -->
           <div class="brama-spacer2"></div>
           <fieldset class="inline">
             <div>
@@ -135,11 +148,22 @@
           <div class="brama-spacer6"></div>
           <label class="block-label"><input type="checkbox">Supplying to on trade </label>
           <div class="brama-spacer6"></div>
+          <label class="block-label"><input type="checkbox">Producer </label>
+          <div class="brama-spacer5"></div>
+        </div>
+
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="text-medium3">How do you take orders?</label>
+          <div class="brama-spacer2"></div>
           <label class="block-label"><input type="checkbox">Online </label>
           <div class="brama-spacer6"></div>
           <label class="block-label"><input type="checkbox">Telephone </label>
           <div class="brama-spacer6"></div>
-          <label class="block-label"><input type="checkbox">Physical premises </label>
+          <label class="block-label"><input type="checkbox">Face to face </label>
           <div class="brama-spacer6"></div>
           <label class="block-label"><input type="checkbox" id="question_other1a" onChange="change_questions_other1();">Other </label>
           <div class="brama-spacer5"></div>
@@ -226,6 +250,7 @@
 
         <div class="brama-spacer"></div>
 
+        <!--
         <div>
           <label class="text-medium3">Do you import alcohol?</label>
           <div class="brama-spacer2"></div>
@@ -242,19 +267,30 @@
             </div>
           </fieldset>
         </div>
+        -->
+
+        <div>
+          <label class="text-medium3">Do you import alcohol?</label>
+          <div class="brama-spacer2"></div>
+          <label class="block-label"><input type="checkbox">No </label>
+          <div class="brama-spacer6"></div>
+          <label class="block-label"><input type="checkbox">Within the EU </label>
+          <div class="brama-spacer6"></div>
+          <label class="block-label"><input type="checkbox">Outside the EU </label>
+        </div>
 
         <div class="brama-spacer"></div>
 
         <div class="brama-spacer"></div>
 
-        <div id="here">
+        <div id="here2">
           <label class="text-medium3">Are you an Authorised Economic Operator?<br>
-            <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
+            <a href="#here2" onclick="document.getElementById('hidden-text2').style.display = 'inline-block';">
             <span class="text-medium-link2">What is an Authorised Economic Operator?</span></a>
           </label>
           <div>
             <div class="brama-spacer2"></div>
-            <div id="hidden-text" class="panel-indent">    
+            <div id="hidden-text2" class="panel-indent">    
             <span>The Authorised Economic Operator (AEO) certificate is an internationally recognised quality mark indicating that your role in the international supply chain is secure, and that your customs controls and procedures are efficient and compliant.</span></div>
             <div class="brama-spacer"></div>
           </div>
@@ -339,6 +375,7 @@ document.getElementById("4").style.display = 'none';
 <script>
     <!--
       document.getElementById("hidden-text").style.display = 'none';
+      document.getElementById("hidden-text2").style.display = 'none';
     //-->
 </script>
 
