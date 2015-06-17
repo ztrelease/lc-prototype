@@ -29,14 +29,25 @@
       $('.'+ toggleClass).toggle();
     });
 
-    $('#submit1').on('click', function(){
-      $('#content1').hide();
-      $('#content3').show();
-    });
+
+      $('#submit1').on('click', function()
+      {
+        if (document.getElementById("question_yes").checked)
+        {
+          $('#content1').hide();
+          $('#content2').show();
+        }
+        else if (document.getElementById("question_no").checked)
+        {
+          $('#content1').hide();
+          $('#content3').show();
+        }
+      });
+
 
     $('#submit2').on('click', function(){
-      $('#content3').hide();
-      $('#content4').show();
+      $('#content2').hide();
+      $('#content3').show();
     });
 
     $('#submit3').on('click', function(){
@@ -384,7 +395,6 @@
               <tr>
                 <th scope="col" class="ated-address-column" id="table">Reasons to claim reliefs</th>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest">Avoidance scheme reference number</th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -517,7 +527,7 @@
             <tr>
               <th scope="col" class="ated-address-column">Reasons to claim reliefs</th>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest">Avoidance scheme reference number</th>
+
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -903,13 +913,13 @@
 function btn_toggle()
 {
 
-  if (document.getElementById("question_no").checked)
+  if (document.getElementById("question_yes").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_n").style.display = 'block';
     document.getElementById("btn_enabled_y").style.display = 'none';
   }
-  else if (document.getElementById("question_yes").checked)
+  else if (document.getElementById("question_no").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_y").style.display = 'block';
