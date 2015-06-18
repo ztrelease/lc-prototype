@@ -1498,6 +1498,10 @@ select {
   color: #666666;
   font-weight: 400; }
 
+.text-gray4 {
+  font-size: 18px;
+  color: #666666; }
+
 .text-black {
   font-size: 16px;
   color: #000000; }
