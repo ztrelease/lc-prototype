@@ -1110,16 +1110,16 @@ select {
   background: url(/public/images/arrow_down.png) 95%/5% no-repeat #fff; }
 
 .hide-styles {
-  background: url('/public/images/expand-collapse-arrow.png') no-repeat 0% 49%; }
+  background: no-repeat 49%; }
 
 .show-styles {
-  background: #e8e8e8 url('/public/images/expand-collapse-arrow2.png') no-repeat 0% 49%; }
+  background: #e8e8e8 no-repeat 0% 49%; }
 
 .hide-styles td {
   border-bottom: 1px solid #BFC1C3; }
 
 .hide-styles td:first-child {
-  padding-left: 13px; }
+  padding-left: 0px; }
 
 .show-styles td:first-child {
   padding-left: 28px;
