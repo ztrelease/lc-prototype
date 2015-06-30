@@ -47,23 +47,23 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-    <h2 class="heading-large brama-shrink-padding-5">Who is claiming relief?</h2>
+    <h2 class="heading-large brama-shrink-padding-5">Are you an appointed agent claiming ATED relief for someone else?</h2>
 
       <div class="brama-spacer2"></div>
 
       <div class="form-group form-group-compound">
           <form>
-            <fieldset>
+            <fieldset class="inline">
               <div>
                 <label class="block-label">
                 <input type="radio" value="1" name="same" id="1" onChange="change_link();">
-                    I'm the owner or representative of the company that owns the property 
+                    Yes
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
-                    I'm an appointed agent
+                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
+                    No
                 </label>
               </div>
             </fieldset>
@@ -72,7 +72,7 @@
 
       <div class="brama-spacer2"></div>
 
-      <p class="text-black2">For all above you must create an ATED account to claim reliefs.</p>
+      <p class="text-black2">You must create an ATED account to claim reliefs.</p>
 
       <div class="brama-spacer2"></div>
 
@@ -97,7 +97,7 @@ function change_link()
 {
   if (document.getElementById("1").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '../agent/match'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("2").checked)
   {

@@ -44,47 +44,65 @@
     </div>
   </div>
 
-  <div class="grid-row">
-    <div class="column-two-thirds">
+  <p class="text-section">ATED account registration </p>
 
-    <h2 class="heading-large brama-shrink-padding-5">Who is claiming relief?</h2>
+  <div class="brama-spacer5"></div>
 
-      <div class="brama-spacer2"></div>
+  <h2 class="heading-large brama-shrink-padding-5">Business registered address</h2>
 
+  <div class="brama-spacer2"></div>
+
+  <p>23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</p>
+
+  <div class="brama-spacer"></div>
+
+  <div id="hidden-form">
       <div class="form-group form-group-compound">
+          <label class="text-bold">Is this your correspondence address?</label>
+          <div class="brama-spacer5"></div>
           <form>
-            <fieldset>
+            <fieldset class="inline">
               <div>
                 <label class="block-label">
                 <input type="radio" value="1" name="same" id="1" onChange="change_link();">
-                    I'm the owner or representative of the company that owns the property 
+                    Yes
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
-                    I'm an appointed agent
+                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
+                    No
                 </label>
               </div>
             </fieldset>
           </form>
       </div>
+  </div>
 
-      <div class="brama-spacer2"></div>
+  <div class="brama-spacer"></div>
 
-      <p class="text-black2">For all above you must create an ATED account to claim reliefs.</p>
+  <div class="grid-row">
+    <div class="column-two-thirds">
 
-      <div class="brama-spacer2"></div>
+      <div class="brama-spacer"></div>
 
       <div id='buttonChange'><input type='submit' value='Continue' class='button'></div>
 
       <div class="brama-spacer" id="here"></div>
 
-      <a href="start_page">Cancel</a>
+      <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
 
-      <div class="brama-spacer"></div>
+      <div class="ated-spacer"></div>
 
-      <div class="brama-spacer"></div>
+      <div id="hidden-text" class="panel-indent">    
+
+      <p>The registration process will be cancelled and you will be signed out. <br>You can restart registration at any time. <a href="../start_page">Sign out</a></p>
+
+      <div class="ated-spacer"></div>
+
+      <div class="ated-spacer"></div>
+
+      </div>
 
     </div>
   </div>
@@ -97,11 +115,11 @@ function change_link()
 {
   if (document.getElementById("1").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '../agent/match'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'correspondence_contact_details'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("2").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'match'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'business_address2'><input type='submit' value='Continue' class='button'></a>";
   }
 
 }
@@ -111,6 +129,11 @@ function change_link()
 
 </script>
 
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
+    //-->
+</script>
 
 {{/content}}
 
