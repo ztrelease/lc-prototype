@@ -40,7 +40,7 @@
         else if (document.getElementById("question_no").checked)
         {
           $('#content1').hide();
-          $('#content3').show();
+          $('#content5').show();
         }
       });
 
@@ -48,16 +48,33 @@
     $('#submit2').on('click', function(){
       $('#content2').hide();
       $('#content3').show();
+      $('#rentalBusinessReadOnly1').text( $('#rentalBusiness').val() );
+      $('#opentopublicReadOnly1').text( $('#opentopublic').val() );
+      $('#propertydevelopersReadOnly1').text( $('#propertydevelopers').val() );
+      $('#propertytradingReadOnly1').text( $('#propertytrading').val() );
+      $('#lendingReadOnly1').text( $('#lending').val() );
+      $('#employeeoccupationReadOnly1').text( $('#employeeoccupation').val() );
+      $('#farmhousesReadOnly1').text( $('#farmhouses').val() );
+      $('#socialhousingReadOnly1').text( $('#socialhousing').val() );
     });
 
     $('#submit3').on('click', function(){
       $('#content3').hide();
       $('#content4').show();
+      $('#rentalBusinessReadOnly2').text( $('#rentalBusiness').val() );
+      $('#opentopublicReadOnly2').text( $('#opentopublic').val() );
+      $('#propertydevelopersReadOnly2').text( $('#propertydevelopers').val() );
+      $('#propertytradingReadOnly2').text( $('#propertytrading').val() );
+      $('#lendingReadOnly2').text( $('#lending').val() );
+      $('#employeeoccupationReadOnly2').text( $('#employeeoccupation').val() );
+      $('#farmhousesReadOnly2').text( $('#farmhouses').val() );
+      $('#socialhousingReadOnly2').text( $('#socialhousing').val() );
     }); 
 
     $('#submit4').on('click', function(){
       $('#content4').hide();
       $('#content5').show();
+
     }); 
 
     $('#submit5').on('click', function(){
@@ -277,7 +294,7 @@
               <tr class="js-hidden tableRow0">
                 <td scope="col" class="ated-address-column">1. Rental businesses</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="rentalBusiness"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -286,7 +303,7 @@
               <tr class="js-hidden tableRow1">
                 <td scope="col" class="ated-address-column">2. Open to the public</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="opentopublic"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -295,7 +312,7 @@
               <tr class="js-hidden tableRow2">
                 <td scope="col" class="ated-address-column">3. Property developers</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="propertydevelopers"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -304,7 +321,7 @@
               <tr class="js-hidden tableRow3">
                 <td scope="col" class="ated-address-column">4. Property trading</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="propertytrading"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -313,7 +330,7 @@
               <tr class="js-hidden tableRow4">
                 <td scope="col" class="ated-address-column">5. Lending</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="lending"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -322,7 +339,7 @@
               <tr class="js-hidden tableRow5">
                 <td scope="col" class="ated-address-column">6. Employee occupation</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="employeeoccupation"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -331,7 +348,7 @@
               <tr class="js-hidden tableRow6">
                 <td scope="col" class="ated-address-column">7. Farmhouses</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="farmhouses"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -340,7 +357,7 @@
               <tr class="js-hidden tableRow7">
                 <td scope="col" class="ated-address-column">8. Social housing</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value=""></th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"><input class="brama-input-mediumform4" type="text" value="" id="socialhousing"></th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -406,7 +423,7 @@
               <tr class="js-hidden tableRow0">
                 <td scope="col" class="ated-address-column">1. Rental businesses</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="rentalBusinessReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -415,7 +432,7 @@
               <tr class="js-hidden tableRow1">
                 <td scope="col" class="ated-address-column">2. Open to the public</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="opentopublicReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -424,7 +441,7 @@
               <tr class="js-hidden tableRow2">
                 <td scope="col" class="ated-address-column">3. Property developers</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="propertydevelopersReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -433,7 +450,7 @@
               <tr class="js-hidden tableRow3">
                 <td scope="col" class="ated-address-column">4. Property trading</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="propertytradingReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -442,7 +459,7 @@
               <tr class="js-hidden tableRow4">
                 <td scope="col" class="ated-address-column">5. Lending</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="lendingReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -451,7 +468,7 @@
               <tr class="js-hidden tableRow5">
                 <td scope="col" class="ated-address-column">6. Employee occupation</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="employeeoccupationReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -460,7 +477,7 @@
               <tr class="js-hidden tableRow6">
                 <td scope="col" class="ated-address-column">7. Farmhouses</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="farmhousesReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -469,7 +486,7 @@
               <tr class="js-hidden tableRow7">
                 <td scope="col" class="ated-address-column">8. Social housing</td>
                 <th scope="col" class="ated-numeric"> </th>
-                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+                <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="socialhousingReadOnly1"> </th>
                 <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
                 <th scope="col" class="ated-mobile-hidden"> </th>
                 <th scope="col"> </th>
@@ -539,7 +556,7 @@
             <tr class="js-hidden tableRow0">
               <td scope="col" class="ated-address-column">1. Rental businesses</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="rentalBusinessReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -548,7 +565,7 @@
             <tr class="js-hidden tableRow1">
               <td scope="col" class="ated-address-column">2. Open to the public</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="opentopublicReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -557,7 +574,7 @@
             <tr class="js-hidden tableRow2">
               <td scope="col" class="ated-address-column">3. Property developers</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="propertydevelopersReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -566,7 +583,7 @@
             <tr class="js-hidden tableRow3">
               <td scope="col" class="ated-address-column">4. Property trading</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="propertytradingReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -575,7 +592,7 @@
             <tr class="js-hidden tableRow4">
               <td scope="col" class="ated-address-column">5. Lending</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="lendingReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -584,7 +601,7 @@
             <tr class="js-hidden tableRow5">
               <td scope="col" class="ated-address-column">6. Employee occupation</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="employeeoccupationReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -593,7 +610,7 @@
             <tr class="js-hidden tableRow6">
               <td scope="col" class="ated-address-column">7. Farmhouses</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="farmhousesReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
@@ -602,7 +619,7 @@
             <tr class="js-hidden tableRow7">
               <td scope="col" class="ated-address-column">8. Social housing</td>
               <th scope="col" class="ated-numeric"> </th>
-              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest"> </th>
+              <th scope="col" class="ated-numeric ated-mobile-hidden ated-ABTest text-medium4" id="socialhousingReadOnly2"> </th>
               <th scope="col" class="ated-mobile-hidden ated-ABTest"> </th>
               <th scope="col" class="ated-mobile-hidden"> </th>
               <th scope="col"> </th>
