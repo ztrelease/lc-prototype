@@ -432,6 +432,30 @@ document.getElementById("question3b").style.display = 'none';
 
 </script>
 
+<script>
+
+function change_questions4()
+{
+  if (document.getElementById("question7").checked)
+  {
+    document.getElementById("question4a").style.display = 'none';
+    document.getElementById("question4b").style.display = 'block';
+    
+  }
+  else if (document.getElementById("question8").checked)
+  {
+    document.getElementById("question4a").style.display = 'block';
+    document.getElementById("question4b").style.display = 'none';
+    
+  }
+
+}
+
+document.getElementById("question3a").style.display = 'none';
+document.getElementById("question3b").style.display = 'none';
+
+</script>
+
 
 <script>
 
@@ -505,6 +529,30 @@ document.getElementById("question_yes3a2").style.display = 'none';
 
 </script>
 
+<script>
+
+function change_questions_yes4()
+{
+  if (document.getElementById("question_yes4a").checked)
+  {
+    document.getElementById("question_yes4a1").style.display = 'block';
+    document.getElementById("question_yes4a2").style.display = 'none';
+    
+  }
+  else if (document.getElementById("question_yes4b").checked)
+  {
+    document.getElementById("question_yes4a1").style.display = 'none';
+    document.getElementById("question_yes4a2").style.display = 'block';
+    
+  }
+
+}
+
+document.getElementById("question_yes4a1").style.display = 'none';
+document.getElementById("question_yes4a2").style.display = 'none';
+
+</script>
+
 
 <script>
 function btn_toggle()
@@ -559,6 +607,32 @@ function btn_toggle3()
     document.getElementById("btn_enabled_y").style.display = 'none';
   }
   else if (document.getElementById("question_yes_3").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_y").style.display = 'block';
+    document.getElementById("btn_enabled_n").style.display = 'none';
+  }
+  
+}
+</script>
+
+<script>
+document.getElementById("btn_enabled_y").style.display = 'none';
+document.getElementById("btn_enabled_n").style.display = 'none';
+document.getElementById("btn_enabled").style.display = 'none';
+</script>
+
+<script>
+function btn_toggle4()
+{
+
+  if (document.getElementById("question_no_4").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_n").style.display = 'block';
+    document.getElementById("btn_enabled_y").style.display = 'none';
+  }
+  else if (document.getElementById("question_yes_4").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_y").style.display = 'block';
