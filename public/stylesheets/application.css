@@ -2084,3 +2084,7 @@ a.testing-link:hover {
     .brama-icon-step-6 {
       background-image: url("../images/icon-steps/icon-step-6-2x.png");
       background-size: 100%; } }
+
+.panel-indent2 {
+  margin: 0 15px 0 0;
+  padding: 5px 0 5px 50px; }
