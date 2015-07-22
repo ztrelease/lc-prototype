@@ -52,18 +52,157 @@
         <p class="text-medium3">Type of business<br><span class="form-label">Limited Company</span></p> 
 
         <div>
-            <label class="form-label" for="business_address0">VAT number</label>
-            <input class="brama-input-mediumform3" type="text" value=" ">
+                <label class="form-label" for="business_address0">Trading name</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
         </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer5"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Do you have a VAT Registration number?</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question8" name="same" onChange="change_questions4();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question7" name="same" onChange="change_questions4();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div> 
+
+        <div id="question4b"></div>
+
+        <div id="question4a">
+
+          <div class="brama-spacer"></div>
+
+          <div class="panel-indent">
+
+              <div>
+                <label class="form-label" for="business_address0">VAT Registration number</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+
+          </div> 
+
+          <div class="brama-spacer"></div>
+
+        </div>
 
         <div class="brama-spacer"></div>
 
         <div>
-            <label class="form-label" for="business_address0">Company registration number</label>
-            <input class="brama-input-mediumform3" type="text" value=" ">
+          <label class="form-label" for="business_address0">Do you have a Company Registration number?</label>
+          <label class="form-label text-gray2">You will find this on your business registration certificate.</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question10" name="same" onChange="change_questions5();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question9" name="same" onChange="change_questions5();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
         </div> 
 
+        <div id="question5a">
+
+          <div class="brama-spacer"></div>
+
+          <div class="panel-indent">
+
+              <div>
+                <label class="form-label" for="business_address0">Company Registration number</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+
+          </div> 
+
+        </div>
+
+        <div id="question5b">
+
+          <div class="brama-spacer"></div>
+
+          <div class="panel-indent">
+
+              <div>
+                        <label class="form-label">Date of incorporation</label>
+                        <label class="form-label text-gray2">You will find this on your business registration certificate</label>
+                        <div class="brama-spacer5"></div>
+                        <label class="form-label text-gray2">For example, &nbsp; 31 &nbsp; 03 &nbsp; 1980</label>
+                        <div class="brama-spacer5"></div>
+                        <input class="brama-input-verysortform8" type="text" value=" ">&nbsp;&nbsp; 
+                        <input class="brama-input-verysortform8" type="text" value=" ">&nbsp;&nbsp; 
+                        <input class="brama-input-verysortform9" type="text" value=" ">&nbsp;&nbsp; 
+              </div>
+
+          </div> 
+
+          <div class="brama-spacer"></div>
+
+        </div>
+
         <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Do you have a Unique Tax Reference number?</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question12" name="same" onChange="change_questions6();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question11" name="same" onChange="change_questions6();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div> 
+
+        <div id="question6a">
+
+          <div class="brama-spacer"></div>
+
+          <div class="panel-indent">
+
+              <div>
+                <label class="form-label" for="business_address0">Unique Tax Reference number</label>
+                <input class="brama-input-mediumform3" type="text" value=" ">
+              </div> 
+
+          </div> 
+
+        </div>
+
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer2"></div>
 
         <p class="text-medium3">Registered address<br>
 
@@ -504,6 +643,81 @@ function change_questions3()
 
 document.getElementById("question3a").style.display = 'none';
 document.getElementById("question3b").style.display = 'none';
+
+</script>
+
+
+<script>
+
+function change_questions4()
+{
+  if (document.getElementById("question7").checked)
+  {
+    document.getElementById("question4a").style.display = 'none';
+    document.getElementById("question4b").style.display = 'block';
+    
+  }
+  else if (document.getElementById("question8").checked)
+  {
+    document.getElementById("question4a").style.display = 'block';
+    document.getElementById("question4b").style.display = 'none';
+    
+  }
+
+}
+
+document.getElementById("question4a").style.display = 'none';
+document.getElementById("question4b").style.display = 'none';
+
+</script>
+
+
+<script>
+
+function change_questions5()
+{
+  if (document.getElementById("question9").checked)
+  {
+    document.getElementById("question5a").style.display = 'none';
+    document.getElementById("question5b").style.display = 'block';
+    
+  }
+  else if (document.getElementById("question10").checked)
+  {
+    document.getElementById("question5a").style.display = 'block';
+    document.getElementById("question5b").style.display = 'none';
+    
+  }
+
+}
+
+document.getElementById("question5a").style.display = 'none';
+document.getElementById("question5b").style.display = 'none';
+
+</script>
+
+
+<script>
+
+function change_questions6()
+{
+  if (document.getElementById("question11").checked)
+  {
+    document.getElementById("question6a").style.display = 'none';
+    document.getElementById("question6b").style.display = 'block';
+    
+  }
+  else if (document.getElementById("question12").checked)
+  {
+    document.getElementById("question6a").style.display = 'block';
+    document.getElementById("question6b").style.display = 'none';
+    
+  }
+
+}
+
+document.getElementById("question6a").style.display = 'none';
+document.getElementById("question6b").style.display = 'none';
 
 </script>
 
