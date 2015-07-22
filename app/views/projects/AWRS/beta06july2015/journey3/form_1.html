@@ -37,9 +37,9 @@
 
   <p class="text-section">AWRS application </p>
 
-  <h2 class="heading-large brama-shrink-padding-5">1. Addresses and contact details</h2>
+  <h2 class="heading-large brama-shrink-padding-5">1. Business details</h2>
 
-  <p class="panel-indent" style="margin-top:10px">This is your registered address.</p>
+  <p class="panel-indent" style="margin-top:10px">This are your business details</p>
 
   <div class="brama-spacer"></div>
 
@@ -47,7 +47,86 @@
 
       <form> 
 
-        <p class="text-medium3">23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</p>
+        <p class="text-medium3">Name<br><spa class="form-label">John</span></p>
+
+        <p class="text-medium3">Lastname<br><spa class="form-label">Smith</span></p>
+ 
+        <p class="text-medium3">Type of business<br><span class="form-label">Sole Trader</span></p> 
+
+        <div>
+          <label class="form-label" for="business_address0">Do you have a National Insurance number</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="same" name="same" onChange="x();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question1" name="same" onChange="x();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Do you have a VAT number</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="same" name="same" onChange="y();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question1" name="same" onChange="y();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div>
+          <label class="form-label" for="business_address0">Do you have a UTR number</label>
+          <div class="brama-spacer6"></div>
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="same" name="same" onChange="z();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question1" name="same" onChange="z();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </div> 
+
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer2"></div>
+
+        <p class="text-medium3">Registered address<br>
+
+        <span class="form-label">23 High Street<br>The Park<br>Gloucester<br>Gloucestershire<br>ABC 123</span></p>
 
         <div class="brama-spacer2"></div>    
 
@@ -70,7 +149,7 @@
               </div>
             </fieldset>
           </form>
-        </div>  
+        </div> 
 
 
         <div id="question1a">
