@@ -39,7 +39,7 @@
       </div>
 
       <div class="div-right">
-        <p class="brama-logged">Paul Coward, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+        <p class="brama-logged">John Smith, Agent Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
       </div>
     </div>
   </div>
@@ -47,23 +47,23 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-    <h2 class="heading-large brama-shrink-padding-5">Are you an appointed agent claiming ATED relief for someone else?</h2>
+    <h2 class="heading-large brama-shrink-padding-5">What is your role?</h2>
 
       <div class="brama-spacer2"></div>
 
       <div class="form-group form-group-compound">
           <form>
-            <fieldset class="inline">
+            <fieldset>
               <div>
                 <label class="block-label">
                 <input type="radio" value="1" name="same" id="1" onChange="change_link();">
-                    Yes
+                    I'm the owner or representative of the company that owns the property 
                 </label>
               </div>
               <div>
                 <label class="block-label">
-                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
-                    No
+                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
+                    I'm an appointed agent
                 </label>
               </div>
             </fieldset>
@@ -101,7 +101,7 @@ function change_link()
   }
   else if (document.getElementById("2").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'match'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
   }
 
 }
@@ -116,5 +116,5 @@ function change_link()
 
 {{/layout}}
 
-<a href = "../../../../../index">BRAMA</a>
+<a href = "../../../../index">BRAMA</a>
 <a href = "../../ated_index">ATED</a>

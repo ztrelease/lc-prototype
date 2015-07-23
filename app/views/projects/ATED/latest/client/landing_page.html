@@ -39,7 +39,7 @@
       </div>
 
       <div class="div-right">
-        <p class="brama-logged">Paul Coward, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+        <p class="brama-logged">John Smith, Agent Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
       </div>
     </div>
   </div>
@@ -47,36 +47,32 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-    <h2 class="heading-large brama-shrink-padding-5">Are you an appointed agent claiming ATED relief for someone else?</h2>
+    <h2 class="heading-large brama-shrink-padding-5">You are about to claim an ATED relief (submit return) for your organisation</h2>
 
       <div class="brama-spacer2"></div>
 
-      <div class="form-group form-group-compound">
-          <form>
-            <fieldset class="inline">
-              <div>
-                <label class="block-label">
-                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
-                    Yes
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
-                    No
-                </label>
-              </div>
-            </fieldset>
-          </form>
-      </div>
+      <!--
+      <p><span class="text-bold">If you are the representative of the company that owns the property you should <a href="#">continue as an agent.</a></span></p>
+
+      -->
+
+      <p><span class="text-bold">To complete the ATED return for your property you need to:</span>
+        <br>1. register to use the new ATED online service
+        <br>2. select the correct relief for your property
+        <br>3. confirm and submit the relief declaration. You won’t need to enter any details about the property
+
+        <p><span class="text-bold">If you prefer to appoint an agent or representative you need to:</span>
+        <br>1. make sure that your agent has registered first and have been given an ATED agent reference number
+        <br>2. they have given you their ATED agent reference number
+        <br>3. register to use the new ATED online service
+        <br>4. enter the agent reference number when prompted
+        <br>5. notify your agent once you have completed this
 
       <div class="brama-spacer2"></div>
 
-      <p class="text-black2">You must create an ATED account to claim reliefs.</p>
-
       <div class="brama-spacer2"></div>
 
-      <div id='buttonChange'><input type='submit' value='Continue' class='button'></div>
+      <div><a href = "match"><input type="submit" value="Continue" class="button"></a></div>
 
       <div class="brama-spacer" id="here"></div>
 
@@ -91,30 +87,10 @@
 
 </main>
 
-<script>
-
-function change_link()
-{
-  if (document.getElementById("1").checked)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
-  }
-  else if (document.getElementById("2").checked)
-  {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'match'><input type='submit' value='Continue' class='button'></a>";
-  }
-
-}
-
-    document.getElementById("hidden-form-1").style.display = 'none';
-    document.getElementById("hidden-form-2").style.display = 'none';
-
-</script>
-
 
 {{/content}}
 
 {{/layout}}
 
-<a href = "../../../../../index">BRAMA</a>
+<a href = "../../../../index">BRAMA</a>
 <a href = "../../ated_index">ATED</a>
