@@ -39,7 +39,7 @@
 
   <h2 class="heading-large brama-shrink-padding-5">1. Business details</h2>
 
-  <p class="panel-indent" style="margin-top:10px">This are your business details</p>
+  <p class="panel-indent" style="margin-top:10px">This information needs to be accurate and up-to-date as it will be used to carry out further checks.</p>
 
   <div class="brama-spacer"></div>
 
@@ -151,6 +151,8 @@
 
           <div class="brama-spacer"></div>
 
+          </div>
+
         </div>
 
         <div class="brama-spacer"></div>
@@ -202,13 +204,26 @@
         <div class="brama-spacer2"></div>    
 
         <div>
-          <label class="form-label" for="business_address0">Is this your main place of business?</label>
+          <label class="form-label" for="business_address0">Is this your principal place of business?</label>
+
+          <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">
+            <span class="text-medium-link2">What is a principal place of business?</span></a>
+          </label>
+          <div class="brama-spacer"></div>
+            <div id="hidden-text">
+            <div class="panel-indent">    
+            <span>The principal place of business is the place where you receive and deal with orders. It is also the place where the day-to-day running of the business takes place.</span>
+            </div>
+            <div class="brama-spacer2"></div>
+          </div>
+
           <div class="brama-spacer6"></div>
+          
           <form>
             <fieldset class="inline">
               <div>
                 <label class="block-label">
-                <input type="radio" value="yes" id="same" name="same" onChange="change_questions();">
+                <input type="radio" value="yes" id="question2" name="same" onChange="change_questions();">
                     Yes
                 </label>
               </div>
@@ -222,6 +237,7 @@
           </form>
         </div>  
 
+        <div id="question1b"></div>
 
         <div id="question1a">
 
@@ -288,7 +304,7 @@
   <div>
       <div class="form-group form-group-compound">
 
-          <label class="form-label">Is your contact address the same as your main place of business?</label>
+          <label class="form-label">Is your contact address the same as your principal place of business?</label>
           <div class="brama-spacer6"></div>
           <form>
             <fieldset class="inline">
@@ -375,13 +391,13 @@
         <form>   
 
         <div>
-          <label class="form-label" for="business_address0">Has this been your main place of business for the last 3 years? </label>
+          <label class="form-label" for="business_address0">Has this been your principal place of business for the last 3 years? </label>
           <div class="brama-spacer6"></div>
           <form>
             <fieldset class="inline">
               <div>
                 <label class="block-label">
-                <input type="radio" value="yes" id="same" name="same" onChange="change_questions3();">
+                <input type="radio" value="yes" id="question6" name="same" onChange="change_questions3();">
                     Yes
                 </label>
               </div>
@@ -395,7 +411,7 @@
           </form>
         </div>   
 
-         <div id="question3a">
+        <div id="question3a">
           <div class="brama-spacer"></div>
           <div class="panel-indent">
           <label class="form-label" for="business_address0">How many years has your business operated from the current address? </label>
@@ -521,6 +537,14 @@
   </div>
 
 </main>
+
+
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
+      document.getElementById("hidden-text2").style.display = 'none';
+    //-->
+</script>
 
 
 <script>
