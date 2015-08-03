@@ -39,7 +39,7 @@
       </div>
 
       <div class="div-right">
-        <p class="brama-logged">John Smith, Agent Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+        <p class="brama-logged">Paul Coward, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
       </div>
     </div>
   </div>
@@ -47,27 +47,36 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-    <h2 class="heading-large brama-shrink-padding-5">We recognise that you have logged in as an agent</h2>
+    <h2 class="heading-large brama-shrink-padding-5">Are you an appointed agent claiming ATED relief for someone else?</h2>
 
       <div class="brama-spacer2"></div>
 
-      <p><span class="text-bold">You are about to register to work on behalf of your clients for the new ATED online service</span>
-        <br>1. After you register you will receive an ATED agent reference number that you need to give to your client
-
-
-        <p><span class="text-bold">Your client will then need to: </span>
-        <br>1. login or create a government gateway account
-        <br>2. register their company to use the new ATED online service
-        <br>3. enter the agent reference number you gave them
-        <br>4. let you know once they have done these steps
-
-     <p><span class="text-bold">Once they have done this you will need to login and accept the request to continue</span>
+      <div class="form-group form-group-compound">
+          <form>
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="1" name="same" id="1" onChange="change_link();">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="2" name="same" id="2" onChange="change_link();">
+                    No
+                </label>
+              </div>
+            </fieldset>
+          </form>
+      </div>
 
       <div class="brama-spacer2"></div>
 
+      <p class="text-black2">You must create an ATED account to claim reliefs.</p>
+
       <div class="brama-spacer2"></div>
 
-      <div><a href = "match"><input type="submit" value="Continue" class="button"></a></div>
+      <div id='buttonChange'><input type='submit' value='Continue' class='button'></div>
 
       <div class="brama-spacer" id="here"></div>
 
@@ -82,10 +91,30 @@
 
 </main>
 
+<script>
+
+function change_link()
+{
+  if (document.getElementById("1").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+  }
+  else if (document.getElementById("2").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+  }
+
+}
+
+    document.getElementById("hidden-form-1").style.display = 'none';
+    document.getElementById("hidden-form-2").style.display = 'none';
+
+</script>
+
 
 {{/content}}
 
 {{/layout}}
 
 <a href = "../../../../index">BRAMA</a>
-<a href = "../../ated_index">ATED</a>
+<a href = "ated_index">ATED</a>
