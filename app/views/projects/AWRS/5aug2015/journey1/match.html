@@ -30,7 +30,7 @@
       </div>
 
       <div class="div-right">
-        <p class="brama-logged">Acme &nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
+        <p class="brama-logged">Paul Coward, Acme Limited &nbsp;&nbsp;&nbsp;<a href="gov_uk" class="text-small">Sign out</a></p> 
       </div>
     </div>
   </div> 
@@ -46,7 +46,7 @@
 
       <div class="brama-spacer2"></div>
 
-      <p class="panel-indent" style="margin-top:10px">Before registering, you need to confirm your business details.</p>
+      <p>Before registering, you need to confirm your business details.</p>
 
       <div class="brama-spacer5"></div>
 
@@ -66,7 +66,30 @@
                 <input type="radio" value="2" name="same" id="2" onChange="change_link();">
                     Sole Trader / Self-employed
                 </label>
-                </div>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="3" name="same" id="3" onChange="change_link();">
+                    Business Partnership
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="4" name="same" id="4" onChange="change_link();">
+                    Limited Partnership
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="5" name="same" id="5" onChange="change_link();">
+                    Limited Liability Partnership
+                </label>
+                <div>
+                <label class="block-label">
+                <input type="radio" value="6" name="same" id="6" onChange="change_link();">
+                    Unincorporated Association
+                </label>
+              </div>
               </div>
           </form>
     </div>
@@ -76,6 +99,16 @@
         <div class="brama-spacer"></div>
 
         <div id='buttonChange'><input type='submit' value='Continue' class='button'></div>
+
+        <div class="brama-spacer" id="here"></div>
+
+        <a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';" class="brama-vertically-centered-text2">Cancel</a>
+
+        <div class="ated-spacer"></div>
+
+        <div id="hidden-text" class="panel-indent">    
+
+        <p>The registration process will be cancelled and you will be signed out. <br>You can restart registration at any time. <a href="../start_page">Sign out</a></p>
 
         <div class="ated-spacer"></div>
 
@@ -94,11 +127,27 @@ function change_link()
 {
   if (document.getElementById("1").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = 'application_overview'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_1'><input type='submit' value='Continue' class='button'></a>";
   }
   else if (document.getElementById("2").checked)
   {
-    document.getElementById("buttonChange").innerHTML = "<a href = '#'><input type='submit' value='Continue' class='button'></a>";
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_2'><input type='submit' value='Continue' class='button'></a>";
+  }
+  else if (document.getElementById("3").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_3'><input type='submit' value='Continue' class='button'></a>";
+  }
+  else if (document.getElementById("4").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_4'><input type='submit' value='Continue' class='button'></a>";
+  }
+  else if (document.getElementById("5").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_5'><input type='submit' value='Continue' class='button'></a>";
+  }
+  else if (document.getElementById("6").checked)
+  {
+    document.getElementById("buttonChange").innerHTML = "<a href = 'match_6'><input type='submit' value='Continue' class='button'></a>";
   }
 
 }
