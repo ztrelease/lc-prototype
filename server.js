@@ -19,7 +19,7 @@ var path = require('path'),
 //  }
 
   //app.use(express.basicAuth(username, password));
-  app.use(express.basicAuth('brama', 'brama7'));
+  app.use(express.basicAuth('brama', 'brama8'));
 //}
 
 // Application settings
