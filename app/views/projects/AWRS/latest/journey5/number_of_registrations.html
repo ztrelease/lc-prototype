@@ -46,7 +46,7 @@
 
           <div class="brama-spacer"></div>
 
-            <label class="text-medium3">How many businesses you want to register?</label>
+            <label class="text-medium3">How many alcohol wholesaler businesses are included to this registration?</label>
           
             <div class="brama-spacer2"></div>
 
@@ -54,13 +54,13 @@
               <div>
                 <label class="block-label">
                 <input type="radio" value="yes" id="question_yes" name="same" onChange="btn_toggle()">
-                    One business
+                    One business only
                 </label>
               </div>
               <div>
                 <label class="block-label">
                 <input type="radio" value="yes" id="question_no" name="same" onChange="btn_toggle()">
-                    Multiple businesses
+                    More than one business
                 </label>
               </div>
             </fieldset>
@@ -70,18 +70,23 @@
             <div id="question1b" class="panel-indent">
 
                   <div>
-                    <label class="business_address0">What type of multiple businesses?</label>
+                    <label class="business_address0">Select type of registration</label>
                     <div class="brama-spacer5"></div>
                     <fieldset>
                       <div>
                         <label class="block-label"> 
                         <input type="radio" value="yes" id="question_yes1a" name="same" onChange="change_questions_yes1();">Partnership
                         </label>
+                        <br><br><br>
+                        <label class="business_address0"><a href="#">What is a partnership?</a></label>
                       </div>
+                      <br>
                       <div>
                         <label class="block-label">
                         <input type="radio" value="yes" id="question_yes1b" name="same" onChange="change_questions_yes1();">Group
                         </label>
+                        <br><br><br>
+                        <label class="business_address0"><a href="#">What is a group?</a></label>
                       </div>
                     </fieldset>
                   </div>
@@ -90,9 +95,30 @@
 
                       <div class="brama-spacer"></div>
 
+                      <!--
+
                       <div>
                         <label class="form-label" for="business_address0">Name of the Partnership</label>
                         <input class="brama-input-mediumform3" type="text" value="">
+                      </div>
+
+                      -->
+
+                      <div>
+                        <label class="business_address0">Are you the partnership representative?</label>
+                        <div class="brama-spacer5"></div>
+                        <fieldset class="inline">
+                          <div>
+                            <label class="block-label"> 
+                            <input type="radio" value="yes" id="question_yes2a" name="same" onChange="change_questions_yes2();">Yes
+                            </label>
+                          </div>
+                          <div>
+                            <label class="block-label">
+                            <input type="radio" value="yes" id="question_yes2b" name="same" onChange="change_questions_yes2();">No
+                            </label>
+                          </div>
+                        </fieldset>
                       </div>
 
                   </div>
@@ -101,9 +127,30 @@
 
                       <div class="brama-spacer"></div>
 
+                      <!--
+
                       <div>
                         <label class="form-label" for="business_address0">Name of the group</label>
                         <input class="brama-input-mediumform3" type="text" value="">
+                      </div>
+
+                      -->
+
+                      <div>
+                        <label class="business_address0">Is your business representing all members of the group?</label>
+                        <div class="brama-spacer5"></div>
+                        <fieldset class="inline">
+                          <div>
+                            <label class="block-label"> 
+                            <input type="radio" value="yes" id="question_yes3a" name="same" onChange="change_questions_yes3();">Yes
+                            </label>
+                          </div>
+                          <div>
+                            <label class="block-label">
+                            <input type="radio" value="yes" id="question_yes3b" name="same" onChange="change_questions_yes3();">No
+                            </label>
+                          </div>
+                        </fieldset>
                       </div>
 
                   </div>
@@ -111,6 +158,8 @@
             </div>
 
             <div id="question1a">
+
+                  <!--
 
                   <div>
 
@@ -121,7 +170,11 @@
 
                   </div>  
 
+                  -->
+
             </div>
+
+
 
           </form>
 
@@ -145,7 +198,7 @@
 
       <div>
 
-        <input type="button" class ="button" value="Continue" id="btn_enabled_n" onclick="location.href='number_of_registrations2'">
+        <input type="button" class ="button" value="Continue" id="btn_enabled_n" onclick="location.href='application_overview'">
 
         <input type="button" class ="button" value="Continue" id="btn_enabled_y" onclick="location.href='#'">
 
