@@ -72,6 +72,7 @@
                   <div>
                     <label class="business_address0">Select type of registration</label>
                     <div class="brama-spacer5"></div>
+
                     <fieldset>
                       <div>
                         <label class="block-label"> 
@@ -86,9 +87,31 @@
                         <input type="radio" value="yes" id="question_yes1b" name="same" onChange="change_questions_yes1();">Group
                         </label>
                         <br><br><br>
-                        <label class="business_address0"><a href="#">What is a group?</a></label>
+                        <label class="business_address0"><a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">What is a group?</a></label>
+                      </div>
+                      <div class="brama-spacer2"></div>
+                        <div id="hidden-text">
+                        <div>    
+                          <span>
+                          • There must be more than one member of the group
+                            <br>
+                          • All members of the group must be limited companies that are established or have a fixed establishment in the UK
+                          <br>
+                          • The group members included in the AWRS application must be, or intend to be, alcohol wholesalers
+                          <br>
+                          • The group must have a group representative that will act on behalf of the group when dealing with HMRC
+                          <br>
+                          • As the group representative you must confirm that you have the consent of all group members to act on their behalf
+                          <br>
+                          • All group members agree that they are jointly and severally liable for any group liabilities
+                          </span>
+                        </div>
+                        <div class="brama-spacer2"></div>
+                        <label class="block-label"><input type="checkbox">As the group representative I can confirm that the above conditions have been met in full </label>
+                        <div class="brama-spacer2"></div>
                       </div>
                     </fieldset>
+
                   </div>
 
                   <div id="question_yes1a1">
@@ -268,6 +291,14 @@ document.getElementById("btn_enabled_n").style.display = 'none';
 document.getElementById("question1a").style.display = 'none';
 document.getElementById("question1b").style.display = 'none';
 
+</script>
+
+
+<script>
+    <!--
+      document.getElementById("hidden-text").style.display = 'none';
+      document.getElementById("hidden-text2").style.display = 'none';
+    //-->
 </script>
 
 
