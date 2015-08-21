@@ -51,48 +51,66 @@
             <div class="brama-spacer2"></div>
 
             <fieldset>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="yes" id="question_yes" name="same" onChange="btn_toggle()">
-                    One business only
-                </label>
-              </div>
-              <div>
-                <label class="block-label">
-                <input type="radio" value="yes" id="question_no" name="same" onChange="btn_toggle()">
-                    More than one business
-                </label>
-              </div>
-            </fieldset>
-
-            <div class="brama-spacer"></div>
-
-            <div id="question1b" class="panel-indent">
-
-                  <div>
-                    <label class="business_address0">Select type of registration</label>
-                    <div class="brama-spacer5"></div>
-
-                    <fieldset>
                       <div>
                         <label class="block-label"> 
-                        <input type="radio" value="yes" id="question_yes1a" name="same" onChange="change_questions_yes1();">Partnership
+                        <input type="radio" value="one" id="one" name="same" onChange="btn_toggle();">One business
                         </label>
                         <br><br><br>
-                        <label class="business_address0"><a href="#">What is a partnership?</a></label>
+                        <label class="business_address0"><a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">What is one business?</a></label>
+                      </div>
+                      <div id="hidden-text">
+                        <div class="panel-indent">
+                        <div>    
+                            <span>
+                            • Lorum
+                              <br>
+                            • Lorum
+                            <br>
+                            • Lorum
+                            </span>
+                        </div>
+                        <div class="brama-spacer2"></div>
+                        <label class="block-label"><input type="checkbox">As the business representative I can confirm that the above conditions have been met in full </label>
+                        </div>
+                        <div class="brama-spacer2"></div>
+                      </div>
+                      <br>
+                      <div>
+                        <label class="block-label"> 
+                        <input type="radio" value="yes" id="partnership" name="same" onChange="btn_toggle();">Partnership
+                        </label>
+                        <br><br><br>
+                        <label class="business_address0"><a href="#here2" onclick="document.getElementById('hidden-text2').style.display = 'inline-block';">What is a partnership?</a></label>
+                      </div>
+                      <div class="brama-spacer2"></div>
+                      <div id="hidden-text2">
+                        <div class="panel-indent">
+                        <div>    
+                            <span>
+                            • Lorum
+                              <br>
+                            • Lorum
+                            <br>
+                            • Lorum
+                            </span>
+                        </div>
+                        <div class="brama-spacer2"></div>
+                        <label class="block-label"><input type="checkbox">As the partnership representative I can confirm that the above conditions have been met in full </label>
+                        </div>
+                        <div class="brama-spacer2"></div>
                       </div>
                       <br>
                       <div>
                         <label class="block-label">
-                        <input type="radio" value="yes" id="question_yes1b" name="same" onChange="change_questions_yes1();">Group
+                        <input type="radio" value="no" id="group" name="same" onChange="btn_toggle();">Group
                         </label>
                         <br><br><br>
-                        <label class="business_address0"><a href="#here" onclick="document.getElementById('hidden-text').style.display = 'inline-block';">What is a group?</a></label>
+                        <label class="business_address0"><a href="#here3" onclick="document.getElementById('hidden-text3').style.display = 'inline-block';">What is a group?</a></label>
                       </div>
-                      <div class="brama-spacer2"></div>
-                        <div id="hidden-text">
+                      <div id="hidden-text3">
+                        <div class="panel-indent">
                         <div>    
-                          <span>
+                            <span>
                           • There must be more than one member of the group
                             <br>
                           • All members of the group must be limited companies that are established or have a fixed establishment in the UK
@@ -108,27 +126,18 @@
                         </div>
                         <div class="brama-spacer2"></div>
                         <label class="block-label"><input type="checkbox">As the group representative I can confirm that the above conditions have been met in full </label>
-                        <div class="brama-spacer2"></div>
+                        </div>
                       </div>
                     </fieldset>
 
-                  </div>
+            <div class="brama-spacer"></div>
 
-                  <div id="question_yes1a1">
+            <div id="question1b">
 
-                      <div class="brama-spacer"></div>
+                  <div class="brama-spacer"></div>
 
-                      <!--
-
-                      <div>
-                        <label class="form-label" for="business_address0">Name of the Partnership</label>
-                        <input class="brama-input-mediumform3" type="text" value="">
-                      </div>
-
-                      -->
-
-                      <div>
-                        <label class="business_address0">Are you the partnership representative?</label>
+                  <div>
+                        <label class="text-medium3">Are you the registration representative business?</label>
                         <div class="brama-spacer5"></div>
                         <fieldset class="inline">
                           <div>
@@ -144,37 +153,15 @@
                         </fieldset>
                       </div>
 
+                  <div id="question_yes1a1">
+
+                    xxxxxxxxxx
+
                   </div>
 
                   <div id="question_yes1a2">
 
-                      <div class="brama-spacer"></div>
-
-                      <!--
-
-                      <div>
-                        <label class="form-label" for="business_address0">Name of the group</label>
-                        <input class="brama-input-mediumform3" type="text" value="">
-                      </div>
-
-                      -->
-
-                      <div>
-                        <label class="business_address0">Is your business representing all members of the group?</label>
-                        <div class="brama-spacer5"></div>
-                        <fieldset class="inline">
-                          <div>
-                            <label class="block-label"> 
-                            <input type="radio" value="yes" id="question_yes3a" name="same" onChange="change_questions_yes3();">Yes
-                            </label>
-                          </div>
-                          <div>
-                            <label class="block-label">
-                            <input type="radio" value="yes" id="question_yes3b" name="same" onChange="change_questions_yes3();">No
-                            </label>
-                          </div>
-                        </fieldset>
-                      </div>
+                    xxxxxxxxxx
 
                   </div>
 
@@ -182,18 +169,24 @@
 
             <div id="question1a">
 
-                  <!--
+              <div class="brama-spacer"></div>
 
-                  <div>
-
-                      <div class="panel-indent">
-                        <label class="form-label" for="business_address0">Name of the Business</label>
-                        <input class="brama-input-mediumform3" type="text" value="">
+              <div>
+                        <label class="text-medium3">Are you the registration representative business? </label>
+                        <div class="brama-spacer5"></div>
+                        <fieldset class="inline">
+                          <div>
+                            <label class="block-label"> 
+                            <input type="radio" value="yes" id="question_yes2a" name="same" onChange="change_questions_yes2();">Yes
+                            </label>
+                          </div>
+                          <div>
+                            <label class="block-label">
+                            <input type="radio" value="yes" id="question_yes2b" name="same" onChange="change_questions_yes2();">No
+                            </label>
+                          </div>
+                        </fieldset>
                       </div>
-
-                  </div>  
-
-                  -->
 
             </div>
 
@@ -223,7 +216,7 @@
 
         <input type="button" class ="button" value="Continue" id="btn_enabled_n" onclick="location.href='application_overview'">
 
-        <input type="button" class ="button" value="Continue" id="btn_enabled_y" onclick="location.href='#'">
+        <input type="button" class ="button" value="Continue" id="btn_enabled_y" onclick="location.href='../journey4/application_overview#'">
 
         <input type="button" class ="button" value="Continue" id="btn_disabled">
 
@@ -268,7 +261,7 @@ document.getElementById("question_yes1a2").style.display = 'none';
 
 function btn_toggle()
 {
-  if (document.getElementById("question_yes").checked)
+  if (document.getElementById("partnership").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_n").style.display = 'block';
@@ -276,7 +269,7 @@ function btn_toggle()
     document.getElementById("question1a").style.display = 'block';
     document.getElementById("question1b").style.display = 'none';
   }
-  else if (document.getElementById("question_no").checked)
+  else if (document.getElementById("group").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_n").style.display = 'block';
@@ -298,6 +291,7 @@ document.getElementById("question1b").style.display = 'none';
     <!--
       document.getElementById("hidden-text").style.display = 'none';
       document.getElementById("hidden-text2").style.display = 'none';
+      document.getElementById("hidden-text3").style.display = 'none';
     //-->
 </script>
 
