@@ -159,7 +159,9 @@
 
         <div>
           <label class="form-label" for="business_address0">Do you have a Unique Tax Reference number?</label>
-          <div class="brama-spacer6"></div>
+          <label class="form-label text-gray2">In the header of any letter received from HMRC.</label>
+          <span><a href="dont_know_utr_2" class="brama-normal-link2">I don't know the UTR</a></span>
+          <div class="brama-spacer"></div>
           <form>
             <fieldset class="inline">
               <div>
@@ -485,6 +487,10 @@
 
           <div class="brama-spacer2"></div>
 
+          <label class="form-label text-gray2">This is the person completing this application or a nominated person within the business who will <br>be responsible for AWRS matters.</label> 
+
+          <div class="brama-spacer2"></div>
+
           <div>
             <label class="form-label" for="business_address0">Contact name</label>
             <input class="brama-input-mediumform3" type="text" value=" ">
@@ -509,6 +515,70 @@
         </form>
 
       </div>
+
+
+      <div class="brama-spacer2"></div>
+
+      <div>
+          <div class="form-group form-group-compound">
+
+              <label class="text-medium3">Were you trading as an alcohol wholesaler on, or before 1 January 2016?</label>
+              <div class="brama-spacer5"></div>
+              <label class="form-label text-gray2">A new business is one that starts trading in alcohol wholesale on, or after 1 January 2016. <br>You can apply at any time, but it has to be at least 45 days in advance of your intended start date.</label>
+              <div class="brama-spacer5"></div>
+              <form>
+                <fieldset class="inline">
+                  <div>
+                    <label class="block-label">
+                    <input type="radio" value="yes" id="question13" name="same" onChange="change_questions7();">
+                        Yes
+                    </label>
+                  </div>
+                  <div>
+                    <label class="block-label">
+                    <input type="radio" value="no" id="question14" name="same" onChange="change_questions7();">
+                        No
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div id="question7a">
+
+                  <div class="brama-spacer"></div>
+
+                  <div class="panel-indent">
+
+                  <!--
+
+                  <div>
+                  <label class="form-label" for="business_address0">Postcode</label>
+                  <input class="brama-input-verysortform4" type="text" value=" ">
+                  &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Find address</a>
+                  </div> 
+
+                  <div class="brama-spacer"></div>
+
+                  -->
+
+                  <div>
+                        <label class="form-label">What is the date that you will begin trading?</label>
+                        <label class="form-label text-gray2">For example, &nbsp; 31 &nbsp; 03 &nbsp; 1980</label>
+                        <div class="brama-spacer5"></div>
+                        <input class="brama-input-verysortform8" type="text" value=" ">&nbsp;&nbsp; 
+                        <input class="brama-input-verysortform8" type="text" value=" ">&nbsp;&nbsp; 
+                        <input class="brama-input-verysortform9" type="text" value=" ">&nbsp;&nbsp; 
+                  </div>
+
+                </div>
+
+                </div>
+
+              </form>
+
+          </div>
+      </div>
+
+
 
   </div>
 
@@ -733,6 +803,31 @@ function change_questions6()
 
 document.getElementById("question6a").style.display = 'none';
 document.getElementById("question6b").style.display = 'none';
+
+</script>
+
+
+<script>
+
+function change_questions7()
+{
+  if (document.getElementById("question13").checked)
+  {
+    document.getElementById("question7a").style.display = 'none';
+    document.getElementById("question7b").style.display = 'block';
+    
+  }
+  else if (document.getElementById("question14").checked)
+  {
+    document.getElementById("question7a").style.display = 'block';
+    document.getElementById("question7b").style.display = 'none';
+    
+  }
+
+}
+
+document.getElementById("question7a").style.display = 'none';
+document.getElementById("question7b").style.display = 'none';
 
 </script>
 
