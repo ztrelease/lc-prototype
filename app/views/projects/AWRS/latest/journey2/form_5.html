@@ -42,11 +42,41 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <p class="panel-indent" style="margin-top:10px">Please provide the business name and address of your main alcohol suppliers by value. If you have more than 5, only provide the details of your main 5 suppliers.</p>
+      <p class="panel-indent" style="margin-top:10px">Please provide the business name and address of your main alcohol suppliers by value. If you have more than 5, only provide the details of your 5 main suppliers.</p>
 
       <div class="brama-spacer"></div>
 
       <form>
+
+            <label class="text-medium3">Do you have alcohol suppliers?</label>
+          
+            <div class="brama-spacer2"></div>
+
+            <fieldset class="inline">
+              <div>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question_yes3" name="same" onChange="btn_toggle3()">
+                    Yes
+                </label>
+              </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question_no3" name="same" onChange="btn_toggle3()">
+                    No
+                </label>
+              </div>
+            </fieldset>
+
+            <div id="question3a"> xxxxx</div>
+
+            <div id="question3b"> xxxxx</div>
+
+
+
+
+
+
+
 
             <label class="text-medium3">Do you have alcohol suppliers?</label>
           
@@ -441,6 +471,32 @@ document.getElementById("btn_enabled_n").style.display = 'none';
 document.getElementById("question1a").style.display = 'none';
 document.getElementById("question1b").style.display = 'none';
 </script>
+
+
+
+<script>
+function btn_toggle3()
+{
+
+  if (document.getElementById("question_yes3").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_n").style.display = 'block';
+    document.getElementById("btn_enabled_y").style.display = 'none';
+    document.getElementById("question3a").style.display = 'block';
+    document.getElementById("question3b").style.display = 'none';
+  }
+  else if (document.getElementById("question_no3").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_n").style.display = 'block';
+    document.getElementById("btn_enabled_y").style.display = 'none';
+    document.getElementById("question3a").style.display = 'none';
+    document.getElementById("question3b").style.display = 'none';
+  }
+}
+</script>
+
 
 
 

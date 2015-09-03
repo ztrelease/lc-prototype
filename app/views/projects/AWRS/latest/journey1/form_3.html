@@ -42,7 +42,7 @@
   <div class="grid-row">
     <div class="column-two-thirds">
 
-      <p class="panel-indent" style="margin-top:10px">You must tell us about all your directors and company secretaries. The information entered needs to be accurate and up-to-date as it will be used to carry out further checks.</p>
+      <p class="panel-indent" style="margin-top:10px">You must tell us about all your directors and company secretaries. The information entered needs to be accurate and up-to-date.</p>
 
       <div class="brama-spacer"></div>
 
@@ -593,6 +593,7 @@ document.getElementById("question_yes3a2").style.display = 'none';
 
 </script>
 
+
 <script>
 
 function change_questions_yes4()
@@ -671,32 +672,6 @@ function btn_toggle3()
     document.getElementById("btn_enabled_y").style.display = 'none';
   }
   else if (document.getElementById("question_yes_3").checked)
-  {
-    document.getElementById("btn_disabled").style.display = 'none';
-    document.getElementById("btn_enabled_y").style.display = 'block';
-    document.getElementById("btn_enabled_n").style.display = 'none';
-  }
-  
-}
-</script>
-
-<script>
-document.getElementById("btn_enabled_y").style.display = 'none';
-document.getElementById("btn_enabled_n").style.display = 'none';
-document.getElementById("btn_enabled").style.display = 'none';
-</script>
-
-<script>
-function btn_toggle4()
-{
-
-  if (document.getElementById("question_no_4").checked)
-  {
-    document.getElementById("btn_disabled").style.display = 'none';
-    document.getElementById("btn_enabled_n").style.display = 'block';
-    document.getElementById("btn_enabled_y").style.display = 'none';
-  }
-  else if (document.getElementById("question_yes_4").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_y").style.display = 'block';
