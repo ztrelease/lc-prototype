@@ -50,6 +50,8 @@
 
         <div class="brama-spacer2"></div>
 
+        <!--
+
         <div id="here">
           <label class="text-medium3">Are you a new business?</label>
           
@@ -92,38 +94,6 @@
 
         </div>
 
-        <!--
-
-        <div class="brama-spacer"></div>
-
-        <div class="brama-spacer"></div>
-
-        <div>
-          <label class="text-medium3">For calculating your annual turnover, what is your accounting period?</label>
-          <div class="brama-spacer2"></div>
-          <fieldset class="inline">
-            <div>
-              <label class="block-label"> 
-              <input type="radio" value="yes" name="same">Calendar year
-              </label>
-            </div>
-            <div class="brama-spacer6"></div>
-            <div>
-              <label class="block-label">
-              <input type="radio" value="no" name="same">Financial year
-              </label>
-            </div>
-            <div class="brama-spacer6"></div>
-            <div>
-              <label class="block-label">
-              <input type="radio" value="no" name="same">Other
-              </label>
-            </div>
-          </fieldset>
-        </div>
-
-        -->
-
         <div class="brama-spacer"></div>
 
         <div class="brama-spacer"></div>
@@ -137,6 +107,8 @@
         <div class="brama-spacer"></div>
 
         <div class="brama-spacer"></div>
+
+        -->
 
         <div>
           <label class="text-medium3">What type of wholesaler are you?</label>
@@ -315,38 +287,68 @@
           <label class="block-label"><input type="checkbox">Outside the EU </label>
         </div>
 
-        <!--
-
         <div class="brama-spacer"></div>
 
         <div class="brama-spacer"></div>
 
-        <div id="here2">
-          <label class="text-medium3">Are you an Authorised Economic Operator?<br>
-            <a href="#here2" onclick="document.getElementById('hidden-text2').style.display = 'inline-block';">
-            <span class="text-medium-link2">What is an Authorised Economic Operator?</span></a>
-          </label>
-          <div>
-            <div class="brama-spacer2"></div>
-            <div id="hidden-text2" class="panel-indent">    
-            <span>The Authorised Economic Operator (AEO) certificate is an internationally recognised quality mark indicating that your role in the international supply chain is secure, and that your customs controls and procedures are efficient and compliant.</span></div>
-            <div class="brama-spacer2"></div>
-          </div>
+        <div id="here111">
+          <label class="text-medium3">Do you use any 3rd party storage?</label>
+          <div class="brama-spacer2"></div>
           <fieldset class="inline">
             <div>
               <label class="block-label"> 
-              <input type="radio" value="yes" name="same">Yes
+              <input type="radio" value="yes" name="same1" id="question_yes1" onChange="btn_toggle1()">Yes
               </label>
             </div>
             <div>
               <label class="block-label">
-              <input type="radio" value="no" name="same">No
+              <input type="radio" value="no" name="same1" id="question_no1" onChange="btn_toggle1()">No
               </label>
             </div>
           </fieldset>
         </div>
 
-        -->
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer"></div>
+
+        <div id="here222">
+          <label class="text-medium3">Do you export alcohol?</label>
+          <div class="brama-spacer2"></div>
+          <fieldset class="inline">
+            <div>
+              <label class="block-label"> 
+              <input type="radio" value="yes" name="same2" id="question_yes2" onChange="btn_toggle2()">Yes
+              </label>
+            </div>
+            <div>
+              <label class="block-label">
+              <input type="radio" value="no" name="same2" id="question_no2" onChange="btn_toggle2()">No
+              </label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="brama-spacer"></div>
+
+        <div class="brama-spacer"></div>
+
+        <div id="here333">
+          <label class="text-medium3">Do you conduct EU dispatches of alcohol?</label>
+          <div class="brama-spacer2"></div>
+          <fieldset class="inline">
+            <div>
+              <label class="block-label"> 
+              <input type="radio" value="yes" name="same3" id="question_yes3" onChange="btn_toggle3()">Yes
+              </label>
+            </div>
+            <div>
+              <label class="block-label">
+              <input type="radio" value="no" name="same3" id="question_no3" onChange="btn_toggle3()">No
+              </label>
+            </div>
+          </fieldset>
+        </div>
 
         <div class="brama-spacer"></div>
 
@@ -513,6 +515,90 @@ function toggle(source) {
 }
 </script>
 
+
+<script>
+function btn_toggle1()
+{
+
+  if (document.getElementById("question_no1").checked)
+  {
+    document.getElementById("btn_disabled1").style.display = 'none';
+    document.getElementById("btn_enabled_n1").style.display = 'block';
+    document.getElementById("btn_enabled_y1").style.display = 'none';
+  }
+  else if (document.getElementById("question_yes1").checked)
+  {
+    document.getElementById("btn_disabled1").style.display = 'none';
+    document.getElementById("btn_enabled_y1").style.display = 'block';
+    document.getElementById("btn_enabled_n1").style.display = 'none';
+  }
+  
+}
+</script>
+
+<script>
+document.getElementById("btn_enabled_y1").style.display = 'none';
+document.getElementById("btn_enabled_n1").style.display = 'none';
+document.getElementById("btn_enabled1").style.display = 'none';
+</script>
+
+
+
+
+<script>
+function btn_toggle2()
+{
+
+  if (document.getElementById("question_no2").checked)
+  {
+    document.getElementById("btn_disabled2").style.display = 'none';
+    document.getElementById("btn_enabled_n2").style.display = 'block';
+    document.getElementById("btn_enabled_y2").style.display = 'none';
+  }
+  else if (document.getElementById("question_yes2").checked)
+  {
+    document.getElementById("btn_disabled2").style.display = 'none';
+    document.getElementById("btn_enabled_y2").style.display = 'block';
+    document.getElementById("btn_enabled_n2").style.display = 'none';
+  }
+  
+}
+</script>
+
+<script>
+document.getElementById("btn_enabled_y2").style.display = 'none';
+document.getElementById("btn_enabled_n2").style.display = 'none';
+document.getElementById("btn_enabled2").style.display = 'none';
+</script>
+
+
+
+
+<script>
+function btn_toggle3()
+{
+
+  if (document.getElementById("question_no3").checked)
+  {
+    document.getElementById("btn_disabled3").style.display = 'none';
+    document.getElementById("btn_enabled_n3").style.display = 'block';
+    document.getElementById("btn_enabled_y3").style.display = 'none';
+  }
+  else if (document.getElementById("question_yes3").checked)
+  {
+    document.getElementById("btn_disabled3").style.display = 'none';
+    document.getElementById("btn_enabled_y3").style.display = 'block';
+    document.getElementById("btn_enabled_n3").style.display = 'none';
+  }
+  
+}
+</script>
+
+<script>
+document.getElementById("btn_enabled_y3").style.display = 'none';
+document.getElementById("btn_enabled_n3").style.display = 'none';
+document.getElementById("btn_enabled3").style.display = 'none';
+</script>
 
 
 
