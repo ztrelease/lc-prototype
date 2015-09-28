@@ -1495,6 +1495,10 @@ select {
   font-size: 18px;
   font-weight: text-italic; }
 
+.text-italic2 {
+  font-size: 16px;
+  font-weight: text-italic; }
+
 .text-gray {
   font-size: 16px;
   color: #666666; }

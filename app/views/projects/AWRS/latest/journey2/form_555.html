@@ -48,125 +48,249 @@
 
       <form>
 
-        <div>
-
+            <label class="text-medium3">Do you have alcohol suppliers?</label>
+          
             <div class="brama-spacer2"></div>
 
-            <h3 class="heading-medium brama-shrink-padding-4">Supplier 3 </h3>
-
-            <div class="brama-spacer2"></div>
-
-            <div>
-
+            <fieldset class="inline">
               <div>
-                <label class="form-label" for="business_address0">Name of alcohol supplier</label>
-                <input class="brama-input-mediumform3" type="text" value=" ">
-              </div> 
-
-              <div class="brama-spacer"></div>
-
-              <div>
-                <label class="text-medium">Is this supplier VAT registered?</label>
-                <div class="brama-spacer5"></div>
-                <fieldset class="inline">
-                  <div>
-                    <label class="block-label"> 
-                    <input type="radio" value="yes" id="question_yes1a" name="same" onChange="change_questions_yes1();">Yes
-                    </label>
-                  </div>
-                  <div>
-                    <label class="block-label">
-                    <input type="radio" value="yes" id="question_yes1b" name="same" onChange="change_questions_yes1();">No
-                    </label>
-                  </div>
-                </fieldset>
+                <label class="block-label">
+                <input type="radio" value="yes" id="question_yes" name="same" onChange="btn_toggle()">
+                    Yes
+                </label>
               </div>
+              <div>
+                <label class="block-label">
+                <input type="radio" value="no" id="question_no" name="same" onChange="btn_toggle()">
+                    No
+                </label>
+              </div>
+            </fieldset>
 
-              <div id="question_yes1a1">
+            <div id="question1a">
+
+                <div class="brama-spacer"></div>
+
+                <div class="brama-spacer2"></div>
+
+                <h3 class="heading-medium brama-shrink-padding-4">Supplier 3 </h3>
+
+                <div class="brama-spacer2"></div>
+
+                <div>
+
+                  <div>
+                    <label class="form-label" for="business_address0">Name of alcohol supplier</label>
+                    <input class="brama-input-mediumform3" type="text" value=" ">
+                  </div> 
 
                   <div class="brama-spacer"></div>
 
-                  <div class="panel-indent">
-                    <label class="form-label" for="business_address0">VAT registration number</label>
-                    <input class="brama-input-mediumform3" type="text" value="">
+                  <div>
+                    <label class="text-medium">Is this supplier based in the UK? </label>
+                    <div class="brama-spacer5"></div>
+                    <fieldset class="inline">
+                      <div>
+                        <label class="block-label"> 
+                        <input type="radio" value="yes" id="question_yes1a" name="same" onChange="change_questions_yes1();">Yes
+                        </label>
+                      </div>
+                      <div>
+                        <label class="block-label">
+                        <input type="radio" value="yes" id="question_yes1b" name="same" onChange="change_questions_yes1();">No
+                        </label>
+                      </div>
+                    </fieldset>
+                  </div>
+
+                  <div id="question_yes1a1">
+
+                      <div class="brama-spacer"></div>
+
+                      <div>
+                        <label class="text-medium">Is this supplier VAT registered?</label>
+                        <div class="brama-spacer5"></div>
+                        <fieldset class="inline">
+                          <div>
+                            <label class="block-label"> 
+                            <input type="radio" value="yes" id="question_yes2a" name="same" onChange="change_questions_yes2();">Yes
+                            </label>
+                          </div>
+                          <div>
+                            <label class="block-label">
+                            <input type="radio" value="yes" id="question_yes2b" name="same" onChange="change_questions_yes2();">No
+                            </label>
+                          </div>
+                        </fieldset>
+                      </div>
+
+                      <div id="question_yes2a1">
+
+                            <div class="brama-spacer"></div>
+
+                            <div class="panel-indent">
+                                  <label class="form-label" for="business_address0">VAT registration number</label>
+                                  <input class="brama-input-mediumform3" type="text" value="">
+                            </div>
+
+                            </div>
+
+                            <div class="brama-spacer"></div>
+
+                            <!--
+
+                              <div>
+                              <label class="form-label" for="business_address0">Postcode</label>
+                              <input class="brama-input-verysortform4" type="text" value=" ">
+                              &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Find address</a>
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              -->
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 1</label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 2</label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                              <label class="form-label" for="business_address0">Postcode</label>
+                              <input class="brama-input-verysortform4" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                        <label class="text-medium3">Do you have another supplier?</label>
+                                        
+                                        <div class="brama-spacer2"></div>
+
+                                        <fieldset class="inline">
+                                              <div>
+                                                <label class="block-label">
+                                                <input type="radio" value="yes" id="question_yes_2" name="1" onChange="btn_toggle2()">Yes
+                                                </label>
+                                              </div>
+                                              <div>
+                                                <label class="block-label">
+                                                <input type="radio" value="no" id="question_no_2" name="1" onChange="btn_toggle2()">No
+                                                </label>
+                                              </div>
+                                        </fieldset>
+
+                              </div>
+
+                      </div>
+
+                  </div>
+
+
+
+
+
+                  <div id="question_yes1a2">
+
+                            <div class="brama-spacer"></div>
+
+
+                            <!--
+
+                              <div>
+                              <label class="form-label" for="business_address0">Postcode</label>
+                              <input class="brama-input-verysortform4" type="text" value=" ">
+                              &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Find address</a>
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              -->
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 1</label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 2</label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
+                                <input class="brama-input-mediumform3" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                              <label class="form-label" for="business_address0">Postcode</label>
+                              <input class="brama-input-verysortform4" type="text" value=" ">
+                              </div> 
+
+                              <div class="brama-spacer"></div>
+
+                              <div class="brama-spacer"></div>
+
+                              <div>
+                                        <label class="text-medium3">Do you have another supplier?</label>
+                                        
+                                        <div class="brama-spacer2"></div>
+
+                                        <fieldset class="inline">
+                                              <div>
+                                                <label class="block-label">
+                                                <input type="radio" value="yes" id="question_yes_2" name="1" onChange="btn_toggle2()">Yes
+                                                </label>
+                                              </div>
+                                              <div>
+                                                <label class="block-label">
+                                                <input type="radio" value="no" id="question_no_2" name="1" onChange="btn_toggle2()">No
+                                                </label>
+                                              </div>
+                                        </fieldset>
+
+                              </div>
+
                   </div>
 
               </div>
-
-              <div class="brama-spacer"></div>
-
-              <!--
-
-                    <div>
-                    <label class="form-label" for="business_address0">Postcode</label>
-                    <input class="brama-input-verysortform4" type="text" value=" ">
-                    &nbsp;&nbsp;&nbsp; <a href="#" class="brama-vertically-centered-text2">Find address</a>
-                    </div> 
-
-                    <div class="brama-spacer"></div>
-
-                    -->
-
-                    <div>
-                      <label class="form-label" for="business_address0">Address line 1</label>
-                      <input class="brama-input-mediumform3" type="text" value=" ">
-                    </div> 
-
-                    <div class="brama-spacer"></div>
-
-                    <div>
-                      <label class="form-label" for="business_address0">Address line 2</label>
-                      <input class="brama-input-mediumform3" type="text" value=" ">
-                    </div> 
-
-                    <div class="brama-spacer"></div>
-
-                    <div>
-                      <label class="form-label" for="business_address0">Address line 3 &nbsp; <span class="text-gray2">(optional)</span></label>
-                      <input class="brama-input-mediumform3" type="text" value=" ">
-                    </div> 
-
-                    <div class="brama-spacer"></div>
-
-                    <div>
-                      <label class="form-label" for="business_address0">Address line 4 &nbsp; <span class="text-gray2">(optional)</span></label>
-                      <input class="brama-input-mediumform3" type="text" value=" ">
-                    </div> 
-
-                    <div class="brama-spacer"></div>
-
-                    <div>
-                    <label class="form-label" for="business_address0">Postcode</label>
-                    <input class="brama-input-verysortform4" type="text" value=" ">
-                    </div> 
-
-              <div class="brama-spacer"></div>
-
-                    <div class="brama-spacer"></div>
-
-                    <div>
-                          <label class="text-medium3">Do you have another supplier?</label>
-                          
-                          <div class="brama-spacer2"></div>
-
-                          <fieldset class="inline">
-                                <div>
-                                  <label class="block-label">
-                                  <input type="radio" value="yes" id="question_yes_2" name="1" onChange="btn_toggle2()">Yes
-                                  </label>
-                                </div>
-                                <div>
-                                  <label class="block-label">
-                                  <input type="radio" value="no" id="question_no_2" name="1" onChange="btn_toggle2()">No
-                                  </label>
-                                </div>
-                          </fieldset>
-
-                    </div>
-
-              </div>
-
-            </div>
 
           </form>
 
