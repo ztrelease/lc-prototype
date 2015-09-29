@@ -276,12 +276,12 @@
                                         <fieldset class="inline">
                                               <div>
                                                 <label class="block-label">
-                                                <input type="radio" value="yes" id="question_yes_2" name="1" onChange="btn_toggle2()">Yes
+                                                <input type="radio" value="yes" id="question_yes_3" name="1" onChange="btn_toggle3()">Yes
                                                 </label>
                                               </div>
                                               <div>
                                                 <label class="block-label">
-                                                <input type="radio" value="no" id="question_no_2" name="1" onChange="btn_toggle2()">No
+                                                <input type="radio" value="no" id="question_no_3" name="1" onChange="btn_toggle3()">No
                                                 </label>
                                               </div>
                                         </fieldset>
@@ -527,6 +527,28 @@ function btn_toggle2()
     document.getElementById("btn_enabled_y").style.display = 'none';
   }
   else if (document.getElementById("question_yes_2").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_y").style.display = 'block';
+    document.getElementById("btn_enabled_n").style.display = 'none';
+  }
+  
+}
+</script>
+
+
+
+<script>
+function btn_toggle3()
+{
+
+  if (document.getElementById("question_no_3").checked)
+  {
+    document.getElementById("btn_disabled").style.display = 'none';
+    document.getElementById("btn_enabled_n").style.display = 'block';
+    document.getElementById("btn_enabled_y").style.display = 'none';
+  }
+  else if (document.getElementById("question_yes_3").checked)
   {
     document.getElementById("btn_disabled").style.display = 'none';
     document.getElementById("btn_enabled_y").style.display = 'block';
