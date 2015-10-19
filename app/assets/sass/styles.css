@@ -1,0 +1,15 @@
+h1.s {
+	color: #666666 !important;
+    font-family:verdana !important;
+	font-size: 24px !important;
+	font-weight: 700 !important;
+	padding-top: 20px !important;
+}
+
+p.s {
+    color: #333333;
+    font-family:verdana;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 20px;
+}
