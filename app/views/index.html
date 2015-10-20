@@ -2,16 +2,66 @@
 
 <html>
 
+<title>Digital Land Charges</title>
+
 <head>
-  	<title>Digital Land Charges</title>
-  	<link rel="stylesheet" href="http://landregistry.herokuapp.com/assets/stylesheets/application.css">
+
+	{{>includes/header}}
+
+	<link rel="stylesheet" href="/public/stylesheets/styles.css">
+	<link rel="stylesheet" href="/public/stylesheets/elements.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
 
-	<h1>Heading</h1>
+<main id="content" role="main">
 
-	<p class="s">Test</p>
+	<div class="breadcrumb">
+		<ol>
+		  <li><a class="breadcrumb_links" href="#">Home</a></li>
+		  <li><a class="breadcrumb_links" href="#">Section</a></li>
+		</ol>
+	</div>
+
+	<div class="spacer_1"></div>
+
+	<div class="grid-row">
+
+	    <div class="column-two-thirds">
+
+	    <!-- ///////////////////////////////// column two thirds ///////////////////////////////// -->
+
+	      	<p class="steps">Step 1 of 6</p>
+
+	      	<h1 class="title_1">Heading</h1>
+
+	      	<p>Text</p>
+
+	      	<p><a class="link" href="#">Link</a></p>
+
+	      	<p><a class="link2" href="#">Link</a></p>
+
+	    <!-- ///////////////////////////////// end column two thirds ///////////////////////////////// -->
+
+	    </div>
+
+	    <div class="column-third">
+
+	    <!-- ///////////////////////////////// column third ///////////////////////////////// -->
+
+	      	<p></p>
+
+	    <!-- ///////////////////////////////// end of column third ///////////////////////////////// -->
+
+	    </div>
+
+  	</div>
+
+</main>
+
+	{{>includes/footer}}
 
 </body>
 
