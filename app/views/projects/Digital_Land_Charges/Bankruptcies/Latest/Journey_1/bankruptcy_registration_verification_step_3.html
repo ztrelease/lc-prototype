@@ -22,28 +22,16 @@
 		<ol>
 		  <li><a class="breadcrumb_links" href="services">Home</a></li>
 		  <li><a class="breadcrumb_links" href="bankruptcies">Bankruptcies</a></li>
-		  <li><a class="breadcrumb_links" href="registrations">List of registration applications</a></li>
-		  <li class="breadcrumb_no_arrow"><span>Bankruptcy registration</span></li>
+		  <li><a class="breadcrumb_links" href="bankruptcies">List of verification applications</a></li>
+		  <li class="breadcrumb_no_arrow"><span>Bankruptcy verification</span></li>
 		</ol>
 	</div>
 
 	<div class="spacer_10"></div>
 
-	<h1 class="title_36">Bankruptcy registration</h1>
+	<h1 class="title_36">Bankruptcy verification</h1>
 
-	<div class="spacer_5"></div>
-
-	<div class="text_16_gray">
-	    <span class="text_16_bold">1. Debtor details</span> 
-	    &nbsp;&nbsp;
-	    2. Debtor address
-	    &nbsp;&nbsp;
-	    3. Court details 
-	    &nbsp;&nbsp;
-	    4. Verify registration
-	</div>
-
-	<div class="spacer_30"></div>
+	<div class="spacer_20"></div>
 
 	<div class="grid-row">
 
@@ -51,54 +39,37 @@
 
 	    <div class="column-form">
 
-	      	<p class="text_24_bold">1. Debtor details</p>
+	      	<p class="text_24_bold">3. Court details</p>
 
 	      	<div class="spacer_20"></div>
 
     		<div class="form">
-		        <label class="form_label">Forename(s)</label>
-		        <input class="form_textfield" type="text">
+		        <label class="form_label">Key number</label>
+		        <input class="form_textfield" type="text" value=" 1111109">
 		    </div>
 
 		    <div class="form">
-		        <label class="form_label">Surname</label>
-		        <input class="form_textfield" type="text">
+		        <label class="form_label">County Court name</label>
+		        <input class="form_textfield" type="text" value=" Portsmouth">
 		    </div>
 
-		    <div class="spacer_5"></div>
-
-		    <div id="name1">
-
-			    <div class="form">
-			        <label class="form_label">Alternative forename(s)</label>
-			        <input class="form_textfield" type="text">
-			    </div>
-
-			    <div class="form">
-			        <label class="form_label">Alternative surname</label>
-			        <input class="form_textfield" type="text">
-			    </div>
-
-			    <div class="spacer_5"></div>
-
-		    </div>
-
-		    <div><a href="#here" onclick="document.getElementById('name1').style.display = 'inline-block';" class="link_16" id="#">Add alternative name</a></div>
-
-		    <div class="spacer_20"></div>
+		    <div class="spacer_15"></div>
 
 		    <div class="form">
-		        <label class="form_label">Occupation</label>
-		        <input class="form_textfield" type="text">
+		        <label class="form_label">Number</label> &nbsp;
+		        <input class="form_textfield_100" type="text" value=" 998">
+		        <span class="text_16_gray">&nbsp;&nbsp; of &nbsp;&nbsp;</span>
+		        <label class="form_label">Year</label> &nbsp;
+		        <input class="form_textfield_100" type="text" value=" 2015">
 		    </div>
 
 		    <div class="spacer_30"></div>
 
-      		<div>
+		    <div>
 	      		<table>
 	      			<tr>
 	      				<td width="50%" class="no-line">
-	      					<a href="bankruptcy_registration_step_2"><input type="submit" value="Continue" class="form_button"></a>
+	      					<a href="bankruptcy_verification"><input type="submit" value="Continue" class="form_button"></a>
 	      				</td>
 	      				<td width="50%" class="custom_3">
 					      	<a href="#" class="link_16">Reject application</a> 
@@ -119,7 +90,7 @@
 	      		<table>
 	      			<tr>
 	      				<td class="magnify_glass">
-	      					<a href="bankruptcy_registration_step_1_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
+	      					<a href="bankruptcy_registration_verification_step_3_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
 	      				</td>
 	      				<td class="pagination_scanned_pages custom_2">
 					      	<span>Page 1 of 2 &nbsp; <a class="link_14" href="#">Next</a></span> 
@@ -162,52 +133,26 @@
 
 <script>
 
-	function page()
-	{
-	  if (document.getElementById("page1").checked)
-	  {
-	    document.getElementById("page_a").style.display = 'none';
-	    document.getElementById("page_b").style.display = 'block';
-	    
-	  }
-	  else if (document.getElementById("page2").checked)
-	  {
-	    document.getElementById("page_a").style.display = 'block';
-	    document.getElementById("page_b").style.display = 'none';
-	    
-	  }
-
-	}
-
-	document.getElementById("page_a").style.display = 'none';
-	document.getElementById("page_b").style.display = 'none';
-
-</script>
-
-
-<script>
-
-	function add_additional_name()
+	function add_additional_address()
 	{
 	  if (document.getElementById("add").style.display == 'block'){
-	    document.getElementById("name1").style.display = 'none';
+	    document.getElementById("address1").style.display = 'none';
 	  } 
 
 	  else if (document.getElementById("add").style.display == 'block'){
-	    document.getElementById("name2").style.display = 'none';
+	    document.getElementById("address2").style.display = 'none';
 	  } 
 
 	  else if (document.getElementById("add").style.display == 'block'){
-	    document.getElementById("name3").style.display = 'none';
+	    document.getElementById("address3").style.display = 'none';
 	  }  
 
 	}
 
-	document.getElementById("name1").style.display = 'none';
-	document.getElementById("name2").style.display = 'none';
-	document.getElementById("name3").style.display = 'none';
+	document.getElementById("address1").style.display = 'none';
+	document.getElementById("address2").style.display = 'none';
+	document.getElementById("address3").style.display = 'none';
 
 </script>
 
 </html>
-

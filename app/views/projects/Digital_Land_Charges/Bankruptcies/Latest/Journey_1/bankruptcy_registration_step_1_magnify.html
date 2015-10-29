@@ -109,7 +109,7 @@
 
 	    </div>
 
-	    <!-- ///////////////////////////////// end of column-form ///////////////////////////////// -->
+	    <!-- ///////////////////////////////// end of column-form ///////////////////////////////// --> 
 
 	    <!-- ///////////////////////////////// column-scan ///////////////////////////////// -->
 
@@ -119,7 +119,7 @@
 	      		<table>
 	      			<tr>
 	      				<td class="magnify_glass">
-	      					<a href="bankruptcy_registration_step_1_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
+	      					<a href="bankruptcy_registration_step_1"><img src="../../../../../public/images/MGlass_2.png" alt="Zoom out"></a>
 	      				</td>
 	      				<td class="pagination_scanned_pages custom_2">
 					      	<span>Page 1 of 2 &nbsp; <a class="link_14" href="#">Next</a></span> 
@@ -128,7 +128,7 @@
 	      		</table>
 	      	</div>
 
-	      	<img class="img_resize_big" src="../../../../../public/images/WOB.jpg" alt="WOB document">
+	      	<img class="img_resize_big_magnified" src="../../../../../public/images/WOB2.jpg" alt="WOB document">
 
 	    </div>
 
@@ -142,11 +142,21 @@
 
 	      	<div class="spacer_5"></div>
 
-	      	<img class="img_resize_small_selected" src="../../../../../public/images/WOB.jpg" alt="WOB document">
+	      	<div style="position:relative">
+
+	      		<img class="img_resize_small_selected" src="../../../../../public/images/WOB.jpg" alt="WOB document">
+
+	      		<div class="selected_area_1"></div>
+
+	      	</div>
 
 	      	<div class="spacer_10"></div>
 
-	      	<img class="img_resize_small" src="../../../../../public/images/WOB_page2.jpg" alt="WOB document">
+	      	<div >
+
+	      		<img class="img_resize_small" src="../../../../../public/images/WOB_page2.jpg" alt="WOB document">
+
+	        </div>
 
 	    </div>
 
@@ -159,31 +169,6 @@
 {{>includes/footer}}
 
 </body>
-
-<script>
-
-	function page()
-	{
-	  if (document.getElementById("page1").checked)
-	  {
-	    document.getElementById("page_a").style.display = 'none';
-	    document.getElementById("page_b").style.display = 'block';
-	    
-	  }
-	  else if (document.getElementById("page2").checked)
-	  {
-	    document.getElementById("page_a").style.display = 'block';
-	    document.getElementById("page_b").style.display = 'none';
-	    
-	  }
-
-	}
-
-	document.getElementById("page_a").style.display = 'none';
-	document.getElementById("page_b").style.display = 'none';
-
-</script>
-
 
 <script>
 
@@ -210,4 +195,3 @@
 </script>
 
 </html>
-

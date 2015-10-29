@@ -22,28 +22,16 @@
 		<ol>
 		  <li><a class="breadcrumb_links" href="services">Home</a></li>
 		  <li><a class="breadcrumb_links" href="bankruptcies">Bankruptcies</a></li>
-		  <li><a class="breadcrumb_links" href="registrations">List of registration applications</a></li>
-		  <li class="breadcrumb_no_arrow"><span>Bankruptcy registration</span></li>
+		  <li><a class="breadcrumb_links" href="bankruptcies">List of verification applications</a></li>
+		  <li class="breadcrumb_no_arrow"><span>Bankruptcy verification</span></li>
 		</ol>
 	</div>
 
 	<div class="spacer_10"></div>
 
-	<h1 class="title_36">Bankruptcy registration</h1>
+	<h1 class="title_36">Bankruptcy verification</h1>
 
-	<div class="spacer_5"></div>
-
-	<div class="text_16_gray">
-	    <span class="text_16_bold">1. Debtor details</span> 
-	    &nbsp;&nbsp;
-	    2. Debtor address
-	    &nbsp;&nbsp;
-	    3. Court details 
-	    &nbsp;&nbsp;
-	    4. Verify registration
-	</div>
-
-	<div class="spacer_30"></div>
+	<div class="spacer_20"></div>
 
 	<div class="grid-row">
 
@@ -57,12 +45,12 @@
 
     		<div class="form">
 		        <label class="form_label">Forename(s)</label>
-		        <input class="form_textfield" type="text">
+		        <input class="form_textfield" type="text" value=" Harry">
 		    </div>
 
 		    <div class="form">
 		        <label class="form_label">Surname</label>
-		        <input class="form_textfield" type="text">
+		        <input class="form_textfield" type="text" value=" Johns">
 		    </div>
 
 		    <div class="spacer_5"></div>
@@ -89,7 +77,7 @@
 
 		    <div class="form">
 		        <label class="form_label">Occupation</label>
-		        <input class="form_textfield" type="text">
+		        <input class="form_textfield" type="text" value=" Gardener">
 		    </div>
 
 		    <div class="spacer_30"></div>
@@ -98,7 +86,7 @@
 	      		<table>
 	      			<tr>
 	      				<td width="50%" class="no-line">
-	      					<a href="bankruptcy_registration_step_2"><input type="submit" value="Continue" class="form_button"></a>
+	      					<a href="bankruptcy_verification_2"><input type="submit" value="Save" class="form_button_4"></a>
 	      				</td>
 	      				<td width="50%" class="custom_3">
 					      	<a href="#" class="link_16">Reject application</a> 
@@ -107,11 +95,11 @@
 	      		</table>
 	      	</div>
 
-	    </div>
+		</div>
 
-	    <!-- ///////////////////////////////// end of column-form ///////////////////////////////// -->
+		<!-- ///////////////////////////////// end of column-form ///////////////////////////////// -->
 
-	    <!-- ///////////////////////////////// column-scan ///////////////////////////////// -->
+		<!-- ///////////////////////////////// column-scan ///////////////////////////////// -->
 
 	    <div class="column-scan">
 
@@ -119,7 +107,7 @@
 	      		<table>
 	      			<tr>
 	      				<td class="magnify_glass">
-	      					<a href="bankruptcy_registration_step_1_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
+	      					<a href="bankruptcy_registration_verification_step_1_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
 	      				</td>
 	      				<td class="pagination_scanned_pages custom_2">
 					      	<span>Page 1 of 2 &nbsp; <a class="link_14" href="#">Next</a></span> 
@@ -130,13 +118,19 @@
 
 	      	<img class="img_resize_big" src="../../../../../public/images/WOB.jpg" alt="WOB document">
 
-	    </div>
+		</div>
 
-	    <!-- ///////////////////////////////// end of column-scan ///////////////////////////////// -->
+		<!-- ///////////////////////////////// end of column-scan ///////////////////////////////// -->
 
-	    <!-- ///////////////////////////////// column-scan ///////////////////////////////// -->
+		<!-- ///////////////////////////////// column-scan ///////////////////////////////// -->
 
 	    <div class="column-scan-small">
+
+	    	<!--
+
+	    	<div class="js-stick-at-top-when-scrolling">
+
+	    	-->
 
 	      	<div class="spacer_30"></div>
 
@@ -148,9 +142,9 @@
 
 	      	<img class="img_resize_small" src="../../../../../public/images/WOB_page2.jpg" alt="WOB document">
 
-	    </div>
+		</div>
 
-	    <!-- ///////////////////////////////// end of column-scan-small ///////////////////////////////// -->
+		<!-- ///////////////////////////////// end of column-scan-small ///////////////////////////////// -->
 
   	</div>
 
@@ -208,6 +202,8 @@
 	document.getElementById("name3").style.display = 'none';
 
 </script>
+
+<script type="text/javascript" src="http://lr-style-guide.herokuapp.com/static/lr-style-guide/lr-styleguide/js/styleguide.min.js"></script>
 
 </html>
 

@@ -34,11 +34,11 @@
 	<div class="spacer_5"></div>
 
 	<div class="text_16_gray">
-	    <span class="text_16_bold">1. Debtor details</span> 
+	    <a href="bankruptcy_registration_step_1" class="link_16 no_link_style">1. Debtor details</a> 
 	    &nbsp;&nbsp;
-	    2. Debtor address
+	    <a href="bankruptcy_registration_step_2" class="link_16 no_link_style">2. Debtor address</a> 
 	    &nbsp;&nbsp;
-	    3. Court details 
+	    <span class="text_16_bold">3. Court details</span> 
 	    &nbsp;&nbsp;
 	    4. Verify registration
 	</div>
@@ -51,54 +51,47 @@
 
 	    <div class="column-form">
 
-	      	<p class="text_24_bold">1. Debtor details</p>
+	      	<p class="text_24_bold">3. Court details</p>
 
 	      	<div class="spacer_20"></div>
 
     		<div class="form">
-		        <label class="form_label">Forename(s)</label>
+		        <label class="form_label">Key number</label>
 		        <input class="form_textfield" type="text">
 		    </div>
 
 		    <div class="form">
-		        <label class="form_label">Surname</label>
+		        <label class="form_label">County court name</label>
 		        <input class="form_textfield" type="text">
 		    </div>
 
-		    <div class="spacer_5"></div>
-
-		    <div id="name1">
-
-			    <div class="form">
-			        <label class="form_label">Alternative forename(s)</label>
-			        <input class="form_textfield" type="text">
-			    </div>
-
-			    <div class="form">
-			        <label class="form_label">Alternative surname</label>
-			        <input class="form_textfield" type="text">
-			    </div>
-
-			    <div class="spacer_5"></div>
-
-		    </div>
-
-		    <div><a href="#here" onclick="document.getElementById('name1').style.display = 'inline-block';" class="link_16" id="#">Add alternative name</a></div>
-
-		    <div class="spacer_20"></div>
+		    <div class="spacer_15"></div>
 
 		    <div class="form">
-		        <label class="form_label">Occupation</label>
-		        <input class="form_textfield" type="text">
+		        <label class="form_label">Number</label> &nbsp;
+		        <input class="form_textfield_55" type="text">
+		        <span class="text_16_gray">&nbsp;&nbsp; of &nbsp;&nbsp;</span>
+		        <label class="form_label">Year</label> &nbsp;
+		        <input class="form_textfield_55" type="text">
+		    </div>
+
+		    <div class="spacer_15"></div>
+
+		    <div class="form">
+		        <label class="form_label">Date of bankruptcy order</label> 
+		        <div class="spacer_10"></div>
+		        <label class="text_16">Day</label> &nbsp; <input class="form_textfield_40" type="text"> &nbsp;
+		        <label class="text_16">Month</label> &nbsp; <input class="form_textfield_40" type="text"> &nbsp;
+		        <label class="text_16">Year</label> &nbsp; <input class="form_textfield_55" type="text"> &nbsp;
 		    </div>
 
 		    <div class="spacer_30"></div>
 
-      		<div>
+		    <div>
 	      		<table>
 	      			<tr>
 	      				<td width="50%" class="no-line">
-	      					<a href="bankruptcy_registration_step_2"><input type="submit" value="Continue" class="form_button"></a>
+	      					<a href="bankruptcy_registration_step_4"><input type="submit" value="Continue" class="form_button"></a>
 	      				</td>
 	      				<td width="50%" class="custom_3">
 					      	<a href="#" class="link_16">Reject application</a> 
@@ -119,7 +112,7 @@
 	      		<table>
 	      			<tr>
 	      				<td class="magnify_glass">
-	      					<a href="bankruptcy_registration_step_1_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
+	      					<a href="bankruptcy_registration_step_3_magnify"><img src="../../../../../public/images/MGlass_1.png" alt="Zoom in"></a>
 	      				</td>
 	      				<td class="pagination_scanned_pages custom_2">
 					      	<span>Page 1 of 2 &nbsp; <a class="link_14" href="#">Next</a></span> 
@@ -162,52 +155,26 @@
 
 <script>
 
-	function page()
-	{
-	  if (document.getElementById("page1").checked)
-	  {
-	    document.getElementById("page_a").style.display = 'none';
-	    document.getElementById("page_b").style.display = 'block';
-	    
-	  }
-	  else if (document.getElementById("page2").checked)
-	  {
-	    document.getElementById("page_a").style.display = 'block';
-	    document.getElementById("page_b").style.display = 'none';
-	    
-	  }
-
-	}
-
-	document.getElementById("page_a").style.display = 'none';
-	document.getElementById("page_b").style.display = 'none';
-
-</script>
-
-
-<script>
-
-	function add_additional_name()
+	function add_additional_address()
 	{
 	  if (document.getElementById("add").style.display == 'block'){
-	    document.getElementById("name1").style.display = 'none';
+	    document.getElementById("address1").style.display = 'none';
 	  } 
 
 	  else if (document.getElementById("add").style.display == 'block'){
-	    document.getElementById("name2").style.display = 'none';
+	    document.getElementById("address2").style.display = 'none';
 	  } 
 
 	  else if (document.getElementById("add").style.display == 'block'){
-	    document.getElementById("name3").style.display = 'none';
+	    document.getElementById("address3").style.display = 'none';
 	  }  
 
 	}
 
-	document.getElementById("name1").style.display = 'none';
-	document.getElementById("name2").style.display = 'none';
-	document.getElementById("name3").style.display = 'none';
+	document.getElementById("address1").style.display = 'none';
+	document.getElementById("address2").style.display = 'none';
+	document.getElementById("address3").style.display = 'none';
 
 </script>
 
 </html>
-
